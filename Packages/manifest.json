@@ -1,6 +1,8 @@
 {
   "dependencies": {
-    "com.meta.xr.sdk.all": "81.0.0",
+    "com.meta.xr.sdk.acoustics": "file:C:/Users/rodri/Downloads/meta_xr_audio_sdk_fmod_81.0/FMOD/Unity/MetaXRSDKAcousticsFMOD.tgz",
+    "com.meta.xr.sdk.core": "81.0.0",
+    "com.meta.xr.sdk.interaction.ovr": "81.0.0",
     "com.meta.xr.sdk.movement": "https://github.com/oculus-samples/Unity-Movement.git",
     "com.unity.ai.navigation": "2.0.9",
     "com.unity.collab-proxy": "2.10.0",
