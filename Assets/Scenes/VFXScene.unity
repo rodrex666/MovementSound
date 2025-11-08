@@ -3759,7 +3759,6 @@ GameObject:
   - component: {fileID: 7633956441385824447}
   - component: {fileID: 7124644485427844574}
   - component: {fileID: 1436637522676575667}
-  - component: {fileID: 3334858499808232030}
   - component: {fileID: 5027255407133186840}
   m_Layer: 0
   m_Name: Sphere1
@@ -35020,7 +35019,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   mySphere: {fileID: 6057183544568666803}
-  myPos: {x: 0, y: 0, z: 0}
 --- !u!114 &3160694284958885582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35722,28 +35720,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &3334858499808232030
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 420940339119308471}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.Grabbable
-  _transferOnSecondSelection: 0
-  _addNewPointsToFront: 0
-  _forwardElement: {fileID: 0}
-  _oneGrabTransformer: {fileID: 0}
-  _twoGrabTransformer: {fileID: 0}
-  _targetTransform: {fileID: 0}
-  _maxGrabPoints: -1
-  _rigidbody: {fileID: 1436637522676575667}
-  _kinematicWhileSelected: 1
-  _throwWhenUnselected: 1
 --- !u!4 &3341207719816081882
 Transform:
   m_ObjectHideFlags: 0
@@ -59066,28 +59042,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &5190946340799743196
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6057183544568666803}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.Grabbable
-  _transferOnSecondSelection: 0
-  _addNewPointsToFront: 0
-  _forwardElement: {fileID: 0}
-  _oneGrabTransformer: {fileID: 0}
-  _twoGrabTransformer: {fileID: 0}
-  _targetTransform: {fileID: 0}
-  _maxGrabPoints: -1
-  _rigidbody: {fileID: 5735034404444680208}
-  _kinematicWhileSelected: 1
-  _throwWhenUnselected: 1
 --- !u!4 &5196942508863922770
 Transform:
   m_ObjectHideFlags: 0
@@ -64074,7 +64028,6 @@ GameObject:
   - component: {fileID: 2409818383254308847}
   - component: {fileID: 622166393936968877}
   - component: {fileID: 5735034404444680208}
-  - component: {fileID: 5190946340799743196}
   - component: {fileID: 6613379305685981565}
   m_Layer: 0
   m_Name: Sphere2
@@ -64818,7 +64771,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::spherePositioning
   mySphere: {fileID: 420940339119308471}
-  myPos: {x: 0, y: 0, z: 0}
 --- !u!1 &6147590280636978840
 GameObject:
   m_ObjectHideFlags: 0
