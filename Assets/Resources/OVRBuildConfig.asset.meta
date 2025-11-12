@@ -1,12 +1,6 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/_Recovery.meta
-guid: 5402daea1560e3b49b6059dbb68f7e09
-folderAsset: yes
-DefaultImporter:
-========
-guid: 96069d4baaaa46f4eb28361332b1507a
+guid: 90e400a06ef32ef42ba1ce501a8c171a
 NativeFormatImporter:
->>>>>>>> cb7f50909e1f05347a5cab49ef47bb13653d95c6:Assets/Resources/OVRBuildConfig.asset.meta
   externalObjects: {}
   mainObjectFileID: 11400000
   userData: 
