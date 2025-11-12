@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "com.meta.xr.sdk.acoustics": "file:C:/Users/neeti/Downloads/FMOD/Unity/MetaXRSDKAcousticsFMOD.tgz",
     "com.meta.xr.sdk.core": "81.0.0",
     "com.meta.xr.sdk.interaction.ovr": "81.0.0",
     "com.meta.xr.sdk.movement": "https://github.com/oculus-samples/Unity-Movement.git",
