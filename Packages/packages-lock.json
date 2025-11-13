@@ -38,6 +38,13 @@
       },
       "hash": "d3b89c847dbcff03d0e318e570785d149238ad80"
     },
+    "com.meta.xr.simulator": {
+      "version": "81.0.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
     "com.unity.ai.navigation": {
       "version": "2.0.9",
       "depth": 0,
