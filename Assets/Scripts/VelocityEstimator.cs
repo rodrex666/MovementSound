@@ -41,7 +41,7 @@ public class VelocityEstimator : MonoBehaviour
         // We only start tracking if the trigger is currently empty.
         // This prevents issues if a second object enters before the first one leaves.
         Debug.Log("Enter the trigger: "+other.name);
-        if (trackedObject == null)
+        if (trackedObject == null && other.CompareTag("Hands"))
         {
             trackedObject = other.transform;
             entryPosition = other.transform.position;
