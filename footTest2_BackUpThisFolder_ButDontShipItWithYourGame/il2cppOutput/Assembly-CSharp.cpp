@@ -46,15 +46,21 @@ IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____983C29AA1F2D6A58D194A31D00967B0B4F403546C35F05A3D12B6EE906A85F82_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____9FBCA1B162D4EBA81EA46CFA85F8C52D9B7CC4FFE7B0C58A010D3B0B069C1EB4_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral1EA254CA7E71EE32F1ABF4EE1D863BCC4E11B925;
+IL2CPP_EXTERN_C String_t* _stringLiteral2221D138F8A120430E38C8903C34475F04420D61;
 IL2CPP_EXTERN_C String_t* _stringLiteral2409165FB90CD4A8B916FCA75790766B82C91748;
+IL2CPP_EXTERN_C String_t* _stringLiteral40B9968876DFBA959A505AA3EC0E9D9D26C14E45;
 IL2CPP_EXTERN_C String_t* _stringLiteral54754078F81BF468EFA43E14CE376B985006DEAC;
 IL2CPP_EXTERN_C String_t* _stringLiteral5B7926C3A5E1BFA542622F78FEA987EAA90FA886;
+IL2CPP_EXTERN_C String_t* _stringLiteral62CB1D81E2B442D69B283BBA5258B36E58071A2D;
 IL2CPP_EXTERN_C String_t* _stringLiteral8F31E52AC333A7138514A392FCD282D6DB411F1C;
 IL2CPP_EXTERN_C String_t* _stringLiteralB7DC32D5415734226F9E3CD688B830D4BFF1D513;
 IL2CPP_EXTERN_C String_t* _stringLiteralCA97E89D80F7841C2C8719EA5A6046CCFFF7F5A0;
 IL2CPP_EXTERN_C String_t* _stringLiteralCBE6A87375AF5C3BDE3931395C8E2F37044FF31D;
 IL2CPP_EXTERN_C String_t* _stringLiteralD45A6D9381BC1554B1AB9F9CC09A6FCD6B800120;
+IL2CPP_EXTERN_C String_t* _stringLiteralEE3D3402E26E8381E174BD0635F0DA5564BACAD8;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisVisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0_mC2DD444DE804211C8EADF53E224C7103F9A3CCD1_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisVelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49_m9A1A9CEB86576246F0B115BAE0A9D851A4957AE4_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisVisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0_m9557AB41C03467D73E149BA6984FE5808B2AF9E3_RuntimeMethod_var;
 
 struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
 struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248;
@@ -296,6 +302,10 @@ struct VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49  : public Mon
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___entryPosition;
 	float ___entryTime;
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___trackedObject;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___sphere1;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___sphere2;
+	VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* ___plasma1;
+	VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* ___plasma2;
 };
 struct footBlastCollision_tD2A684D627AC5ED2825BE1D7A2CB534499B044BB  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -307,6 +317,19 @@ struct footBlastCollision_tD2A684D627AC5ED2825BE1D7A2CB534499B044BB  : public Mo
 struct plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
 	VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* ___plasmaVFX;
+	float ___aveVel;
+	float ___estVelocity1;
+	float ___estVelocity2;
+	float ___estVelocity3;
+	VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49* ___vel1;
+	VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49* ___vel2;
+	VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49* ___vel3;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___velHold1;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___velHold2;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___velHold3;
+	float ___aveVelNormalIntense;
+	float ___aveVelNormalColour;
+	float ___myY;
 };
 struct spherePositioning_t280148174E4E2B87FF57356F779FF75BF93947C3  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -425,6 +448,7 @@ struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031  : public RuntimeArr
 
 
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
 
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR EventInstance_tB965FE66D8F64AF5ED7084290FED14B1B50B11CF RuntimeManager_CreateInstance_mB5613913B946498BBF3B847EEDAD1AE121BFA04E (String_t* ___0_path, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t EventInstance_start_mA66929F498D81CE8EBEF687D9EFEC93BDB4AAEF4 (EventInstance_tB965FE66D8F64AF5ED7084290FED14B1B50B11CF* __this, const RuntimeMethod* method) ;
@@ -449,19 +473,29 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865 (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_RotateAround_m489C5BE8B8B15D0A5F4863DE6D23FF2CC8FA76C6 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_point, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_axis, float ___2_angle, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_LookAt_mA8567593181FD78BBDC2AF29AD99F93BDB2976B2 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_target, const RuntimeMethod* method) ;
+inline VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49* GameObject_GetComponent_TisVelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49_m9A1A9CEB86576246F0B115BAE0A9D851A4957AE4 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
+{
+	return ((  VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared)(__this, method);
+}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_rotation_m61340DE74726CF0F9946743A727C4D444397331D (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___0_value, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline (float ___0_value, float ___1_min, float ___2_max, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* Transform_get_parent_m65354E28A4C94EC00EBCF03532F7B0718380791E (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_parent_m9BD5E563B539DD5BEC342736B03F97B38A243234 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_value, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
+inline VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* GameObject_GetComponent_TisVisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0_m9557AB41C03467D73E149BA6984FE5808B2AF9E3 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
+{
+	return ((  VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared)(__this, method);
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m9E3155FB84015C823606188F53B47CB44C444991 (String_t* ___0_str0, String_t* ___1_str1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Component_CompareTag_mE6F8897E84F12DF12D302FFC4D58204D51096FC5 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, String_t* ___0_tag, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B (const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) ;
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline (float ___0_value, float ___1_min, float ___2_max, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void FMODPlaywithParameters_updateParameterFMOD_m72AD985DD99338FCEBEFB96FF2274F6DE469C3C1_inline (FMODPlaywithParameters_t76C514E722C5D7D71E35942B927F19DF46A1A741* __this, float ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Single_ToString_m3F2C4433B6ADFA5ED8E3F14ED19CD23014E5179D (float* __this, String_t* ___0_format, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m647EBF831F54B6DF7D5AFA5FD012CF4EE7571B6A (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___0_values, const RuntimeMethod* method) ;
@@ -815,30 +849,116 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void plasmaControl_Start_m1D391FE0EBD95FE2B68
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisVisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0_mC2DD444DE804211C8EADF53E224C7103F9A3CCD1_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisVelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49_m9A1A9CEB86576246F0B115BAE0A9D851A4957AE4_RuntimeMethod_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:14>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:29>
 		VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* L_0;
 		L_0 = Component_GetComponent_TisVisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0_mC2DD444DE804211C8EADF53E224C7103F9A3CCD1(__this, Component_GetComponent_TisVisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0_mC2DD444DE804211C8EADF53E224C7103F9A3CCD1_RuntimeMethod_var);
 		__this->___plasmaVFX = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___plasmaVFX), (void*)L_0);
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:15>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:30>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = __this->___velHold1;
+		NullCheck(L_1);
+		VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49* L_2;
+		L_2 = GameObject_GetComponent_TisVelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49_m9A1A9CEB86576246F0B115BAE0A9D851A4957AE4(L_1, GameObject_GetComponent_TisVelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49_m9A1A9CEB86576246F0B115BAE0A9D851A4957AE4_RuntimeMethod_var);
+		__this->___vel1 = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___vel1), (void*)L_2);
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:31>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = __this->___velHold2;
+		NullCheck(L_3);
+		VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49* L_4;
+		L_4 = GameObject_GetComponent_TisVelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49_m9A1A9CEB86576246F0B115BAE0A9D851A4957AE4(L_3, GameObject_GetComponent_TisVelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49_m9A1A9CEB86576246F0B115BAE0A9D851A4957AE4_RuntimeMethod_var);
+		__this->___vel2 = L_4;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___vel2), (void*)L_4);
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:32>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___velHold3;
+		NullCheck(L_5);
+		VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49* L_6;
+		L_6 = GameObject_GetComponent_TisVelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49_m9A1A9CEB86576246F0B115BAE0A9D851A4957AE4(L_5, GameObject_GetComponent_TisVelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49_m9A1A9CEB86576246F0B115BAE0A9D851A4957AE4_RuntimeMethod_var);
+		__this->___vel3 = L_6;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___vel3), (void*)L_6);
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:33>
 		return;
 	}
 }
 // Method Definition Index: 91989
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void plasmaControl_Update_mACE36BF6F9C22871EB046DB2ABC84D2E5936B07B (plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C* __this, const RuntimeMethod* method) 
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
 	{
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:19>
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0;
-		L_0 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_1;
-		L_1 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2221D138F8A120430E38C8903C34475F04420D61);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral40B9968876DFBA959A505AA3EC0E9D9D26C14E45);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEE3D3402E26E8381E174BD0635F0DA5564BACAD8);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:37>
+		VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49* L_0 = __this->___vel1;
 		NullCheck(L_0);
-		Transform_set_rotation_m61340DE74726CF0F9946743A727C4D444397331D(L_0, L_1, NULL);
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:20>
+		float L_1 = L_0->___estimatedNormalizedVelocity;
+		__this->___estVelocity1 = L_1;
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:38>
+		VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49* L_2 = __this->___vel2;
+		NullCheck(L_2);
+		float L_3 = L_2->___estimatedNormalizedVelocity;
+		__this->___estVelocity2 = L_3;
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:39>
+		VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49* L_4 = __this->___vel3;
+		NullCheck(L_4);
+		float L_5 = L_4->___estimatedNormalizedVelocity;
+		__this->___estVelocity3 = L_5;
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:43>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6;
+		L_6 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_7;
+		L_7 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
+		NullCheck(L_6);
+		Transform_set_rotation_m61340DE74726CF0F9946743A727C4D444397331D(L_6, L_7, NULL);
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:44>
+		float L_8 = __this->___estVelocity1;
+		float L_9 = __this->___estVelocity2;
+		float L_10 = __this->___estVelocity3;
+		__this->___aveVel = ((float)(((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(L_8, L_9)), L_10))/(3.0f)));
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:45>
+		float L_11 = __this->___aveVel;
+		float L_12;
+		L_12 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(((float)(L_11/(0.5f))), (0.0f), (1.0f), NULL);
+		__this->___aveVelNormalColour = L_12;
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:46>
+		float L_13 = __this->___aveVel;
+		float L_14;
+		L_14 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(((float)(L_13/(0.5f))), (0.800000012f), (5.0f), NULL);
+		__this->___aveVelNormalIntense = L_14;
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:47>
+		VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* L_15 = __this->___plasmaVFX;
+		float L_16 = __this->___aveVelNormalColour;
+		NullCheck(L_15);
+		VisualEffect_SetFloat_mB59095AC406A373BC587551B5A4781719F608F51(L_15, _stringLiteralEE3D3402E26E8381E174BD0635F0DA5564BACAD8, L_16, NULL);
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:48>
+		VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* L_17 = __this->___plasmaVFX;
+		float L_18 = __this->___aveVelNormalIntense;
+		NullCheck(L_17);
+		VisualEffect_SetFloat_mB59095AC406A373BC587551B5A4781719F608F51(L_17, _stringLiteral40B9968876DFBA959A505AA3EC0E9D9D26C14E45, L_18, NULL);
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:50>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_19;
+		L_19 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		NullCheck(L_19);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_20;
+		L_20 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_19, NULL);
+		NullCheck(L_20);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21;
+		L_21 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_20, NULL);
+		float L_22 = L_21.___y;
+		__this->___myY = ((float)il2cpp_codegen_multiply(L_22, (8.0f)));
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:52>
+		VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* L_23 = __this->___plasmaVFX;
+		float L_24 = __this->___myY;
+		NullCheck(L_23);
+		VisualEffect_SetFloat_mB59095AC406A373BC587551B5A4781719F608F51(L_23, _stringLiteral2221D138F8A120430E38C8903C34475F04420D61, L_24, NULL);
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:53>
 		return;
 	}
 }
@@ -911,14 +1031,29 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VelocityEstimator_Start_m29FF16213AE3766
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisVisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0_m9557AB41C03467D73E149BA6984FE5808B2AF9E3_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1EA254CA7E71EE32F1ABF4EE1D863BCC4E11B925);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:37>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:42>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___sphere1;
+		NullCheck(L_0);
+		VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* L_1;
+		L_1 = GameObject_GetComponent_TisVisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0_m9557AB41C03467D73E149BA6984FE5808B2AF9E3(L_0, GameObject_GetComponent_TisVisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0_m9557AB41C03467D73E149BA6984FE5808B2AF9E3_RuntimeMethod_var);
+		__this->___plasma1 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___plasma1), (void*)L_1);
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:43>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___sphere2;
+		NullCheck(L_2);
+		VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* L_3;
+		L_3 = GameObject_GetComponent_TisVisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0_m9557AB41C03467D73E149BA6984FE5808B2AF9E3(L_2, GameObject_GetComponent_TisVisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0_m9557AB41C03467D73E149BA6984FE5808B2AF9E3_RuntimeMethod_var);
+		__this->___plasma2 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___plasma2), (void*)L_3);
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:44>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral1EA254CA7E71EE32F1ABF4EE1D863BCC4E11B925, NULL);
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:38>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:45>
 		return;
 	}
 }
@@ -931,11 +1066,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VelocityEstimator_OnTriggerEnter_m1F87E0
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral54754078F81BF468EFA43E14CE376B985006DEAC);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral62CB1D81E2B442D69B283BBA5258B36E58071A2D);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB7DC32D5415734226F9E3CD688B830D4BFF1D513);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:43>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:50>
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_0 = ___0_other;
 		NullCheck(L_0);
 		String_t* L_1;
@@ -944,51 +1080,61 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VelocityEstimator_OnTriggerEnter_m1F87E0
 		L_2 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteralB7DC32D5415734226F9E3CD688B830D4BFF1D513, L_1, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_2, NULL);
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:44>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:51>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3 = __this->___trackedObject;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_4;
 		L_4 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_3, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_4)
 		{
-			goto IL_0060;
+			goto IL_006d;
 		}
 	}
 	{
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:46>
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_5 = ___0_other;
 		NullCheck(L_5);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6;
-		L_6 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_5, NULL);
-		__this->___trackedObject = L_6;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___trackedObject), (void*)L_6);
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:47>
+		bool L_6;
+		L_6 = Component_CompareTag_mE6F8897E84F12DF12D302FFC4D58204D51096FC5(L_5, _stringLiteral62CB1D81E2B442D69B283BBA5258B36E58071A2D, NULL);
+		if (!L_6)
+		{
+			goto IL_006d;
+		}
+	}
+	{
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:53>
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_7 = ___0_other;
 		NullCheck(L_7);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_8;
 		L_8 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_7, NULL);
-		NullCheck(L_8);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9;
-		L_9 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_8, NULL);
-		__this->___entryPosition = L_9;
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:48>
-		float L_10;
-		L_10 = Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B(NULL);
-		__this->___entryTime = L_10;
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:50>
-		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_11 = ___0_other;
-		NullCheck(L_11);
-		String_t* L_12;
-		L_12 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_11, NULL);
-		String_t* L_13;
-		L_13 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_12, _stringLiteral54754078F81BF468EFA43E14CE376B985006DEAC, NULL);
+		__this->___trackedObject = L_8;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___trackedObject), (void*)L_8);
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:54>
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_9 = ___0_other;
+		NullCheck(L_9);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_10;
+		L_10 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_9, NULL);
+		NullCheck(L_10);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11;
+		L_11 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_10, NULL);
+		__this->___entryPosition = L_11;
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:55>
+		float L_12;
+		L_12 = Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B(NULL);
+		__this->___entryTime = L_12;
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:57>
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_13 = ___0_other;
+		NullCheck(L_13);
+		String_t* L_14;
+		L_14 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_13, NULL);
+		String_t* L_15;
+		L_15 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_14, _stringLiteral54754078F81BF468EFA43E14CE376B985006DEAC, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_13, NULL);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_15, NULL);
 	}
 
-IL_0060:
+IL_006d:
 	{
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:52>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:59>
 		return;
 	}
 }
@@ -1010,7 +1156,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VelocityEstimator_OnTriggerExit_mD02E57A
 	float V_1 = 0.0f;
 	float V_2 = 0.0f;
 	{
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:57>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:64>
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_0 = ___0_other;
 		NullCheck(L_0);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1;
@@ -1025,7 +1171,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VelocityEstimator_OnTriggerExit_mD02E57A
 		}
 	}
 	{
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:62>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:69>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = __this->___entryPosition;
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_5 = ___0_other;
 		NullCheck(L_5);
@@ -1037,12 +1183,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VelocityEstimator_OnTriggerExit_mD02E57A
 		float L_8;
 		L_8 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_4, L_7, NULL);
 		V_0 = L_8;
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:65>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:72>
 		float L_9;
 		L_9 = Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B(NULL);
 		float L_10 = __this->___entryTime;
 		V_1 = ((float)il2cpp_codegen_subtract(L_9, L_10));
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:68>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:75>
 		float L_11 = V_1;
 		if ((!(((float)L_11) <= ((float)(0.0f)))))
 		{
@@ -1050,22 +1196,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VelocityEstimator_OnTriggerExit_mD02E57A
 		}
 	}
 	{
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:70>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:77>
 		__this->___estimatedNormalizedVelocity = (0.0f);
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:71>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:78>
 		__this->___trackedObject = (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___trackedObject), (void*)(Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*)NULL);
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:72>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:79>
 		return;
 	}
 
 IL_0055:
 	{
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:76>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:83>
 		float L_12 = V_0;
 		float L_13 = V_1;
 		V_2 = ((float)(L_12/L_13));
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:81>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:88>
 		float L_14 = V_2;
 		float L_15 = __this->___maxExpectedVelocity;
 		float L_16 = __this->___minParamValue;
@@ -1073,12 +1219,12 @@ IL_0055:
 		float L_18;
 		L_18 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(((float)(L_14/L_15)), L_16, L_17, NULL);
 		__this->___estimatedNormalizedVelocity = L_18;
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:84>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:91>
 		FMODPlaywithParameters_t76C514E722C5D7D71E35942B927F19DF46A1A741* L_19 = __this->____FmodParatemers;
 		float L_20 = __this->___estimatedNormalizedVelocity;
 		NullCheck(L_19);
 		FMODPlaywithParameters_updateParameterFMOD_m72AD985DD99338FCEBEFB96FF2274F6DE469C3C1_inline(L_19, L_20, NULL);
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:87>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:94>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_21 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_22 = L_21;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_23 = __this->___trackedObject;
@@ -1108,14 +1254,14 @@ IL_0055:
 		L_32 = String_Concat_m647EBF831F54B6DF7D5AFA5FD012CF4EE7571B6A(L_29, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_32, NULL);
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:91>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:98>
 		__this->___trackedObject = (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___trackedObject), (void*)(Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*)NULL);
 	}
 
 IL_00e0:
 	{
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:93>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:100>
 		return;
 	}
 }
@@ -1123,7 +1269,7 @@ IL_00e0:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float VelocityEstimator_GetLastEstimatedVelocity_m792B80B77F72F5C6F9DC11F2994EF2D781F76437 (VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:97>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:104>
 		float L_0 = __this->___estimatedNormalizedVelocity;
 		return L_0;
 	}
@@ -1132,7 +1278,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float VelocityEstimator_GetLastEstimatedVeloc
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VelocityEstimator__ctor_mECE8F9692DA606F89196F6B57FF6388051EFE13F (VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:8>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VelocityEstimator.cs:9>
 		__this->___maxExpectedVelocity = (10.0f);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
@@ -1422,6 +1568,57 @@ IL_0009:
 		return L_1;
 	}
 }
+// Method Definition Index: 49434
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline (float ___0_value, float ___1_min, float ___2_max, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	float V_2 = 0.0f;
+	{
+		float L_0 = ___0_value;
+		float L_1 = ___1_min;
+		V_0 = (bool)((((float)L_0) < ((float)L_1))? 1 : 0);
+		bool L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_000e;
+		}
+	}
+	{
+		float L_3 = ___1_min;
+		___0_value = L_3;
+		goto IL_0019;
+	}
+
+IL_000e:
+	{
+		float L_4 = ___0_value;
+		float L_5 = ___2_max;
+		V_1 = (bool)((((float)L_4) > ((float)L_5))? 1 : 0);
+		bool L_6 = V_1;
+		if (!L_6)
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		float L_7 = ___2_max;
+		___0_value = L_7;
+	}
+
+IL_0019:
+	{
+		float L_8 = ___0_value;
+		V_2 = L_8;
+		goto IL_001d;
+	}
+
+IL_001d:
+	{
+		float L_9 = V_2;
+		return L_9;
+	}
+}
 // Method Definition Index: 49309
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) 
 {
@@ -1481,57 +1678,6 @@ IL_0040:
 	{
 		float L_19 = V_3;
 		return L_19;
-	}
-}
-// Method Definition Index: 49434
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline (float ___0_value, float ___1_min, float ___2_max, const RuntimeMethod* method) 
-{
-	bool V_0 = false;
-	bool V_1 = false;
-	float V_2 = 0.0f;
-	{
-		float L_0 = ___0_value;
-		float L_1 = ___1_min;
-		V_0 = (bool)((((float)L_0) < ((float)L_1))? 1 : 0);
-		bool L_2 = V_0;
-		if (!L_2)
-		{
-			goto IL_000e;
-		}
-	}
-	{
-		float L_3 = ___1_min;
-		___0_value = L_3;
-		goto IL_0019;
-	}
-
-IL_000e:
-	{
-		float L_4 = ___0_value;
-		float L_5 = ___2_max;
-		V_1 = (bool)((((float)L_4) > ((float)L_5))? 1 : 0);
-		bool L_6 = V_1;
-		if (!L_6)
-		{
-			goto IL_0019;
-		}
-	}
-	{
-		float L_7 = ___2_max;
-		___0_value = L_7;
-	}
-
-IL_0019:
-	{
-		float L_8 = ___0_value;
-		V_2 = L_8;
-		goto IL_001d;
-	}
-
-IL_001d:
-	{
-		float L_9 = V_2;
-		return L_9;
 	}
 }
 // Method Definition Index: 91979

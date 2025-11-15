@@ -21,6 +21,7 @@ struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F;
 struct String_t;
 struct Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4;
 struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1;
+struct VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49;
 struct VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0;
 struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
 struct GetCameraDelegate_t6656012307EDCA92ED0C70BC60F9690D39C4793F;
@@ -939,6 +940,10 @@ struct VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49  : public Mon
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___entryPosition;
 	float ___entryTime;
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___trackedObject;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___sphere1;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___sphere2;
+	VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* ___plasma1;
+	VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* ___plasma2;
 };
 struct footBlastCollision_tD2A684D627AC5ED2825BE1D7A2CB534499B044BB  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -950,6 +955,19 @@ struct footBlastCollision_tD2A684D627AC5ED2825BE1D7A2CB534499B044BB  : public Mo
 struct plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
 	VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* ___plasmaVFX;
+	float ___aveVel;
+	float ___estVelocity1;
+	float ___estVelocity2;
+	float ___estVelocity3;
+	VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49* ___vel1;
+	VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49* ___vel2;
+	VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49* ___vel3;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___velHold1;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___velHold2;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___velHold3;
+	float ___aveVelNormalIntense;
+	float ___aveVelNormalColour;
+	float ___myY;
 };
 struct spherePositioning_t280148174E4E2B87FF57356F779FF75BF93947C3  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -1071,15 +1089,15 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable12013[4] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable12014[3] = 
 {
 	static_cast<int32_t>(offsetof(MovementAroundHead_tB1EB8D445252DD3D31C7B62C16074B99DC6BE227, ___mainCamera)),static_cast<int32_t>(offsetof(MovementAroundHead_tB1EB8D445252DD3D31C7B62C16074B99DC6BE227, ___radius)),static_cast<int32_t>(offsetof(MovementAroundHead_tB1EB8D445252DD3D31C7B62C16074B99DC6BE227, ___orbitSpeed)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable12015[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable12015[14] = 
 {
-	static_cast<int32_t>(offsetof(plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C, ___plasmaVFX)),};
+	static_cast<int32_t>(offsetof(plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C, ___plasmaVFX)),static_cast<int32_t>(offsetof(plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C, ___aveVel)),static_cast<int32_t>(offsetof(plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C, ___estVelocity1)),static_cast<int32_t>(offsetof(plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C, ___estVelocity2)),static_cast<int32_t>(offsetof(plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C, ___estVelocity3)),static_cast<int32_t>(offsetof(plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C, ___vel1)),static_cast<int32_t>(offsetof(plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C, ___vel2)),static_cast<int32_t>(offsetof(plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C, ___vel3)),static_cast<int32_t>(offsetof(plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C, ___velHold1)),static_cast<int32_t>(offsetof(plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C, ___velHold2)),static_cast<int32_t>(offsetof(plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C, ___velHold3)),static_cast<int32_t>(offsetof(plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C, ___aveVelNormalIntense)),static_cast<int32_t>(offsetof(plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C, ___aveVelNormalColour)),static_cast<int32_t>(offsetof(plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C, ___myY)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable12016[1] = 
 {
 	static_cast<int32_t>(offsetof(spherePositioning_t280148174E4E2B87FF57356F779FF75BF93947C3, ___mySphere)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable12017[8] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable12017[12] = 
 {
-	static_cast<int32_t>(offsetof(VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49, ___maxExpectedVelocity)),static_cast<int32_t>(offsetof(VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49, ___minParamValue)),static_cast<int32_t>(offsetof(VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49, ___maxParamValue)),static_cast<int32_t>(offsetof(VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49, ____FmodParatemers)),static_cast<int32_t>(offsetof(VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49, ___estimatedNormalizedVelocity)),static_cast<int32_t>(offsetof(VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49, ___entryPosition)),static_cast<int32_t>(offsetof(VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49, ___entryTime)),static_cast<int32_t>(offsetof(VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49, ___trackedObject)),};
+	static_cast<int32_t>(offsetof(VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49, ___maxExpectedVelocity)),static_cast<int32_t>(offsetof(VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49, ___minParamValue)),static_cast<int32_t>(offsetof(VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49, ___maxParamValue)),static_cast<int32_t>(offsetof(VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49, ____FmodParatemers)),static_cast<int32_t>(offsetof(VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49, ___estimatedNormalizedVelocity)),static_cast<int32_t>(offsetof(VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49, ___entryPosition)),static_cast<int32_t>(offsetof(VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49, ___entryTime)),static_cast<int32_t>(offsetof(VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49, ___trackedObject)),static_cast<int32_t>(offsetof(VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49, ___sphere1)),static_cast<int32_t>(offsetof(VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49, ___sphere2)),static_cast<int32_t>(offsetof(VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49, ___plasma1)),static_cast<int32_t>(offsetof(VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49, ___plasma2)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable12018[4] = 
 {
 	static_cast<int32_t>(offsetof(Section_t50C894D0A717C2368EBAAE5477D4E8626D0B5401, ___heading)),static_cast<int32_t>(offsetof(Section_t50C894D0A717C2368EBAAE5477D4E8626D0B5401, ___text)),static_cast<int32_t>(offsetof(Section_t50C894D0A717C2368EBAAE5477D4E8626D0B5401, ___linkText)),static_cast<int32_t>(offsetof(Section_t50C894D0A717C2368EBAAE5477D4E8626D0B5401, ___url)),};
