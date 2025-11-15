@@ -42,8 +42,8 @@ public class plasmaControl : MonoBehaviour
 
         transform.rotation = Quaternion.identity;
         aveVel = (estVelocity1 + estVelocity2 + estVelocity3) / 3;
-        aveVelNormalColour = Mathf.Clamp(aveVel / 0.5f, 0, 1);
-        aveVelNormalIntense = Mathf.Clamp(aveVel / 0.5f, 0.8f, 5f);
+        aveVelNormalColour = (aveVel / 2); 
+        aveVelNormalIntense = (aveVel * 2);
         plasmaVFX.SetFloat("colourTime", aveVelNormalColour);
         plasmaVFX.SetFloat("intensity", aveVelNormalIntense);
 

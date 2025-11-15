@@ -479,7 +479,6 @@ inline VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49* GameObject_G
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_rotation_m61340DE74726CF0F9946743A727C4D444397331D (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___0_value, const RuntimeMethod* method) ;
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline (float ___0_value, float ___1_min, float ___2_max, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* Transform_get_parent_m65354E28A4C94EC00EBCF03532F7B0718380791E (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
@@ -496,6 +495,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m9E3155FB84015C823606
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Component_CompareTag_mE6F8897E84F12DF12D302FFC4D58204D51096FC5 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, String_t* ___0_tag, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B (const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline (float ___0_value, float ___1_min, float ___2_max, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void FMODPlaywithParameters_updateParameterFMOD_m72AD985DD99338FCEBEFB96FF2274F6DE469C3C1_inline (FMODPlaywithParameters_t76C514E722C5D7D71E35942B927F19DF46A1A741* __this, float ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Single_ToString_m3F2C4433B6ADFA5ED8E3F14ED19CD23014E5179D (float* __this, String_t* ___0_format, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m647EBF831F54B6DF7D5AFA5FD012CF4EE7571B6A (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___0_values, const RuntimeMethod* method) ;
@@ -924,40 +924,36 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void plasmaControl_Update_mACE36BF6F9C22871EB
 		__this->___aveVel = ((float)(((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(L_8, L_9)), L_10))/(3.0f)));
 		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:45>
 		float L_11 = __this->___aveVel;
-		float L_12;
-		L_12 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(((float)(L_11/(0.5f))), (0.0f), (1.0f), NULL);
-		__this->___aveVelNormalColour = L_12;
+		__this->___aveVelNormalColour = ((float)(L_11/(2.0f)));
 		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:46>
-		float L_13 = __this->___aveVel;
-		float L_14;
-		L_14 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(((float)(L_13/(0.5f))), (0.800000012f), (5.0f), NULL);
-		__this->___aveVelNormalIntense = L_14;
+		float L_12 = __this->___aveVel;
+		__this->___aveVelNormalIntense = ((float)il2cpp_codegen_multiply(L_12, (2.0f)));
 		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:47>
-		VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* L_15 = __this->___plasmaVFX;
-		float L_16 = __this->___aveVelNormalColour;
-		NullCheck(L_15);
-		VisualEffect_SetFloat_mB59095AC406A373BC587551B5A4781719F608F51(L_15, _stringLiteralEE3D3402E26E8381E174BD0635F0DA5564BACAD8, L_16, NULL);
+		VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* L_13 = __this->___plasmaVFX;
+		float L_14 = __this->___aveVelNormalColour;
+		NullCheck(L_13);
+		VisualEffect_SetFloat_mB59095AC406A373BC587551B5A4781719F608F51(L_13, _stringLiteralEE3D3402E26E8381E174BD0635F0DA5564BACAD8, L_14, NULL);
 		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:48>
-		VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* L_17 = __this->___plasmaVFX;
-		float L_18 = __this->___aveVelNormalIntense;
-		NullCheck(L_17);
-		VisualEffect_SetFloat_mB59095AC406A373BC587551B5A4781719F608F51(L_17, _stringLiteral40B9968876DFBA959A505AA3EC0E9D9D26C14E45, L_18, NULL);
+		VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* L_15 = __this->___plasmaVFX;
+		float L_16 = __this->___aveVelNormalIntense;
+		NullCheck(L_15);
+		VisualEffect_SetFloat_mB59095AC406A373BC587551B5A4781719F608F51(L_15, _stringLiteral40B9968876DFBA959A505AA3EC0E9D9D26C14E45, L_16, NULL);
 		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:50>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_19;
-		L_19 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
-		NullCheck(L_19);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_20;
-		L_20 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_19, NULL);
-		NullCheck(L_20);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21;
-		L_21 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_20, NULL);
-		float L_22 = L_21.___y;
-		__this->___myY = ((float)il2cpp_codegen_multiply(L_22, (8.0f)));
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_17;
+		L_17 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		NullCheck(L_17);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_18;
+		L_18 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_17, NULL);
+		NullCheck(L_18);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19;
+		L_19 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_18, NULL);
+		float L_20 = L_19.___y;
+		__this->___myY = ((float)il2cpp_codegen_multiply(L_20, (8.0f)));
 		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:52>
-		VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* L_23 = __this->___plasmaVFX;
-		float L_24 = __this->___myY;
-		NullCheck(L_23);
-		VisualEffect_SetFloat_mB59095AC406A373BC587551B5A4781719F608F51(L_23, _stringLiteral2221D138F8A120430E38C8903C34475F04420D61, L_24, NULL);
+		VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* L_21 = __this->___plasmaVFX;
+		float L_22 = __this->___myY;
+		NullCheck(L_21);
+		VisualEffect_SetFloat_mB59095AC406A373BC587551B5A4781719F608F51(L_21, _stringLiteral2221D138F8A120430E38C8903C34475F04420D61, L_22, NULL);
 		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:53>
 		return;
 	}
@@ -1568,57 +1564,6 @@ IL_0009:
 		return L_1;
 	}
 }
-// Method Definition Index: 49434
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline (float ___0_value, float ___1_min, float ___2_max, const RuntimeMethod* method) 
-{
-	bool V_0 = false;
-	bool V_1 = false;
-	float V_2 = 0.0f;
-	{
-		float L_0 = ___0_value;
-		float L_1 = ___1_min;
-		V_0 = (bool)((((float)L_0) < ((float)L_1))? 1 : 0);
-		bool L_2 = V_0;
-		if (!L_2)
-		{
-			goto IL_000e;
-		}
-	}
-	{
-		float L_3 = ___1_min;
-		___0_value = L_3;
-		goto IL_0019;
-	}
-
-IL_000e:
-	{
-		float L_4 = ___0_value;
-		float L_5 = ___2_max;
-		V_1 = (bool)((((float)L_4) > ((float)L_5))? 1 : 0);
-		bool L_6 = V_1;
-		if (!L_6)
-		{
-			goto IL_0019;
-		}
-	}
-	{
-		float L_7 = ___2_max;
-		___0_value = L_7;
-	}
-
-IL_0019:
-	{
-		float L_8 = ___0_value;
-		V_2 = L_8;
-		goto IL_001d;
-	}
-
-IL_001d:
-	{
-		float L_9 = V_2;
-		return L_9;
-	}
-}
 // Method Definition Index: 49309
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) 
 {
@@ -1678,6 +1623,57 @@ IL_0040:
 	{
 		float L_19 = V_3;
 		return L_19;
+	}
+}
+// Method Definition Index: 49434
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline (float ___0_value, float ___1_min, float ___2_max, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	float V_2 = 0.0f;
+	{
+		float L_0 = ___0_value;
+		float L_1 = ___1_min;
+		V_0 = (bool)((((float)L_0) < ((float)L_1))? 1 : 0);
+		bool L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_000e;
+		}
+	}
+	{
+		float L_3 = ___1_min;
+		___0_value = L_3;
+		goto IL_0019;
+	}
+
+IL_000e:
+	{
+		float L_4 = ___0_value;
+		float L_5 = ___2_max;
+		V_1 = (bool)((((float)L_4) > ((float)L_5))? 1 : 0);
+		bool L_6 = V_1;
+		if (!L_6)
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		float L_7 = ___2_max;
+		___0_value = L_7;
+	}
+
+IL_0019:
+	{
+		float L_8 = ___0_value;
+		V_2 = L_8;
+		goto IL_001d;
+	}
+
+IL_001d:
+	{
+		float L_9 = V_2;
+		return L_9;
 	}
 }
 // Method Definition Index: 91979
