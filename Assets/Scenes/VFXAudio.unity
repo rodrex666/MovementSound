@@ -40819,7 +40819,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &3837006210417670323
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -90461,7 +90461,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3148193087806057786}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 0
@@ -94145,6 +94145,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 64219265449917296, guid: 9c0c601a474e6014487f2bbb1ef92d76, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 248368243723025073, guid: 9c0c601a474e6014487f2bbb1ef92d76, type: 3}
       propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[0].m_Value
       value: 0
@@ -94152,6 +94156,10 @@ PrefabInstance:
     - target: {fileID: 5329970870810544384, guid: 9c0c601a474e6014487f2bbb1ef92d76, type: 3}
       propertyPath: m_Name
       value: SphereFoot
+      objectReference: {fileID: 0}
+    - target: {fileID: 5329970870810544384, guid: 9c0c601a474e6014487f2bbb1ef92d76, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5528271176928480513, guid: 9c0c601a474e6014487f2bbb1ef92d76, type: 3}
       propertyPath: m_LocalPosition.x
