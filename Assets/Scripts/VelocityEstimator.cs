@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.VFX;
 
 public class VelocityEstimator : MonoBehaviour
 {
@@ -21,19 +22,25 @@ public class VelocityEstimator : MonoBehaviour
     [Header("Debug Info")]
     [Tooltip("The final, normalized velocity (0 to 1) of the last object that passed through.")]
     [SerializeField] // This makes it visible in the inspector but not publicly settable from other scripts.
-    private float estimatedNormalizedVelocity;
+    public float estimatedNormalizedVelocity;
 
     private Vector3 entryPosition;
     private float entryTime;
     private Transform trackedObject; // To keep track of the object currently inside the trigger.
 
-    
+
+    public GameObject sphere1;
+    public GameObject sphere2;
+    public VisualEffect plasma1;
+    public VisualEffect plasma2;
+
    
 
 
     private void Start()
     {
-       
+        plasma1 = sphere1.GetComponent<VisualEffect>();
+        plasma2 = sphere2.GetComponent<VisualEffect>();
         Debug.Log("Enter start");
     }
     private void OnTriggerEnter(Collider other)
@@ -95,5 +102,6 @@ public class VelocityEstimator : MonoBehaviour
     public float GetLastEstimatedVelocity()
     {
         return estimatedNormalizedVelocity;
+
     }
 }

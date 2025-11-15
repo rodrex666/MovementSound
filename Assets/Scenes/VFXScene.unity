@@ -58351,6 +58351,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::plasmaControl
   plasmaVFX: {fileID: 6361216424592446982}
+  rb: {fileID: 1436637522676575667}
+  velo: {x: 0, y: 0, z: 0}
 --- !u!114 &5032444385740947300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67161,6 +67163,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::plasmaControl
   plasmaVFX: {fileID: 817988018233883928}
+  rb: {fileID: 5735034404444680208}
+  velo: {x: 0, y: 0, z: 0}
 --- !u!1 &6622702990700526343
 GameObject:
   m_ObjectHideFlags: 0
