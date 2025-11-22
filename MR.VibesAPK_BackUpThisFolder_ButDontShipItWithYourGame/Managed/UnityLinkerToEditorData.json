@@ -1110,7 +1110,9 @@
           },
           {
             "name": "MeshCollider",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/VFXAudio.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
