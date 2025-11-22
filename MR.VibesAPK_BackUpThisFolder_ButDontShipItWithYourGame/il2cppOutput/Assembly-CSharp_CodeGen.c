@@ -18,6 +18,10 @@ extern void footBlastCollision__ctor_m300EDAC999FEAFB75553DA4CFE5A82B200FA715F (
 extern void MovementAroundHead_Start_m8FC7C5889EE70DAACB6A1F16D8A207BD5ECD8864 (void);
 extern void MovementAroundHead_Update_mBAA12FAAC0062247C2A7EE060096549E3E024550 (void);
 extern void MovementAroundHead__ctor_m81176FEED67DF8CE2A22C628E8F79FD500762812 (void);
+extern void passthroughColour_Start_mD1DD2F6EB446E3CE170974692B2EA9E554BDFF81 (void);
+extern void passthroughColour_OnTriggerEnter_mDAF163E45335C59D59DD76BDD9639906E8C53157 (void);
+extern void passthroughColour_OnTriggerExit_mCACE54E84EE7DAF0C691065FA49237B5BEB620B7 (void);
+extern void passthroughColour__ctor_m11E311A6EE08A0894BADCDDD520B50F2688D3B93 (void);
 extern void plasmaControl_Start_m1D391FE0EBD95FE2B68B0D55C5158C588CA9E35F (void);
 extern void plasmaControl_Update_mACE36BF6F9C22871EB046DB2ABC84D2E5936B07B (void);
 extern void plasmaControl__ctor_m065F9EF332F016A4266FF352517FC50A2D5343FA (void);
@@ -32,7 +36,7 @@ extern void Readme__ctor_m69C325C4C171DCB0312B646A9034AA91EA8C39C6 (void);
 extern void Section__ctor_m5F732533E4DFC0167D965E5F5DB332E46055399B (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[25] = 
+static Il2CppMethodPointer s_methodPointers[29] = 
 {
 	FMODPlaywithParameters_Start_mD9334FC92FD8548E146263B26A3D7866CABACE2E,
 	FMODPlaywithParameters_Update_m73FAF395CFE27B551DC584249898E46E8D539F9D,
@@ -45,6 +49,10 @@ static Il2CppMethodPointer s_methodPointers[25] =
 	MovementAroundHead_Start_m8FC7C5889EE70DAACB6A1F16D8A207BD5ECD8864,
 	MovementAroundHead_Update_mBAA12FAAC0062247C2A7EE060096549E3E024550,
 	MovementAroundHead__ctor_m81176FEED67DF8CE2A22C628E8F79FD500762812,
+	passthroughColour_Start_mD1DD2F6EB446E3CE170974692B2EA9E554BDFF81,
+	passthroughColour_OnTriggerEnter_mDAF163E45335C59D59DD76BDD9639906E8C53157,
+	passthroughColour_OnTriggerExit_mCACE54E84EE7DAF0C691065FA49237B5BEB620B7,
+	passthroughColour__ctor_m11E311A6EE08A0894BADCDDD520B50F2688D3B93,
 	plasmaControl_Start_m1D391FE0EBD95FE2B68B0D55C5158C588CA9E35F,
 	plasmaControl_Update_mACE36BF6F9C22871EB046DB2ABC84D2E5936B07B,
 	plasmaControl__ctor_m065F9EF332F016A4266FF352517FC50A2D5343FA,
@@ -60,7 +68,7 @@ static Il2CppMethodPointer s_methodPointers[25] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[25] = 
+static const int32_t s_InvokerIndices[29] = 
 {
 	17916,
 	17916,
@@ -72,6 +80,10 @@ static const int32_t s_InvokerIndices[25] =
 	17916,
 	17916,
 	17916,
+	17916,
+	17916,
+	13692,
+	13692,
 	17916,
 	17916,
 	17916,
@@ -92,7 +104,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	25,
+	29,
 	s_methodPointers,
 	0,
 	NULL,
