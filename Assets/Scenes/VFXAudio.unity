@@ -18210,9 +18210,12 @@ VisualEffect:
         m_Overridden: 1
       - m_Value: 0
         m_Name: spotScale
-        m_Overridden: 1
+        m_Overridden: 0
       - m_Value: 0.48
         m_Name: colourTime
+        m_Overridden: 1
+      - m_Value: 0.02
+        m_Name: width
         m_Overridden: 1
     m_Vector2f:
       m_Array: []
@@ -50203,6 +50206,8 @@ MonoBehaviour:
   velHold3: {fileID: 28960253}
   aveVelNormalIntense: 0
   aveVelNormalColour: 0
+  sphereOther: {fileID: 6057183544568666803}
+  sphereDistance: 0
   myY: 0
 --- !u!4 &5031382706878953246
 Transform:
@@ -66327,9 +66332,12 @@ VisualEffect:
         m_Overridden: 1
       - m_Value: 0
         m_Name: spotScale
-        m_Overridden: 1
+        m_Overridden: 0
       - m_Value: 0.48
         m_Name: colourTime
+        m_Overridden: 1
+      - m_Value: 0.02
+        m_Name: width
         m_Overridden: 1
     m_Vector2f:
       m_Array: []
@@ -67820,6 +67828,8 @@ MonoBehaviour:
   velHold3: {fileID: 28960253}
   aveVelNormalIntense: 0
   aveVelNormalColour: 0
+  sphereOther: {fileID: 420940339119308471}
+  sphereDistance: 0
   myY: 0
 --- !u!4 &6616323573471177582
 Transform:
