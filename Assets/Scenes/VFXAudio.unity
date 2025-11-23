@@ -218,6 +218,2035 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5017089234479915369, guid: 695453b5f71308c42bb6cdad798d1051, type: 3}
   m_PrefabInstance: {fileID: 186110329}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &263988778
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 116906132360081794, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 178117593228127315, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 229180894284131465, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 247806949035776331, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 247806949035776331, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 247806949035776331, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 247806949035776331, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 247806949035776331, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 367726106882423678, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 378763843793230580, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 529620118935795537, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 580242617773523681, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 580242617773523681, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 580242617773523681, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 580242617773523681, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 580242617773523681, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 684482963762188524, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 695563163234727623, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 695563163234727623, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 695563163234727623, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 695563163234727623, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 695563163234727623, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 722653075215621127, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 722653075215621127, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 722653075215621127, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 722653075215621127, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 722653075215621127, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 742634267978266813, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 742634267978266813, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 742634267978266813, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 742634267978266813, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 742634267978266813, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 753265968899478112, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 754296910367663411, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 754296910367663411, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 754296910367663411, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 754296910367663411, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 754296910367663411, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 763007735903448674, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 763007735903448674, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 763007735903448674, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 763007735903448674, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 763007735903448674, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 873598982389813617, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 930612523291448048, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 930612523291448048, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 930612523291448048, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 930612523291448048, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 930612523291448048, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 1066724860104745369, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1122057512652382530, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 1122057512652382530, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 1122057512652382530, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 1122057512652382530, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 1122057512652382530, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 1127549961300105796, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1156241561192053212, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1190041908188591716, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 1190041908188591716, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 1190041908188591716, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 1190041908188591716, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 1190041908188591716, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 1317326044667144134, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1327733390419519772, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 1327733390419519772, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 1327733390419519772, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 1327733390419519772, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 1327733390419519772, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 1375038350168094937, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 1375038350168094937, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 1375038350168094937, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 1375038350168094937, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 1375038350168094937, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 1496561397220966729, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 1496561397220966729, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 1496561397220966729, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 1496561397220966729, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 1496561397220966729, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 1555380117046604715, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 1555380117046604715, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 1555380117046604715, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 1555380117046604715, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 1555380117046604715, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 1613115000342713719, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 1613115000342713719, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 1613115000342713719, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 1613115000342713719, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 1613115000342713719, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 1621694163589883076, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 1621694163589883076, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 1621694163589883076, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 1621694163589883076, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 1621694163589883076, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 1633169976064061270, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 1633169976064061270, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 1633169976064061270, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 1633169976064061270, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 1633169976064061270, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 1744276726910623313, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755201293582367942, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1772860130329594143, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928132419274397442, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 1928132419274397442, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 1928132419274397442, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 1928132419274397442, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 1928132419274397442, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 1944143844242843821, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2023969252073205431, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 2023969252073205431, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 2023969252073205431, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 2023969252073205431, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 2023969252073205431, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 2027933325071233271, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 2027933325071233271, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 2027933325071233271, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 2027933325071233271, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 2027933325071233271, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 2060995301994975199, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140893347969667256, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 2140893347969667256, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 2140893347969667256, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 2140893347969667256, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 2140893347969667256, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 2319417359602893179, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326266034950445131, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526709466191832615, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2563171041050738265, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2585431014558977198, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 2585431014558977198, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 2585431014558977198, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 2585431014558977198, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 2585431014558977198, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 2597753409777467789, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2597753409777467789, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2597753409777467789, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2597753409777467789, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2597753409777467789, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2597753409777467789, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2597753409777467789, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2597753409777467789, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2597753409777467789, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2597753409777467789, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2616347620264281665, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 2616347620264281665, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 2616347620264281665, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 2616347620264281665, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 2616347620264281665, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 2650229092697181633, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749263097894315017, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2773060400656036030, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2833396667743519070, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2847676705584211710, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2899251672840859524, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2915418925220819682, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 2915418925220819682, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 2915418925220819682, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 2915418925220819682, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 2915418925220819682, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 2965645930507747295, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 2965645930507747295, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 2965645930507747295, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 2965645930507747295, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 2965645930507747295, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 2990026012968764499, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199699019653300559, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219406155988020689, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229775252619534049, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 3229775252619534049, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 3229775252619534049, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 3229775252619534049, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 3229775252619534049, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 3327161577316499663, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 3327161577316499663, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 3327161577316499663, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 3327161577316499663, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 3327161577316499663, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 3378267185429004244, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3413623613808300830, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3515059625911406072, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3597704942908686761, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3734730972823962000, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 3734730972823962000, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 3734730972823962000, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 3734730972823962000, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 3734730972823962000, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 3739960776059437894, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3760934442605209550, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 3760934442605209550, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 3760934442605209550, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 3760934442605209550, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 3760934442605209550, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 3775001193566217689, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 3775001193566217689, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 3775001193566217689, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 3775001193566217689, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 3775001193566217689, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 3796507315668035936, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 3796507315668035936, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3838124448271967532, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3840444911135082966, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3879260340252813349, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4094247071456472127, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4255009431822392857, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4256498063403618445, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 4256498063403618445, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 4256498063403618445, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 4256498063403618445, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 4256498063403618445, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 4264146097191370607, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 4264146097191370607, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 4264146097191370607, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 4264146097191370607, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 4264146097191370607, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 4265174510589080436, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 4265174510589080436, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 4265174510589080436, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 4265174510589080436, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 4265174510589080436, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 4289586047914408208, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 4289586047914408208, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 4289586047914408208, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 4289586047914408208, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 4289586047914408208, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 4342747235062427758, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4403696715902594494, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4408927887198669913, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 4408927887198669913, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 4408927887198669913, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 4408927887198669913, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 4408927887198669913, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 4430728171213374032, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4561456164198972806, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4578026192889195045, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 4578026192889195045, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 4578026192889195045, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 4578026192889195045, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 4578026192889195045, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 4611719719000350436, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 4611719719000350436, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 4611719719000350436, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 4611719719000350436, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 4611719719000350436, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 4612795175522625975, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4628117259710805049, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4644157801966915715, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4675443058348434150, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4789950220033445477, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4831228184715385960, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 4831228184715385960, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 4831228184715385960, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 4831228184715385960, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 4831228184715385960, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 4887283882559879747, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4952263409284803869, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 4952263409284803869, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 4952263409284803869, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 4952263409284803869, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 4952263409284803869, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 5031050172227294912, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 5031050172227294912, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 5031050172227294912, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 5031050172227294912, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 5031050172227294912, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 5036823811559714246, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5074316993620221429, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 5074316993620221429, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 5074316993620221429, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 5074316993620221429, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 5074316993620221429, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 5088521010741501556, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5191789242427564247, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 5191789242427564247, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 5191789242427564247, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 5191789242427564247, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 5191789242427564247, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 5261434536099337679, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5285549214918926349, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 5285549214918926349, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 5285549214918926349, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 5285549214918926349, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 5285549214918926349, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 5470580851964771590, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 5470580851964771590, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 5470580851964771590, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 5470580851964771590, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 5470580851964771590, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 5543561649966366931, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.256
+      objectReference: {fileID: 0}
+    - target: {fileID: 5543561649966366931, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.14599991
+      objectReference: {fileID: 0}
+    - target: {fileID: 5561289680178887637, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 5561289680178887637, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 5561289680178887637, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 5561289680178887637, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 5561289680178887637, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 5707642355692361328, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 5707642355692361328, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 5707642355692361328, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 5707642355692361328, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 5707642355692361328, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 5723601497801357306, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 5723601497801357306, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 5723601497801357306, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 5723601497801357306, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 5723601497801357306, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 5804789486777902121, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 5804789486777902121, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 5804789486777902121, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 5804789486777902121, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 5804789486777902121, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 5815879910031956870, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5922101053372936258, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 5922101053372936258, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 5922101053372936258, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 5922101053372936258, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 5922101053372936258, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 5926974328959128277, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 5926974328959128277, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 5926974328959128277, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 5926974328959128277, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 5926974328959128277, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 5975796406436578715, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 5975796406436578715, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 5975796406436578715, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 5975796406436578715, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 5975796406436578715, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 6219637471257754739, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6224722908412387891, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6263976568857690971, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 6263976568857690971, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 6263976568857690971, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 6263976568857690971, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 6263976568857690971, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 6323554046517992508, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6348162002294908312, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6358001579153140546, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 6358001579153140546, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 6358001579153140546, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 6358001579153140546, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 6358001579153140546, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 6440468348328490077, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6521201660695410008, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 6521201660695410008, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 6521201660695410008, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 6521201660695410008, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 6521201660695410008, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 6554950781481679584, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6635722295681931763, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6691806705152123858, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698356713584830528, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6823207867296894413, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6903671871378308621, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Name
+      value: SoundControllers (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6903671871378308621, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6909063024872423215, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7062097068582911590, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7081923367613768448, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 7081923367613768448, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 7081923367613768448, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 7081923367613768448, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 7081923367613768448, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 7136667329032915159, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 7136667329032915159, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 7136667329032915159, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 7136667329032915159, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 7136667329032915159, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 7159644289443951451, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7230615090105257035, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7248044240793531216, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 7248044240793531216, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 7248044240793531216, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 7248044240793531216, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 7248044240793531216, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 7290093431012401050, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 7290093431012401050, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 7290093431012401050, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 7290093431012401050, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 7290093431012401050, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 7355399091692703179, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 7355399091692703179, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 7355399091692703179, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 7355399091692703179, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 7355399091692703179, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 7396681575153717861, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7411127395137478997, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 7411127395137478997, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 7411127395137478997, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 7411127395137478997, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 7411127395137478997, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 7594354376839391907, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 7594354376839391907, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 7594354376839391907, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 7594354376839391907, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 7594354376839391907, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 7608116895821725738, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7630799493586186973, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 7630799493586186973, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 7630799493586186973, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 7630799493586186973, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 7630799493586186973, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 7655190746773705935, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 7655190746773705935, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 7655190746773705935, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 7655190746773705935, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 7655190746773705935, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 7657249674583838207, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 7657249674583838207, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 7657249674583838207, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 7657249674583838207, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 7657249674583838207, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 7786686866765708346, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 7786686866765708346, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 7786686866765708346, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 7786686866765708346, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 7786686866765708346, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 7805694687726954637, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 7805694687726954637, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 7805694687726954637, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 7805694687726954637, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 7805694687726954637, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 7864976612581314010, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 7864976612581314010, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 7864976612581314010, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 7864976612581314010, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 7864976612581314010, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 7922050747620567674, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 7922050747620567674, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 7922050747620567674, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 7922050747620567674, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 7922050747620567674, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 7942977013516618437, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976926758716162373, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 7976926758716162373, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 7976926758716162373, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 7976926758716162373, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 7976926758716162373, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 8161873070814707696, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167690819147363307, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8171257749234342921, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8176541610964619933, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 8176541610964619933, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 8176541610964619933, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 8176541610964619933, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 8176541610964619933, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 8211071499958891924, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8218690214883882553, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.95699996
+      objectReference: {fileID: 0}
+    - target: {fileID: 8218690214883882553, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.14599991
+      objectReference: {fileID: 0}
+    - target: {fileID: 8261164990402289851, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 8261164990402289851, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 8261164990402289851, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 8261164990402289851, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 8261164990402289851, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 8446978256205426946, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 8446978256205426946, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 8446978256205426946, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 8446978256205426946, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 8446978256205426946, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 8501766265333016225, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8516505181385293034, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 8516505181385293034, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 8516505181385293034, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 8516505181385293034, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 8516505181385293034, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 8577428768530337492, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 8577428768530337492, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 8577428768530337492, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 8577428768530337492, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 8577428768530337492, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 8600632029123477725, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8604460352704831802, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 8604460352704831802, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 8604460352704831802, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 8604460352704831802, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 8604460352704831802, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 8760415297390776258, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 8760415297390776258, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 8760415297390776258, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 8760415297390776258, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 8760415297390776258, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 8764096987446938900, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8844011756671893884, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 8844011756671893884, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 8844011756671893884, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 8844011756671893884, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 8844011756671893884, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 8906326052678634797, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 8906326052678634797, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 8906326052678634797, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 8906326052678634797, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 8906326052678634797, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 9085803733299390813, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9098881198130277194, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9167072743625386408, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 9167072743625386408, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 9167072743625386408, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 9167072743625386408, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 9167072743625386408, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 9167144672024528210, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 9167144672024528210, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 9167144672024528210, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 9167144672024528210, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 9167144672024528210, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 9196873218400281761, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma1
+      value: 
+      objectReference: {fileID: 6361216424592446982}
+    - target: {fileID: 9196873218400281761, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: plasma2
+      value: 
+      objectReference: {fileID: 817988018233883928}
+    - target: {fileID: 9196873218400281761, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere1
+      value: 
+      objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 9196873218400281761, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: sphere2
+      value: 
+      objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 9196873218400281761, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
 --- !u!1 &266044489
 GameObject:
   m_ObjectHideFlags: 0
@@ -519,7 +2548,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &724220643
 Transform:
   m_ObjectHideFlags: 0
@@ -1330,6 +3359,14 @@ PrefabInstance:
       propertyPath: sphereOther
       value: 
       objectReference: {fileID: 6057183544568666803}
+    - target: {fileID: 8213764499447065888, guid: b18c82127540c194caf4f7679b532fa4, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 8213764499447065888, guid: b18c82127540c194caf4f7679b532fa4, type: 3}
+      propertyPath: maxExpectedVelocity
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1510,6 +3547,14 @@ PrefabInstance:
       propertyPath: sphereOther
       value: 
       objectReference: {fileID: 420940339119308471}
+    - target: {fileID: 2065706476549874157, guid: 82ac3364da378be48af3814c23ec7e29, type: 3}
+      propertyPath: _FmodParatemers
+      value: 
+      objectReference: {fileID: 547408515}
+    - target: {fileID: 2065706476549874157, guid: 82ac3364da378be48af3814c23ec7e29, type: 3}
+      propertyPath: maxExpectedVelocity
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7126736417683301339, guid: 82ac3364da378be48af3814c23ec7e29, type: 3}
       propertyPath: Target
       value: 
@@ -1577,3 +3622,4 @@ SceneRoots:
   - {fileID: 759559769}
   - {fileID: 3166082139336284251}
   - {fileID: 308239985639958308}
+  - {fileID: 263988778}
