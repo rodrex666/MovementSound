@@ -1624,7 +1624,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6903671871378308621, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
       propertyPath: m_Name
-      value: SoundControllers (1)
+      value: SoundControllersNEW
       objectReference: {fileID: 0}
     - target: {fileID: 6903671871378308621, guid: 2525d481ea00482429e7c1bfbd9964a4, type: 3}
       propertyPath: m_IsActive
@@ -2543,7 +2543,7 @@ GameObject:
   m_Component:
   - component: {fileID: 724220643}
   m_Layer: 0
-  m_Name: SoundControllers
+  m_Name: SoundControllersOLD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3076,7 +3076,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 97243173574808265, guid: 66824f43eb099504982e5547617ffb07, type: 3}
       propertyPath: m_Name
-      value: passthroughs
+      value: Passthroughs
       objectReference: {fileID: 0}
     - target: {fileID: 940390674068503511, guid: 66824f43eb099504982e5547617ffb07, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3431,7 +3431,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7174849832135580012, guid: 7943e33b095b85343be8d36a13775c9c, type: 3}
       propertyPath: m_Name
-      value: '[BuildingBlock] Camera Rig New'
+      value: Camera Rig New
       objectReference: {fileID: 0}
     - target: {fileID: 8063904279784860605, guid: 7943e33b095b85343be8d36a13775c9c, type: 3}
       propertyPath: mySphere
@@ -3614,12 +3614,12 @@ SceneRoots:
   m_Roots:
   - {fileID: 266044491}
   - {fileID: 670572673}
+  - {fileID: 308239985639958308}
+  - {fileID: 8689357005016400520}
   - {fileID: 7158438919983332028}
   - {fileID: 9140332885269385692}
   - {fileID: 8869494789619111171}
-  - {fileID: 724220643}
-  - {fileID: 8689357005016400520}
   - {fileID: 759559769}
   - {fileID: 3166082139336284251}
-  - {fileID: 308239985639958308}
   - {fileID: 263988778}
+  - {fileID: 724220643}
