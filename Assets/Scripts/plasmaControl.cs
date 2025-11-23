@@ -20,7 +20,9 @@ public class plasmaControl : MonoBehaviour
     public float aveVelNormalIntense;
     public float aveVelNormalColour;
 
-    //public GameObject mySphere;
+    public GameObject sphereOther;
+    public float sphereDistance;
+    private float sphereDistanceNorm;
     public float myY;
 
     void Start()
@@ -34,18 +36,29 @@ public class plasmaControl : MonoBehaviour
 
     void Update()
     {
+        Vector3 sphereOtherWorldPos = sphereOther.transform.position;
+        Vector3 sphereMeWorldPos = this.transform.position;
+
+        //Vector3 sphereOtherLocalPos = sphereOther.transform.InverseTransformPoint(sphereOtherWorldPos);
+        //Vector3 sphereMeLocalPos = this.transform.InverseTransformPoint(sphereMeWorldPos);
+
+        sphereDistance = Vector3.Distance(sphereOtherWorldPos, sphereMeWorldPos);
+        sphereDistanceNorm = 5 - (sphereDistance * 5);
+
         estVelocity1 = vel1.estimatedNormalizedVelocity;
         estVelocity2 = vel2.estimatedNormalizedVelocity;
         estVelocity3 = vel3.estimatedNormalizedVelocity;
 
-        
+
 
         transform.rotation = Quaternion.identity;
         aveVel = (estVelocity1 + estVelocity2 + estVelocity3) / 3;
         aveVelNormalColour = (aveVel / 2); 
-        aveVelNormalIntense = (aveVel * 2);
+        aveVelNormalIntense = (aveVel * 1.5f);
         plasmaVFX.SetFloat("colourTime", aveVelNormalColour);
         plasmaVFX.SetFloat("intensity", aveVelNormalIntense);
+
+        plasmaVFX.SetFloat("attractionStrength", sphereDistanceNorm);
 
         myY = (gameObject.transform.position.y) * 8;
 

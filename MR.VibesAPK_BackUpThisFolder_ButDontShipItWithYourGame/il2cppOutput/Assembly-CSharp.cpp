@@ -66,6 +66,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral5B7926C3A5E1BFA542622F78FEA987EAA90FA886
 IL2CPP_EXTERN_C String_t* _stringLiteral5FA9723B2F4C3783BC3A1699D76E829D3B1C644E;
 IL2CPP_EXTERN_C String_t* _stringLiteral62CB1D81E2B442D69B283BBA5258B36E58071A2D;
 IL2CPP_EXTERN_C String_t* _stringLiteral8F31E52AC333A7138514A392FCD282D6DB411F1C;
+IL2CPP_EXTERN_C String_t* _stringLiteral95E71D951B7689D0065A194D054AC918A95351C3;
 IL2CPP_EXTERN_C String_t* _stringLiteralB7DC32D5415734226F9E3CD688B830D4BFF1D513;
 IL2CPP_EXTERN_C String_t* _stringLiteralCA97E89D80F7841C2C8719EA5A6046CCFFF7F5A0;
 IL2CPP_EXTERN_C String_t* _stringLiteralCBE6A87375AF5C3BDE3931395C8E2F37044FF31D;
@@ -468,6 +469,9 @@ struct plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C  : public MonoBeh
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___velHold3;
 	float ___aveVelNormalIntense;
 	float ___aveVelNormalColour;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___sphereOther;
+	float ___sphereDistance;
+	float ___sphereDistanceNorm;
 	float ___myY;
 };
 struct spherePositioning_t280148174E4E2B87FF57356F779FF75BF93947C3  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
@@ -628,10 +632,11 @@ inline VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49* GameObject_G
 {
 	return ((  VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared)(__this, method);
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_rotation_m61340DE74726CF0F9946743A727C4D444397331D (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* Transform_get_parent_m65354E28A4C94EC00EBCF03532F7B0718380791E (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_parent_m9BD5E563B539DD5BEC342736B03F97B38A243234 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_value, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) ;
@@ -644,7 +649,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m87A9A3C761FF5C43ED8A53B16190A
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m9E3155FB84015C823606188F53B47CB44C444991 (String_t* ___0_str0, String_t* ___1_str1, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Component_CompareTag_mE6F8897E84F12DF12D302FFC4D58204D51096FC5 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, String_t* ___0_tag, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B (const RuntimeMethod* method) ;
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline (float ___0_value, float ___1_min, float ___2_max, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void FMODPlaywithParameters_updateParameterFMOD_m72AD985DD99338FCEBEFB96FF2274F6DE469C3C1_inline (FMODPlaywithParameters_t76C514E722C5D7D71E35942B927F19DF46A1A741* __this, float ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Single_ToString_m3F2C4433B6ADFA5ED8E3F14ED19CD23014E5179D (float* __this, String_t* ___0_format, const RuntimeMethod* method) ;
@@ -665,7 +669,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RuntimeHelpers_InitializeArray_m751372AA
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 91923
+// Method Definition Index: 91907
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FMODPlaywithParameters_Start_mD9334FC92FD8548E146263B26A3D7866CABACE2E (FMODPlaywithParameters_t76C514E722C5D7D71E35942B927F19DF46A1A741* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -689,7 +693,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FMODPlaywithParameters_Start_mD9334FC92F
 		return;
 	}
 }
-// Method Definition Index: 91924
+// Method Definition Index: 91908
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FMODPlaywithParameters_Update_m73FAF395CFE27B551DC584249898E46E8D539F9D (FMODPlaywithParameters_t76C514E722C5D7D71E35942B927F19DF46A1A741* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -708,7 +712,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FMODPlaywithParameters_Update_m73FAF395C
 		return;
 	}
 }
-// Method Definition Index: 91925
+// Method Definition Index: 91909
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FMODPlaywithParameters_updateParameterFMOD_m72AD985DD99338FCEBEFB96FF2274F6DE469C3C1 (FMODPlaywithParameters_t76C514E722C5D7D71E35942B927F19DF46A1A741* __this, float ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -719,7 +723,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FMODPlaywithParameters_updateParameterFM
 		return;
 	}
 }
-// Method Definition Index: 91926
+// Method Definition Index: 91910
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FMODPlaywithParameters__ctor_mDDA32DD9F91D57DDE62AD98BB4CEB9C6D3BA0FCF (FMODPlaywithParameters_t76C514E722C5D7D71E35942B927F19DF46A1A741* __this, const RuntimeMethod* method) 
 {
 	{
@@ -737,7 +741,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FMODPlaywithParameters__ctor_mDDA32DD9F9
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 91927
+// Method Definition Index: 91911
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void footBlastCollision_Start_m080949413479B05143470526359176FE00AE6E4F (footBlastCollision_tD2A684D627AC5ED2825BE1D7A2CB534499B044BB* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -758,7 +762,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void footBlastCollision_Start_m080949413479B0
 		return;
 	}
 }
-// Method Definition Index: 91928
+// Method Definition Index: 91912
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void footBlastCollision_Update_mB0E4C87114580B2A323EF6593E795FE10F3CC564 (footBlastCollision_tD2A684D627AC5ED2825BE1D7A2CB534499B044BB* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -806,7 +810,7 @@ IL_0053:
 		return;
 	}
 }
-// Method Definition Index: 91929
+// Method Definition Index: 91913
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void footBlastCollision_OnTriggerEnter_m5E808ED0763992DFB96366F331CC25A2AB7D776C (footBlastCollision_tD2A684D627AC5ED2825BE1D7A2CB534499B044BB* __this, Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___0_other, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -826,7 +830,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void footBlastCollision_OnTriggerEnter_m5E808
 		return;
 	}
 }
-// Method Definition Index: 91930
+// Method Definition Index: 91914
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void footBlastCollision__ctor_m300EDAC999FEAFB75553DA4CFE5A82B200FA715F (footBlastCollision_tD2A684D627AC5ED2825BE1D7A2CB534499B044BB* __this, const RuntimeMethod* method) 
 {
 	{
@@ -842,7 +846,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void footBlastCollision__ctor_m300EDAC999FEAF
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 91931
+// Method Definition Index: 91915
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MovementAroundHead_Start_m8FC7C5889EE70DAACB6A1F16D8A207BD5ECD8864 (MovementAroundHead_tB1EB8D445252DD3D31C7B62C16074B99DC6BE227* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -915,7 +919,7 @@ IL_0062:
 		return;
 	}
 }
-// Method Definition Index: 91932
+// Method Definition Index: 91916
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MovementAroundHead_Update_mBAA12FAAC0062247C2A7EE060096549E3E024550 (MovementAroundHead_tB1EB8D445252DD3D31C7B62C16074B99DC6BE227* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -972,7 +976,7 @@ IL_000f:
 		return;
 	}
 }
-// Method Definition Index: 91933
+// Method Definition Index: 91917
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MovementAroundHead__ctor_m81176FEED67DF8CE2A22C628E8F79FD500762812 (MovementAroundHead_tB1EB8D445252DD3D31C7B62C16074B99DC6BE227* __this, const RuntimeMethod* method) 
 {
 	{
@@ -992,7 +996,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MovementAroundHead__ctor_m81176FEED67DF8
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 91934
+// Method Definition Index: 91918
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void passthroughColour_Start_mD1DD2F6EB446E3CE170974692B2EA9E554BDFF81 (passthroughColour_t8201310849C5224AEEB22035A848F02369F1F0F3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1021,7 +1025,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void passthroughColour_Start_mD1DD2F6EB446E3C
 		return;
 	}
 }
-// Method Definition Index: 91935
+// Method Definition Index: 91919
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void passthroughColour_OnTriggerEnter_mDAF163E45335C59D59DD76BDD9639906E8C53157 (passthroughColour_t8201310849C5224AEEB22035A848F02369F1F0F3* __this, Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___0_other, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1066,7 +1070,7 @@ IL_003b:
 		return;
 	}
 }
-// Method Definition Index: 91936
+// Method Definition Index: 91920
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void passthroughColour_OnTriggerExit_mCACE54E84EE7DAF0C691065FA49237B5BEB620B7 (passthroughColour_t8201310849C5224AEEB22035A848F02369F1F0F3* __this, Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___0_other, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1105,7 +1109,7 @@ IL_002a:
 		return;
 	}
 }
-// Method Definition Index: 91937
+// Method Definition Index: 91921
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void passthroughColour__ctor_m11E311A6EE08A0894BADCDDD520B50F2688D3B93 (passthroughColour_t8201310849C5224AEEB22035A848F02369F1F0F3* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1121,7 +1125,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void passthroughColour__ctor_m11E311A6EE08A08
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 91938
+// Method Definition Index: 91922
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void plasmaControl_Start_m1D391FE0EBD95FE2B68B0D55C5158C588CA9E35F (plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1132,37 +1136,37 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void plasmaControl_Start_m1D391FE0EBD95FE2B68
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:29>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:31>
 		VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* L_0;
 		L_0 = Component_GetComponent_TisVisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0_mC2DD444DE804211C8EADF53E224C7103F9A3CCD1(__this, Component_GetComponent_TisVisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0_mC2DD444DE804211C8EADF53E224C7103F9A3CCD1_RuntimeMethod_var);
 		__this->___plasmaVFX = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___plasmaVFX), (void*)L_0);
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:30>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:32>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = __this->___velHold1;
 		NullCheck(L_1);
 		VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49* L_2;
 		L_2 = GameObject_GetComponent_TisVelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49_m9A1A9CEB86576246F0B115BAE0A9D851A4957AE4(L_1, GameObject_GetComponent_TisVelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49_m9A1A9CEB86576246F0B115BAE0A9D851A4957AE4_RuntimeMethod_var);
 		__this->___vel1 = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___vel1), (void*)L_2);
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:31>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:33>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = __this->___velHold2;
 		NullCheck(L_3);
 		VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49* L_4;
 		L_4 = GameObject_GetComponent_TisVelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49_m9A1A9CEB86576246F0B115BAE0A9D851A4957AE4(L_3, GameObject_GetComponent_TisVelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49_m9A1A9CEB86576246F0B115BAE0A9D851A4957AE4_RuntimeMethod_var);
 		__this->___vel2 = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___vel2), (void*)L_4);
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:32>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:34>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___velHold3;
 		NullCheck(L_5);
 		VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49* L_6;
 		L_6 = GameObject_GetComponent_TisVelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49_m9A1A9CEB86576246F0B115BAE0A9D851A4957AE4(L_5, GameObject_GetComponent_TisVelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49_m9A1A9CEB86576246F0B115BAE0A9D851A4957AE4_RuntimeMethod_var);
 		__this->___vel3 = L_6;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___vel3), (void*)L_6);
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:33>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:35>
 		return;
 	}
 }
-// Method Definition Index: 91939
+// Method Definition Index: 91923
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void plasmaControl_Update_mACE36BF6F9C22871EB046DB2ABC84D2E5936B07B (plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1170,74 +1174,109 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void plasmaControl_Update_mACE36BF6F9C22871EB
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2221D138F8A120430E38C8903C34475F04420D61);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral40B9968876DFBA959A505AA3EC0E9D9D26C14E45);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral95E71D951B7689D0065A194D054AC918A95351C3);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEE3D3402E26E8381E174BD0635F0DA5564BACAD8);
 		s_Il2CppMethodInitialized = true;
 	}
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_1;
+	memset((&V_1), 0, sizeof(V_1));
 	{
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:37>
-		VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49* L_0 = __this->___vel1;
-		NullCheck(L_0);
-		float L_1 = L_0->___estimatedNormalizedVelocity;
-		__this->___estVelocity1 = L_1;
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:38>
-		VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49* L_2 = __this->___vel2;
-		NullCheck(L_2);
-		float L_3 = L_2->___estimatedNormalizedVelocity;
-		__this->___estVelocity2 = L_3;
 		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:39>
-		VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49* L_4 = __this->___vel3;
-		NullCheck(L_4);
-		float L_5 = L_4->___estimatedNormalizedVelocity;
-		__this->___estVelocity3 = L_5;
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:43>
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6;
-		L_6 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_7;
-		L_7 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
-		NullCheck(L_6);
-		Transform_set_rotation_m61340DE74726CF0F9946743A727C4D444397331D(L_6, L_7, NULL);
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:44>
-		float L_8 = __this->___estVelocity1;
-		float L_9 = __this->___estVelocity2;
-		float L_10 = __this->___estVelocity3;
-		__this->___aveVel = ((float)(((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(L_8, L_9)), L_10))/(3.0f)));
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___sphereOther;
+		NullCheck(L_0);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1;
+		L_1 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_0, NULL);
+		NullCheck(L_1);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2;
+		L_2 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_1, NULL);
+		V_0 = L_2;
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:40>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3;
+		L_3 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_3);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
+		L_4 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_3, NULL);
+		V_1 = L_4;
 		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:45>
-		float L_11 = __this->___aveVel;
-		__this->___aveVelNormalColour = ((float)(L_11/(2.0f)));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5 = V_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = V_1;
+		float L_7;
+		L_7 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_5, L_6, NULL);
+		__this->___sphereDistance = L_7;
 		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:46>
-		float L_12 = __this->___aveVel;
-		__this->___aveVelNormalIntense = ((float)il2cpp_codegen_multiply(L_12, (2.0f)));
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:47>
-		VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* L_13 = __this->___plasmaVFX;
-		float L_14 = __this->___aveVelNormalColour;
-		NullCheck(L_13);
-		VisualEffect_SetFloat_mB59095AC406A373BC587551B5A4781719F608F51(L_13, _stringLiteralEE3D3402E26E8381E174BD0635F0DA5564BACAD8, L_14, NULL);
+		float L_8 = __this->___sphereDistance;
+		__this->___sphereDistanceNorm = ((float)il2cpp_codegen_subtract((5.0f), ((float)il2cpp_codegen_multiply(L_8, (5.0f)))));
 		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:48>
-		VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* L_15 = __this->___plasmaVFX;
-		float L_16 = __this->___aveVelNormalIntense;
-		NullCheck(L_15);
-		VisualEffect_SetFloat_mB59095AC406A373BC587551B5A4781719F608F51(L_15, _stringLiteral40B9968876DFBA959A505AA3EC0E9D9D26C14E45, L_16, NULL);
+		VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49* L_9 = __this->___vel1;
+		NullCheck(L_9);
+		float L_10 = L_9->___estimatedNormalizedVelocity;
+		__this->___estVelocity1 = L_10;
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:49>
+		VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49* L_11 = __this->___vel2;
+		NullCheck(L_11);
+		float L_12 = L_11->___estimatedNormalizedVelocity;
+		__this->___estVelocity2 = L_12;
 		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:50>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_17;
-		L_17 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
-		NullCheck(L_17);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_18;
-		L_18 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_17, NULL);
-		NullCheck(L_18);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19;
-		L_19 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_18, NULL);
-		float L_20 = L_19.___y;
-		__this->___myY = ((float)il2cpp_codegen_multiply(L_20, (8.0f)));
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:52>
-		VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* L_21 = __this->___plasmaVFX;
-		float L_22 = __this->___myY;
-		NullCheck(L_21);
-		VisualEffect_SetFloat_mB59095AC406A373BC587551B5A4781719F608F51(L_21, _stringLiteral2221D138F8A120430E38C8903C34475F04420D61, L_22, NULL);
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:53>
+		VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49* L_13 = __this->___vel3;
+		NullCheck(L_13);
+		float L_14 = L_13->___estimatedNormalizedVelocity;
+		__this->___estVelocity3 = L_14;
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:54>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_15;
+		L_15 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_16;
+		L_16 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
+		NullCheck(L_15);
+		Transform_set_rotation_m61340DE74726CF0F9946743A727C4D444397331D(L_15, L_16, NULL);
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:55>
+		float L_17 = __this->___estVelocity1;
+		float L_18 = __this->___estVelocity2;
+		float L_19 = __this->___estVelocity3;
+		__this->___aveVel = ((float)(((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(L_17, L_18)), L_19))/(3.0f)));
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:56>
+		float L_20 = __this->___aveVel;
+		__this->___aveVelNormalColour = ((float)(L_20/(2.0f)));
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:57>
+		float L_21 = __this->___aveVel;
+		__this->___aveVelNormalIntense = ((float)il2cpp_codegen_multiply(L_21, (1.5f)));
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:58>
+		VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* L_22 = __this->___plasmaVFX;
+		float L_23 = __this->___aveVelNormalColour;
+		NullCheck(L_22);
+		VisualEffect_SetFloat_mB59095AC406A373BC587551B5A4781719F608F51(L_22, _stringLiteralEE3D3402E26E8381E174BD0635F0DA5564BACAD8, L_23, NULL);
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:59>
+		VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* L_24 = __this->___plasmaVFX;
+		float L_25 = __this->___aveVelNormalIntense;
+		NullCheck(L_24);
+		VisualEffect_SetFloat_mB59095AC406A373BC587551B5A4781719F608F51(L_24, _stringLiteral40B9968876DFBA959A505AA3EC0E9D9D26C14E45, L_25, NULL);
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:61>
+		VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* L_26 = __this->___plasmaVFX;
+		float L_27 = __this->___sphereDistanceNorm;
+		NullCheck(L_26);
+		VisualEffect_SetFloat_mB59095AC406A373BC587551B5A4781719F608F51(L_26, _stringLiteral95E71D951B7689D0065A194D054AC918A95351C3, L_27, NULL);
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:63>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_28;
+		L_28 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		NullCheck(L_28);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_29;
+		L_29 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_28, NULL);
+		NullCheck(L_29);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_30;
+		L_30 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_29, NULL);
+		float L_31 = L_30.___y;
+		__this->___myY = ((float)il2cpp_codegen_multiply(L_31, (8.0f)));
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:65>
+		VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* L_32 = __this->___plasmaVFX;
+		float L_33 = __this->___myY;
+		NullCheck(L_32);
+		VisualEffect_SetFloat_mB59095AC406A373BC587551B5A4781719F608F51(L_32, _stringLiteral2221D138F8A120430E38C8903C34475F04420D61, L_33, NULL);
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:66>
 		return;
 	}
 }
-// Method Definition Index: 91940
+// Method Definition Index: 91924
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void plasmaControl__ctor_m065F9EF332F016A4266FF352517FC50A2D5343FA (plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1253,7 +1292,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void plasmaControl__ctor_m065F9EF332F016A4266
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 91941
+// Method Definition Index: 91925
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void spherePositioning_Start_mD0039E833A1F9E7D414620EB90C8BF6BF6FA34A5 (spherePositioning_t280148174E4E2B87FF57356F779FF75BF93947C3* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1283,7 +1322,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void spherePositioning_Start_mD0039E833A1F9E7
 		return;
 	}
 }
-// Method Definition Index: 91942
+// Method Definition Index: 91926
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void spherePositioning__ctor_m566F80382689076AC2DECB1C2908C6917070943C (spherePositioning_t280148174E4E2B87FF57356F779FF75BF93947C3* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1299,7 +1338,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void spherePositioning__ctor_m566F80382689076
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 91943
+// Method Definition Index: 91927
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VelocityEstimator_Start_m29FF16213AE376639D96BBFE442C641C1EE3E28E (VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1332,7 +1371,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VelocityEstimator_Start_m29FF16213AE3766
 		return;
 	}
 }
-// Method Definition Index: 91944
+// Method Definition Index: 91928
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VelocityEstimator_OnTriggerEnter_m1F87E053E9781C4730E909B3D9AEBBDC6ED1498A (VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49* __this, Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___0_other, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1413,7 +1452,7 @@ IL_006d:
 		return;
 	}
 }
-// Method Definition Index: 91945
+// Method Definition Index: 91929
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VelocityEstimator_OnTriggerExit_mD02E57A205C912D74B76B46146E938AB2931B6C2 (VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49* __this, Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___0_other, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1540,7 +1579,7 @@ IL_00e0:
 		return;
 	}
 }
-// Method Definition Index: 91946
+// Method Definition Index: 91930
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float VelocityEstimator_GetLastEstimatedVelocity_m792B80B77F72F5C6F9DC11F2994EF2D781F76437 (VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1549,7 +1588,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float VelocityEstimator_GetLastEstimatedVeloc
 		return L_0;
 	}
 }
-// Method Definition Index: 91947
+// Method Definition Index: 91931
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VelocityEstimator__ctor_mECE8F9692DA606F89196F6B57FF6388051EFE13F (VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1567,7 +1606,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VelocityEstimator__ctor_mECE8F9692DA606F
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 91948
+// Method Definition Index: 91932
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Readme__ctor_m69C325C4C171DCB0312B646A9034AA91EA8C39C6 (Readme_tE17B99201D0F52BD5727638AD3F41072A65B3BBB* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1583,7 +1622,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Readme__ctor_m69C325C4C171DCB0312B646A90
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 91949
+// Method Definition Index: 91933
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Section__ctor_m5F732533E4DFC0167D965E5F5DB332E46055399B (Section_t50C894D0A717C2368EBAAE5477D4E8626D0B5401* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1599,7 +1638,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Section__ctor_m5F732533E4DFC0167D965E5F5
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 91950
+// Method Definition Index: 91934
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1633,7 +1672,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC
 		return L_6;
 	}
 }
-// Method Definition Index: 91951
+// Method Definition Index: 91935
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (UnitySourceGeneratedAssemblyMonoScriptTypes_v1_tC95F24D0C6E6B77389433852BB389F39C692926E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1820,42 +1859,6 @@ IL_0009:
 		return L_1;
 	}
 }
-// Method Definition Index: 49367
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline (const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 V_0;
-	memset((&V_0), 0, sizeof(V_0));
-	{
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_0 = ((Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_StaticFields*)il2cpp_codegen_static_fields_for(Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_il2cpp_TypeInfo_var))->___identityQuaternion;
-		V_0 = L_0;
-		goto IL_0009;
-	}
-
-IL_0009:
-	{
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_1 = V_0;
-		return L_1;
-	}
-}
-// Method Definition Index: 49309
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) 
-{
-	{
-		float L_0 = ___0_x;
-		__this->___x = L_0;
-		float L_1 = ___1_y;
-		__this->___y = L_1;
-		float L_2 = ___2_z;
-		__this->___z = L_2;
-		return;
-	}
-}
 // Method Definition Index: 49326
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) 
 {
@@ -1902,6 +1905,42 @@ IL_0040:
 	{
 		float L_19 = V_3;
 		return L_19;
+	}
+}
+// Method Definition Index: 49367
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_0 = ((Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_StaticFields*)il2cpp_codegen_static_fields_for(Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_il2cpp_TypeInfo_var))->___identityQuaternion;
+		V_0 = L_0;
+		goto IL_0009;
+	}
+
+IL_0009:
+	{
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_1 = V_0;
+		return L_1;
+	}
+}
+// Method Definition Index: 49309
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = ___0_x;
+		__this->___x = L_0;
+		float L_1 = ___1_y;
+		__this->___y = L_1;
+		float L_2 = ___2_z;
+		__this->___z = L_2;
+		return;
 	}
 }
 // Method Definition Index: 49434
@@ -1955,7 +1994,7 @@ IL_001d:
 		return L_9;
 	}
 }
-// Method Definition Index: 91925
+// Method Definition Index: 91909
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void FMODPlaywithParameters_updateParameterFMOD_m72AD985DD99338FCEBEFB96FF2274F6DE469C3C1_inline (FMODPlaywithParameters_t76C514E722C5D7D71E35942B927F19DF46A1A741* __this, float ___0_value, const RuntimeMethod* method) 
 {
 	{
