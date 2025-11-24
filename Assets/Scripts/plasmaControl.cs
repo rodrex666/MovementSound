@@ -24,6 +24,7 @@ public class plasmaControl : MonoBehaviour
     public float maxExpectedVelocity;
     public float minParamValue = 0;
     public float maxParamValue = 2;
+    public float mySmoothVelocity;
 
     [Header("Sound Emitter")]
     [SerializeField]
@@ -33,6 +34,7 @@ public class plasmaControl : MonoBehaviour
     {
         plasmaVFX = GetComponent<VisualEffect>();
         previousPosition = transform.position;
+        mySmoothVelocity = 0f;
     }
 
     void Update()
@@ -55,7 +57,11 @@ public class plasmaControl : MonoBehaviour
         myVelocity = velDistance / Time.deltaTime;
         previousPosition = transform.position;
 
-        estimatedNormalizedVelocity = Mathf.Clamp(myVelocity / maxExpectedVelocity, minParamValue, maxParamValue);
+        //Smooth the velocity
+        mySmoothVelocity = Mathf.SmoothDamp(mySmoothVelocity, myVelocity, ref mySmoothVelocity, 0.1f);
+
+        //normalising the smooth velocity
+        estimatedNormalizedVelocity = Mathf.Clamp(mySmoothVelocity / maxExpectedVelocity, minParamValue, maxParamValue);
 
         //Update Parameters in Sphere
         _FmodParatemers.updateParameterFMOD(estimatedNormalizedVelocity);
