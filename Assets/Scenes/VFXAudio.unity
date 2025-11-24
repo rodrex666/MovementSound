@@ -13072,9 +13072,21 @@ PrefabInstance:
       propertyPath: passthroughHolder
       value: 
       objectReference: {fileID: 1571982018}
+    - target: {fileID: 3994079924305391469, guid: 3f6a2d302142fc54a8cf9e62c184a55c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4087863925700589058, guid: 3f6a2d302142fc54a8cf9e62c184a55c, type: 3}
       propertyPath: m_Name
       value: passthroughColoursNew
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520018046377786788, guid: 3f6a2d302142fc54a8cf9e62c184a55c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5850606211681800665, guid: 3f6a2d302142fc54a8cf9e62c184a55c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6316773478274326892, guid: 3f6a2d302142fc54a8cf9e62c184a55c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13128,6 +13140,10 @@ PrefabInstance:
       propertyPath: passthroughHolder
       value: 
       objectReference: {fileID: 1571982018}
+    - target: {fileID: 8775355629515272320, guid: 3f6a2d302142fc54a8cf9e62c184a55c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
