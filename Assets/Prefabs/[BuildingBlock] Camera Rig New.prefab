@@ -12688,7 +12688,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Meta.XR.BuildingBlocks::Meta.XR.BuildingBlocks.BuildingBlock
   blockId: 8b26b298-7bf4-490e-b245-a039c0184303
-  instanceId: 57ffae43-4f6a-4f45-888d-3d41445034f5
+  instanceId: f41c7ea8-1aa6-4882-9c15-b4afbce3be23
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -14820,7 +14820,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Meta.XR.BuildingBlocks::Meta.XR.BuildingBlocks.BuildingBlock
   blockId: 81f55626-5fad-45e9-a1df-184f330da7ba
-  instanceId: e1010992-51a4-4e77-8c21-ef5b0ed0b9aa
+  instanceId: 5f390733-4b81-4ed1-8cd8-fe014a9dc66f
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 2063f481-1b63-4eda-9ee8-a00df98536bc
@@ -29221,7 +29221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Meta.XR.BuildingBlocks::Meta.XR.BuildingBlocks.BuildingBlock
   blockId: 5817f7c0-f2a5-45f9-a5ca-64264e0166e8
-  instanceId: 9b161e94-f2ad-4f94-b107-e664b2483987
+  instanceId: 3e265462-59b7-4dde-8b4b-eafeb1e85225
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -47192,7 +47192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Meta.XR.BuildingBlocks::Meta.XR.BuildingBlocks.BuildingBlock
   blockId: 5817f7c0-f2a5-45f9-a5ca-64264e0166e8
-  instanceId: f0fc36c0-15e9-4325-8118-2055336aa859
+  instanceId: c8b3710b-e96f-4501-9a2e-ecec7d250ac1
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -63354,9 +63354,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2804153143263202285}
-  - component: {fileID: 3358595756858326791}
   - component: {fileID: 2585539720759146975}
   - component: {fileID: 3411785395384340182}
+  - component: {fileID: 708545649394064409}
   m_Layer: 0
   m_Name: CenterEyeAnchor
   m_TagString: MainCamera
@@ -63380,14 +63380,6 @@ Transform:
   - {fileID: 1543719674797361031}
   m_Father: {fileID: 4765285370989023786}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!81 &3358595756858326791
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5947125657335573021}
-  m_Enabled: 1
 --- !u!20 &2585539720759146975
 Camera:
   m_ObjectHideFlags: 0
@@ -63483,6 +63475,20 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &708545649394064409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5947125657335573021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioListener
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 0}
 --- !u!1 &5954951418873034596
 GameObject:
   m_ObjectHideFlags: 0
@@ -75261,7 +75267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Meta.XR.BuildingBlocks::Meta.XR.BuildingBlocks.BuildingBlock
   blockId: e47682b9-c270-40b1-b16d-90b627a5ce1b
-  instanceId: 3467a2f6-b037-462b-b7e1-cd741e1b7d39
+  instanceId: 2c762887-5eea-4dad-9472-c25811f073f6
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -95042,7 +95048,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Meta.XR.BuildingBlocks::Meta.XR.BuildingBlocks.BuildingBlock
   blockId: 8b26b298-7bf4-490e-b245-a039c0184303
-  instanceId: 73dd8f71-a5d7-4967-b90e-327469cd6122
+  instanceId: 34661a16-8f83-4940-9a7b-caf697b682d8
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{7bb1e192-a098-4c4b-ae69-166e40d12f84}">
+		<property name="name">
+			<value>MainMixVolume</value>
+		</property>
+		<relationship name="folder">
+			<destination>{5ba56d03-b09b-4c83-b1ae-315e9354207e}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{24153736-df19-42bf-bb34-4c0313f18309}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{24153736-df19-42bf-bb34-4c0313f18309}">
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="initialValue">
+			<value>1</value>
+		</property>
+	</object>
+</objects>
