@@ -12,7 +12,6 @@ extern void FMODPlaywithParameters_Update_m73FAF395CFE27B551DC584249898E46E8D539
 extern void FMODPlaywithParameters_updateParameterFMOD_m72AD985DD99338FCEBEFB96FF2274F6DE469C3C1 (void);
 extern void FMODPlaywithParameters__ctor_mDDA32DD9F91D57DDE62AD98BB4CEB9C6D3BA0FCF (void);
 extern void footBlastCollision_Start_m080949413479B05143470526359176FE00AE6E4F (void);
-extern void footBlastCollision_Update_mB0E4C87114580B2A323EF6593E795FE10F3CC564 (void);
 extern void footBlastCollision_OnTriggerEnter_m5E808ED0763992DFB96366F331CC25A2AB7D776C (void);
 extern void footBlastCollision__ctor_m300EDAC999FEAFB75553DA4CFE5A82B200FA715F (void);
 extern void MovementAroundHead_Start_m8FC7C5889EE70DAACB6A1F16D8A207BD5ECD8864 (void);
@@ -36,14 +35,13 @@ extern void Readme__ctor_m69C325C4C171DCB0312B646A9034AA91EA8C39C6 (void);
 extern void Section__ctor_m5F732533E4DFC0167D965E5F5DB332E46055399B (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[29] = 
+static Il2CppMethodPointer s_methodPointers[28] = 
 {
 	FMODPlaywithParameters_Start_mD9334FC92FD8548E146263B26A3D7866CABACE2E,
 	FMODPlaywithParameters_Update_m73FAF395CFE27B551DC584249898E46E8D539F9D,
 	FMODPlaywithParameters_updateParameterFMOD_m72AD985DD99338FCEBEFB96FF2274F6DE469C3C1,
 	FMODPlaywithParameters__ctor_mDDA32DD9F91D57DDE62AD98BB4CEB9C6D3BA0FCF,
 	footBlastCollision_Start_m080949413479B05143470526359176FE00AE6E4F,
-	footBlastCollision_Update_mB0E4C87114580B2A323EF6593E795FE10F3CC564,
 	footBlastCollision_OnTriggerEnter_m5E808ED0763992DFB96366F331CC25A2AB7D776C,
 	footBlastCollision__ctor_m300EDAC999FEAFB75553DA4CFE5A82B200FA715F,
 	MovementAroundHead_Start_m8FC7C5889EE70DAACB6A1F16D8A207BD5ECD8864,
@@ -68,12 +66,11 @@ static Il2CppMethodPointer s_methodPointers[29] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[29] = 
+static const int32_t s_InvokerIndices[28] = 
 {
 	17916,
 	17916,
 	13790,
-	17916,
 	17916,
 	17916,
 	13692,
@@ -97,14 +94,14 @@ static const int32_t s_InvokerIndices[29] =
 	17916,
 	17916,
 	17916,
-	29338,
+	29339,
 	17916,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	29,
+	28,
 	s_methodPointers,
 	0,
 	NULL,

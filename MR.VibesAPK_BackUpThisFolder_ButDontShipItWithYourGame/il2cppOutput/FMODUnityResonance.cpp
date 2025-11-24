@@ -681,7 +681,7 @@ inline void List_1_AddWithResize_m79A9BF770BEF9C06BE40D5401E55E375F2726CC4 (List
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 91907
+// Method Definition Index: 91938
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t14EB74337897CA151C53CDCB14582435DC06A120 UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_m89A3A2D839E02FD4A67534285C7BE87F4BBDDFCA (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -715,7 +715,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t14EB74337897CA151C53CDCB14582
 		return L_6;
 	}
 }
-// Method Definition Index: 91908
+// Method Definition Index: 91939
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mBC6E862BB20DB12A65B2F108817CC90B9CC5FD7B (UnitySourceGeneratedAssemblyMonoScriptTypes_v1_t91403D98B038360BF3C9D99EA5CD453876C9AF0C* __this, const RuntimeMethod* method) 
 {
 	{
@@ -801,7 +801,7 @@ IL2CPP_EXTERN_C void MonoScriptData_t14EB74337897CA151C53CDCB14582435DC06A120_ma
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 91909
+// Method Definition Index: 91940
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FmodResonanceAudio_UpdateAudioRoom_mE957D662AD9913EC12470386DDC9A65777CF67D2 (FmodResonanceAudioRoom_t7078E03ED7F19847733049BD2ACA2CBA5B39BB35* ___0_room, bool ___1_roomEnabled, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -933,7 +933,7 @@ IL_0088:
 		return;
 	}
 }
-// Method Definition Index: 91910
+// Method Definition Index: 91941
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FmodResonanceAudio_IsListenerInsideRoom_mF51A6574877EEB05D8496935C40F6B9C50BC495D (FmodResonanceAudioRoom_t7078E03ED7F19847733049BD2ACA2CBA5B39BB35* ___0_room, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1015,7 +1015,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FmodResonanceAudio_IsListenerInsideRoom_
 		return L_23;
 	}
 }
-// Method Definition Index: 91911
+// Method Definition Index: 91942
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DSP_t2B1AC37BB23E46F1608C986888576EDAE43E74AD FmodResonanceAudio_get_ListenerPlugin_mD852E94681203B33FB96E426E51EFC961DE1AAAB (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1050,7 +1050,7 @@ IL_0016:
 		return L_2;
 	}
 }
-// Method Definition Index: 91912
+// Method Definition Index: 91943
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float FmodResonanceAudio_ConvertAmplitudeFromDb_mB733E1B4458C6EB6342882C0E65FD625FE366A68 (float ___0_db, const RuntimeMethod* method) 
 {
 	{
@@ -1061,7 +1061,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float FmodResonanceAudio_ConvertAmplitudeFrom
 		return L_1;
 	}
 }
-// Method Definition Index: 91913
+// Method Definition Index: 91944
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FmodResonanceAudio_ConvertAudioTransformFromUnity_mADC39D21EA0D3A5AE8C304A7041EFB3E3C0AF215 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___0_position, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974* ___1_rotation, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1117,7 +1117,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FmodResonanceAudio_ConvertAudioTransform
 		return;
 	}
 }
-// Method Definition Index: 91914
+// Method Definition Index: 91945
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* FmodResonanceAudio_GetBytes_m118205AD0F68AE69DA396FE804E86630D8BA6365 (intptr_t ___0_ptr, int32_t ___1_length, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1161,7 +1161,7 @@ IL_001f:
 		return L_8;
 	}
 }
-// Method Definition Index: 91915
+// Method Definition Index: 91946
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RoomProperties_t4C5F00200CF815F9A30E6192C13DBF7448A51538 FmodResonanceAudio_GetRoomProperties_m20E941629CDA31D5A1D27028D5EC7E0673BC647F (FmodResonanceAudioRoom_t7078E03ED7F19847733049BD2ACA2CBA5B39BB35* ___0_room, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1311,7 +1311,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RoomProperties_t4C5F00200CF815F9A30E6192C13DB
 		return L_53;
 	}
 }
-// Method Definition Index: 91916
+// Method Definition Index: 91947
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DSP_t2B1AC37BB23E46F1608C986888576EDAE43E74AD FmodResonanceAudio_Initialize_m6F0D8A464FBAABAD7040F426D3F81FCB0624A5A1 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1557,7 +1557,7 @@ IL_014a:
 		return L_51;
 	}
 }
-// Method Definition Index: 91917
+// Method Definition Index: 91948
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FmodResonanceAudio__cctor_m907C588ED1F4CB5FBC03523E1311612A8D7F0C46 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1624,7 +1624,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FmodResonanceAudio__cctor_m907C588ED1F4C
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 91918
+// Method Definition Index: 91949
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FmodResonanceAudioRoom_OnEnable_mDB3DCB9E5858B517F47DC52048472F14B452D60C (FmodResonanceAudioRoom_t7078E03ED7F19847733049BD2ACA2CBA5B39BB35* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1643,7 +1643,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FmodResonanceAudioRoom_OnEnable_mDB3DCB9
 		return;
 	}
 }
-// Method Definition Index: 91919
+// Method Definition Index: 91950
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FmodResonanceAudioRoom_OnDisable_mBF54289307047AB8B837917C1E8B70C6837C689F (FmodResonanceAudioRoom_t7078E03ED7F19847733049BD2ACA2CBA5B39BB35* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1660,7 +1660,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FmodResonanceAudioRoom_OnDisable_mBF5428
 		return;
 	}
 }
-// Method Definition Index: 91920
+// Method Definition Index: 91951
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FmodResonanceAudioRoom_Update_mB3F39F395CE086C53460FE4A25FDB244B77E73CB (FmodResonanceAudioRoom_t7078E03ED7F19847733049BD2ACA2CBA5B39BB35* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1679,7 +1679,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FmodResonanceAudioRoom_Update_mB3F39F395
 		return;
 	}
 }
-// Method Definition Index: 91921
+// Method Definition Index: 91952
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FmodResonanceAudioRoom_OnDrawGizmosSelected_m52A7D70F7A63652BA33C68443AB65F11F13E378B (FmodResonanceAudioRoom_t7078E03ED7F19847733049BD2ACA2CBA5B39BB35* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1703,7 +1703,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FmodResonanceAudioRoom_OnDrawGizmosSelec
 		return;
 	}
 }
-// Method Definition Index: 91922
+// Method Definition Index: 91953
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FmodResonanceAudioRoom__ctor_m1F848A91D64BC754832CB90A48F3A7A2C8AEB9EA (FmodResonanceAudioRoom_t7078E03ED7F19847733049BD2ACA2CBA5B39BB35* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1875,7 +1875,7 @@ IL_0009:
 		return L_1;
 	}
 }
-// Method Definition Index: 49572
+// Method Definition Index: 49573
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector4_op_Implicit_m0217ADDC8CADDB93ACBABB17A50207698DAB0071_inline (Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___0_v, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
