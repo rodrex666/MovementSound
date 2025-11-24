@@ -61,6 +61,7 @@ IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5
 IL2CPP_EXTERN_C String_t* _stringLiteral1EA254CA7E71EE32F1ABF4EE1D863BCC4E11B925;
 IL2CPP_EXTERN_C String_t* _stringLiteral2221D138F8A120430E38C8903C34475F04420D61;
 IL2CPP_EXTERN_C String_t* _stringLiteral2409165FB90CD4A8B916FCA75790766B82C91748;
+IL2CPP_EXTERN_C String_t* _stringLiteral258CF6BED8761ADDEF9D97B66AB65F9630CF0934;
 IL2CPP_EXTERN_C String_t* _stringLiteral40B9968876DFBA959A505AA3EC0E9D9D26C14E45;
 IL2CPP_EXTERN_C String_t* _stringLiteral54754078F81BF468EFA43E14CE376B985006DEAC;
 IL2CPP_EXTERN_C String_t* _stringLiteral5B7926C3A5E1BFA542622F78FEA987EAA90FA886;
@@ -473,6 +474,8 @@ struct plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C  : public MonoBeh
 	float ___maxParamValue;
 	float ___mySmoothVelocity;
 	FMODPlaywithParameters_t76C514E722C5D7D71E35942B927F19DF46A1A741* ____FmodParatemers;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___myFluffSphere;
+	VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* ___fluffyVFX;
 };
 struct spherePositioning_t280148174E4E2B87FF57356F779FF75BF93947C3  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -635,6 +638,10 @@ inline VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* Component_GetComp
 {
 	return ((  VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
 }
+inline VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* GameObject_GetComponent_TisVisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0_m9557AB41C03467D73E149BA6984FE5808B2AF9E3 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
+{
+	return ((  VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared)(__this, method);
+}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_rotation_m61340DE74726CF0F9946743A727C4D444397331D (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
@@ -647,10 +654,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_parent_m9BD5E563B539DD5BEC342736B03F97B38A243234 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_value, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
-inline VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* GameObject_GetComponent_TisVisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0_m9557AB41C03467D73E149BA6984FE5808B2AF9E3 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
-{
-	return ((  VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared)(__this, method);
-}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m9E3155FB84015C823606188F53B47CB44C444991 (String_t* ___0_str0, String_t* ___1_str1, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Component_CompareTag_mE6F8897E84F12DF12D302FFC4D58204D51096FC5 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, String_t* ___0_tag, const RuntimeMethod* method) ;
@@ -1123,24 +1126,32 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void plasmaControl_Start_m1D391FE0EBD95FE2B68
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisVisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0_mC2DD444DE804211C8EADF53E224C7103F9A3CCD1_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisVisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0_m9557AB41C03467D73E149BA6984FE5808B2AF9E3_RuntimeMethod_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:35>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:38>
 		VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* L_0;
 		L_0 = Component_GetComponent_TisVisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0_mC2DD444DE804211C8EADF53E224C7103F9A3CCD1(__this, Component_GetComponent_TisVisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0_mC2DD444DE804211C8EADF53E224C7103F9A3CCD1_RuntimeMethod_var);
 		__this->___plasmaVFX = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___plasmaVFX), (void*)L_0);
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:36>
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1;
-		L_1 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:39>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = __this->___myFluffSphere;
 		NullCheck(L_1);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2;
-		L_2 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_1, NULL);
-		__this->___previousPosition = L_2;
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:37>
+		VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* L_2;
+		L_2 = GameObject_GetComponent_TisVisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0_m9557AB41C03467D73E149BA6984FE5808B2AF9E3(L_1, GameObject_GetComponent_TisVisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0_m9557AB41C03467D73E149BA6984FE5808B2AF9E3_RuntimeMethod_var);
+		__this->___fluffyVFX = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___fluffyVFX), (void*)L_2);
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:40>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3;
+		L_3 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_3);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
+		L_4 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_3, NULL);
+		__this->___previousPosition = L_4;
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:41>
 		__this->___mySmoothVelocity = (0.0f);
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:38>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:42>
 		return;
 	}
 }
@@ -1151,6 +1162,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void plasmaControl_Update_mACE36BF6F9C22871EB
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2221D138F8A120430E38C8903C34475F04420D61);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral258CF6BED8761ADDEF9D97B66AB65F9630CF0934);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral40B9968876DFBA959A505AA3EC0E9D9D26C14E45);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral95E71D951B7689D0065A194D054AC918A95351C3);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEE3D3402E26E8381E174BD0635F0DA5564BACAD8);
@@ -1162,14 +1174,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void plasmaControl_Update_mACE36BF6F9C22871EB
 	memset((&V_1), 0, sizeof(V_1));
 	float V_2 = 0.0f;
 	{
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:43>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:47>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0;
 		L_0 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_1;
 		L_1 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
 		NullCheck(L_0);
 		Transform_set_rotation_m61340DE74726CF0F9946743A727C4D444397331D(L_0, L_1, NULL);
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:46>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:50>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2;
 		L_2 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
 		NullCheck(L_2);
@@ -1180,7 +1192,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void plasmaControl_Update_mACE36BF6F9C22871EB
 		L_4 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_3, NULL);
 		float L_5 = L_4.___y;
 		__this->___myY = ((float)il2cpp_codegen_multiply(L_5, (8.0f)));
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:49>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:53>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = __this->___sphereOther;
 		NullCheck(L_6);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7;
@@ -1189,23 +1201,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void plasmaControl_Update_mACE36BF6F9C22871EB
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
 		L_8 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_7, NULL);
 		V_0 = L_8;
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:50>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:54>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_9;
 		L_9 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
 		NullCheck(L_9);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10;
 		L_10 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_9, NULL);
 		V_1 = L_10;
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:52>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:56>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11 = V_0;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12 = V_1;
 		float L_13;
 		L_13 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_11, L_12, NULL);
 		__this->___sphereDistance = L_13;
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:53>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:57>
 		float L_14 = __this->___sphereDistance;
 		__this->___sphereDistanceNorm = ((float)il2cpp_codegen_subtract((5.0f), ((float)il2cpp_codegen_multiply(L_14, (5.0f)))));
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:56>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:60>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_15;
 		L_15 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
 		NullCheck(L_15);
@@ -1215,26 +1227,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void plasmaControl_Update_mACE36BF6F9C22871EB
 		float L_18;
 		L_18 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_16, L_17, NULL);
 		V_2 = L_18;
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:57>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:61>
 		float L_19 = V_2;
 		float L_20;
 		L_20 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
 		__this->___myVelocity = ((float)(L_19/L_20));
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:58>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:62>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_21;
 		L_21 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
 		NullCheck(L_21);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22;
 		L_22 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_21, NULL);
 		__this->___previousPosition = L_22;
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:61>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:65>
 		float L_23 = __this->___mySmoothVelocity;
 		float L_24 = __this->___myVelocity;
 		float* L_25 = (float*)(&__this->___mySmoothVelocity);
 		float L_26;
 		L_26 = Mathf_SmoothDamp_m3A255A356924421B4042AAD1623EF46F92A08C91_inline(L_23, L_24, L_25, (0.100000001f), NULL);
 		__this->___mySmoothVelocity = L_26;
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:64>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:68>
 		float L_27 = __this->___mySmoothVelocity;
 		float L_28 = __this->___maxExpectedVelocity;
 		float L_29 = __this->___minParamValue;
@@ -1242,35 +1254,50 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void plasmaControl_Update_mACE36BF6F9C22871EB
 		float L_31;
 		L_31 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(((float)(L_27/L_28)), L_29, L_30, NULL);
 		__this->___estimatedNormalizedVelocity = L_31;
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:67>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:71>
 		FMODPlaywithParameters_t76C514E722C5D7D71E35942B927F19DF46A1A741* L_32 = __this->____FmodParatemers;
 		float L_33 = __this->___estimatedNormalizedVelocity;
 		NullCheck(L_32);
 		FMODPlaywithParameters_updateParameterFMOD_m72AD985DD99338FCEBEFB96FF2274F6DE469C3C1_inline(L_32, L_33, NULL);
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:70>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:74>
 		float L_34 = __this->___estimatedNormalizedVelocity;
 		__this->___normalIntense = ((float)il2cpp_codegen_multiply(L_34, (1.5f)));
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:73>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:77>
 		VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* L_35 = __this->___plasmaVFX;
 		float L_36 = __this->___estimatedNormalizedVelocity;
 		NullCheck(L_35);
 		VisualEffect_SetFloat_mB59095AC406A373BC587551B5A4781719F608F51(L_35, _stringLiteralEE3D3402E26E8381E174BD0635F0DA5564BACAD8, L_36, NULL);
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:74>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:78>
 		VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* L_37 = __this->___plasmaVFX;
 		float L_38 = __this->___normalIntense;
 		NullCheck(L_37);
 		VisualEffect_SetFloat_mB59095AC406A373BC587551B5A4781719F608F51(L_37, _stringLiteral40B9968876DFBA959A505AA3EC0E9D9D26C14E45, L_38, NULL);
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:75>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:79>
 		VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* L_39 = __this->___plasmaVFX;
 		float L_40 = __this->___sphereDistanceNorm;
 		NullCheck(L_39);
 		VisualEffect_SetFloat_mB59095AC406A373BC587551B5A4781719F608F51(L_39, _stringLiteral95E71D951B7689D0065A194D054AC918A95351C3, L_40, NULL);
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:76>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:80>
 		VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* L_41 = __this->___plasmaVFX;
 		float L_42 = __this->___myY;
 		NullCheck(L_41);
 		VisualEffect_SetFloat_mB59095AC406A373BC587551B5A4781719F608F51(L_41, _stringLiteral2221D138F8A120430E38C8903C34475F04420D61, L_42, NULL);
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:77>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:82>
+		VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* L_43 = __this->___fluffyVFX;
+		float L_44 = __this->___sphereDistance;
+		NullCheck(L_43);
+		VisualEffect_SetFloat_mB59095AC406A373BC587551B5A4781719F608F51(L_43, _stringLiteral258CF6BED8761ADDEF9D97B66AB65F9630CF0934, L_44, NULL);
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:83>
+		VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* L_45 = __this->___fluffyVFX;
+		float L_46 = __this->___myY;
+		NullCheck(L_45);
+		VisualEffect_SetFloat_mB59095AC406A373BC587551B5A4781719F608F51(L_45, _stringLiteral2221D138F8A120430E38C8903C34475F04420D61, L_46, NULL);
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:84>
+		VisualEffect_t8CF4F0E13AEBF27224BB1323CC103666EDBBCFB0* L_47 = __this->___fluffyVFX;
+		float L_48 = __this->___estimatedNormalizedVelocity;
+		NullCheck(L_47);
+		VisualEffect_SetFloat_mB59095AC406A373BC587551B5A4781719F608F51(L_47, _stringLiteralEE3D3402E26E8381E174BD0635F0DA5564BACAD8, L_48, NULL);
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/plasmaControl.cs:85>
 		return;
 	}
 }
