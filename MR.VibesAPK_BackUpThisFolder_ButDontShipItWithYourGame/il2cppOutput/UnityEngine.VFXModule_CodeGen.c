@@ -146,7 +146,6 @@ extern void VisualEffect_SetVector2_m4DDC038B4B9FC98288DE4F864FF31F80D0B568A6 (v
 extern void VisualEffect_SetVector3_m9DEA0241E8C6768309AEDC1319F3BD84EAB8D246 (void);
 extern void VisualEffect_SetVector4_m94086CD93C6C371BD5C3D8A3E815C034DD02E4D1 (void);
 extern void VisualEffect_SetTexture_m96338B6E07291B861827B204CAE5654386D91E2C (void);
-extern void VisualEffect_GetFloat_m7DE09883BFE78C2AC343FE6EE3A7C84704121F2D (void);
 extern void VisualEffect_HasUInt_mECAE541A87CE6A7470ACA49C53FF5D5E11DF1047 (void);
 extern void VisualEffect_HasFloat_m96F1E6C9BB23E20D1BB730D3356E3E794D410B25 (void);
 extern void VisualEffect_HasVector4_m9BD809A0E57D0083CC65C3F8240FF3A55F866811 (void);
@@ -156,7 +155,6 @@ extern void VisualEffect_SetFloat_mB59095AC406A373BC587551B5A4781719F608F51 (voi
 extern void VisualEffect_SetVector4_m2689F7AA23636CA94447027AFE213A03F51B261C (void);
 extern void VisualEffect_SetTexture_m500CB940B0427A4015A3B9E0FDE98F4F30E415BD (void);
 extern void VisualEffect_SetBool_m2AE92C97A9290E260655D557C4E68B2947E72964 (void);
-extern void VisualEffect_GetFloat_mF0087B8CD2B38C2A0441EE31F2674342D9173984 (void);
 extern void VisualEffect_get_time_mA25FD6698B47E3B62F587CD885D4B64D857C722E (void);
 extern void VisualEffect_Simulate_mC347313CB7CBC9439F65F88FC490E29FFE7B2E74 (void);
 extern void VisualEffect_InvokeGetCachedEventAttributeForOutputEvent_Internal_mB2B1867606653A162B31F890AFFAFF2D4569904E (void);
@@ -186,11 +184,10 @@ extern void VisualEffect_SetVector2_Injected_mA3E2F89E5210357109CE21AE006AA0AACF
 extern void VisualEffect_SetVector3_Injected_mCC2F637648A46336B82961B8E0BCFAEA669E029B (void);
 extern void VisualEffect_SetVector4_Injected_mABA72031DFB9EA44BBEFDEC79ED98C6A146FC76F (void);
 extern void VisualEffect_SetTexture_Injected_m6A500837AF061577E79224B7B819F1ADE96327D2 (void);
-extern void VisualEffect_GetFloat_Injected_m45826436687777BAA57C5BE1E741D09A65A66193 (void);
 extern void VisualEffect_get_time_Injected_mE20E5B2234A44E9669D55FB8F7E38BCB57EDDF93 (void);
 extern void VisualEffect_Simulate_Injected_m4CE47009AEF83F550932C935C1F8A6B5201DA2D5 (void);
 extern void VFXRenderer__ctor_mF0F7DA1BF087936A6A95638221B09CE05EA475BF (void);
-static Il2CppMethodPointer s_methodPointers[186] = 
+static Il2CppMethodPointer s_methodPointers[183] = 
 {
 	VFXEventAttribute__ctor_m08E26E4F79DA1062FC43501FDFE00B9EF3ED3AE1,
 	VFXEventAttribute__ctor_mB30DC279ACFC41DA8C7ABB9FC73B9FE763CE1B86,
@@ -334,7 +331,6 @@ static Il2CppMethodPointer s_methodPointers[186] =
 	VisualEffect_SetVector3_m9DEA0241E8C6768309AEDC1319F3BD84EAB8D246,
 	VisualEffect_SetVector4_m94086CD93C6C371BD5C3D8A3E815C034DD02E4D1,
 	VisualEffect_SetTexture_m96338B6E07291B861827B204CAE5654386D91E2C,
-	VisualEffect_GetFloat_m7DE09883BFE78C2AC343FE6EE3A7C84704121F2D,
 	VisualEffect_HasUInt_mECAE541A87CE6A7470ACA49C53FF5D5E11DF1047,
 	VisualEffect_HasFloat_m96F1E6C9BB23E20D1BB730D3356E3E794D410B25,
 	VisualEffect_HasVector4_m9BD809A0E57D0083CC65C3F8240FF3A55F866811,
@@ -344,7 +340,6 @@ static Il2CppMethodPointer s_methodPointers[186] =
 	VisualEffect_SetVector4_m2689F7AA23636CA94447027AFE213A03F51B261C,
 	VisualEffect_SetTexture_m500CB940B0427A4015A3B9E0FDE98F4F30E415BD,
 	VisualEffect_SetBool_m2AE92C97A9290E260655D557C4E68B2947E72964,
-	VisualEffect_GetFloat_mF0087B8CD2B38C2A0441EE31F2674342D9173984,
 	VisualEffect_get_time_mA25FD6698B47E3B62F587CD885D4B64D857C722E,
 	VisualEffect_Simulate_mC347313CB7CBC9439F65F88FC490E29FFE7B2E74,
 	VisualEffect_InvokeGetCachedEventAttributeForOutputEvent_Internal_mB2B1867606653A162B31F890AFFAFF2D4569904E,
@@ -374,7 +369,6 @@ static Il2CppMethodPointer s_methodPointers[186] =
 	VisualEffect_SetVector3_Injected_mCC2F637648A46336B82961B8E0BCFAEA669E029B,
 	VisualEffect_SetVector4_Injected_mABA72031DFB9EA44BBEFDEC79ED98C6A146FC76F,
 	VisualEffect_SetTexture_Injected_m6A500837AF061577E79224B7B819F1ADE96327D2,
-	VisualEffect_GetFloat_Injected_m45826436687777BAA57C5BE1E741D09A65A66193,
 	VisualEffect_get_time_Injected_mE20E5B2234A44E9669D55FB8F7E38BCB57EDDF93,
 	VisualEffect_Simulate_Injected_m4CE47009AEF83F550932C935C1F8A6B5201DA2D5,
 	VFXRenderer__ctor_mF0F7DA1BF087936A6A95638221B09CE05EA475BF,
@@ -388,7 +382,7 @@ static Il2CppTokenAdjustorThunkPair s_adjustorThunks[3] =
 	{ 0x06000070, VFXOutputEventArgs_get_eventAttribute_m38C5944E1F1FC4355BB632849C6C7D56AFA4C6B0_AdjustorThunk },
 	{ 0x06000071, VFXOutputEventArgs__ctor_m4A6030F4BF7E27F5F682E0FC4211F53DF866ED56_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[186] = 
+static const int32_t s_InvokerIndices[183] = 
 {
 	3132,
 	13616,
@@ -532,7 +526,6 @@ static const int32_t s_InvokerIndices[186] =
 	6699,
 	6701,
 	6547,
-	12072,
 	9840,
 	9840,
 	9840,
@@ -542,7 +535,6 @@ static const int32_t s_InvokerIndices[186] =
 	7137,
 	7080,
 	7053,
-	12073,
 	17808,
 	7210,
 	27594,
@@ -572,7 +564,6 @@ static const int32_t s_InvokerIndices[186] =
 	22747,
 	22747,
 	22753,
-	24350,
 	27740,
 	22778,
 	17916,
@@ -581,7 +572,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_VFXModule_CodeGenModule;
 const Il2CppCodeGenModule g_UnityEngine_VFXModule_CodeGenModule = 
 {
 	"UnityEngine.VFXModule.dll",
-	186,
+	183,
 	s_methodPointers,
 	3,
 	s_adjustorThunks,
