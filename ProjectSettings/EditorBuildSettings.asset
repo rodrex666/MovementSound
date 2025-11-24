@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/VFXScene.unity
     guid: 8157b6146ddb2bd4aaf9bce99d63e61a
   - enabled: 0
@@ -14,6 +14,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/VFXAudio.unity
     guid: 8761662f1730bc640a70edda728f9772
+  - enabled: 1
+    path: Assets/Scenes/MainMenuScene.unity
+    guid: 3f87d6918a1c86745881a2f352d50413
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 4bb86b52ce727fb408ae6283e538bfd5, type: 2}
