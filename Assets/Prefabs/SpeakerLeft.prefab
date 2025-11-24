@@ -131,7 +131,7 @@ MonoBehaviour:
       Data2: 1317772606
       Data3: -1231584869
       Data4: -190765661
-    Path: event:/Vox
+    Path: event:/Song_1/Vox
   Event: 
   EventPlayTrigger: 1
   EventStopTrigger: 2
