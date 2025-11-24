@@ -26668,7 +26668,6 @@ struct footBlastCollision_tD2A684D627AC5ED2825BE1D7A2CB534499B044BB  : public Mo
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___explosionHolder;
 	ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* ___explodeParticles;
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___clapPosition;
-	bool ___hitCollider;
 };
 struct passthroughColour_t8201310849C5224AEEB22035A848F02369F1F0F3  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -26691,12 +26690,14 @@ struct plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C  : public MonoBeh
 	float ___maxExpectedVelocity;
 	float ___minParamValue;
 	float ___maxParamValue;
+	float ___mySmoothVelocity;
 	FMODPlaywithParameters_t76C514E722C5D7D71E35942B927F19DF46A1A741* ____FmodParatemers;
 };
 struct spherePositioning_t280148174E4E2B87FF57356F779FF75BF93947C3  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___mySphere;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___myBlaster;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___myFluffSphere;
 };
 struct CollisionEvents_t036F7D60BC8FBC5E55F19F7E4B92CA0CE3F99A65  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -37919,21 +37920,21 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable11978[1] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable11991[2] = 
 {
 	static_cast<int32_t>(offsetof(FMODPlaywithParameters_t76C514E722C5D7D71E35942B927F19DF46A1A741, ___MainMix)),static_cast<int32_t>(offsetof(FMODPlaywithParameters_t76C514E722C5D7D71E35942B927F19DF46A1A741, ____valueFmod)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable11992[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable11992[3] = 
 {
-	static_cast<int32_t>(offsetof(footBlastCollision_tD2A684D627AC5ED2825BE1D7A2CB534499B044BB, ___explosionHolder)),static_cast<int32_t>(offsetof(footBlastCollision_tD2A684D627AC5ED2825BE1D7A2CB534499B044BB, ___explodeParticles)),static_cast<int32_t>(offsetof(footBlastCollision_tD2A684D627AC5ED2825BE1D7A2CB534499B044BB, ___clapPosition)),static_cast<int32_t>(offsetof(footBlastCollision_tD2A684D627AC5ED2825BE1D7A2CB534499B044BB, ___hitCollider)),};
+	static_cast<int32_t>(offsetof(footBlastCollision_tD2A684D627AC5ED2825BE1D7A2CB534499B044BB, ___explosionHolder)),static_cast<int32_t>(offsetof(footBlastCollision_tD2A684D627AC5ED2825BE1D7A2CB534499B044BB, ___explodeParticles)),static_cast<int32_t>(offsetof(footBlastCollision_tD2A684D627AC5ED2825BE1D7A2CB534499B044BB, ___clapPosition)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable11993[3] = 
 {
 	static_cast<int32_t>(offsetof(MovementAroundHead_tB1EB8D445252DD3D31C7B62C16074B99DC6BE227, ___mainCamera)),static_cast<int32_t>(offsetof(MovementAroundHead_tB1EB8D445252DD3D31C7B62C16074B99DC6BE227, ___radius)),static_cast<int32_t>(offsetof(MovementAroundHead_tB1EB8D445252DD3D31C7B62C16074B99DC6BE227, ___orbitSpeed)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable11994[4] = 
 {
 	static_cast<int32_t>(offsetof(passthroughColour_t8201310849C5224AEEB22035A848F02369F1F0F3, ___passthroughHolder)),static_cast<int32_t>(offsetof(passthroughColour_t8201310849C5224AEEB22035A848F02369F1F0F3, ___myColour)),static_cast<int32_t>(offsetof(passthroughColour_t8201310849C5224AEEB22035A848F02369F1F0F3, ___passComponent)),static_cast<int32_t>(offsetof(passthroughColour_t8201310849C5224AEEB22035A848F02369F1F0F3, ___passthroughOG)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable11995[13] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable11995[14] = 
 {
-	static_cast<int32_t>(offsetof(plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C, ___plasmaVFX)),static_cast<int32_t>(offsetof(plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C, ___sphereOther)),static_cast<int32_t>(offsetof(plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C, ___normalIntense)),static_cast<int32_t>(offsetof(plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C, ___sphereDistance)),static_cast<int32_t>(offsetof(plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C, ___sphereDistanceNorm)),static_cast<int32_t>(offsetof(plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C, ___myY)),static_cast<int32_t>(offsetof(plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C, ___estimatedNormalizedVelocity)),static_cast<int32_t>(offsetof(plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C, ___previousPosition)),static_cast<int32_t>(offsetof(plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C, ___myVelocity)),static_cast<int32_t>(offsetof(plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C, ___maxExpectedVelocity)),static_cast<int32_t>(offsetof(plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C, ___minParamValue)),static_cast<int32_t>(offsetof(plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C, ___maxParamValue)),static_cast<int32_t>(offsetof(plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C, ____FmodParatemers)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable11996[2] = 
+	static_cast<int32_t>(offsetof(plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C, ___plasmaVFX)),static_cast<int32_t>(offsetof(plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C, ___sphereOther)),static_cast<int32_t>(offsetof(plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C, ___normalIntense)),static_cast<int32_t>(offsetof(plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C, ___sphereDistance)),static_cast<int32_t>(offsetof(plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C, ___sphereDistanceNorm)),static_cast<int32_t>(offsetof(plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C, ___myY)),static_cast<int32_t>(offsetof(plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C, ___estimatedNormalizedVelocity)),static_cast<int32_t>(offsetof(plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C, ___previousPosition)),static_cast<int32_t>(offsetof(plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C, ___myVelocity)),static_cast<int32_t>(offsetof(plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C, ___maxExpectedVelocity)),static_cast<int32_t>(offsetof(plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C, ___minParamValue)),static_cast<int32_t>(offsetof(plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C, ___maxParamValue)),static_cast<int32_t>(offsetof(plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C, ___mySmoothVelocity)),static_cast<int32_t>(offsetof(plasmaControl_t2F5B3CF108362C337999041C9ADE62CFCEB06E0C, ____FmodParatemers)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable11996[3] = 
 {
-	static_cast<int32_t>(offsetof(spherePositioning_t280148174E4E2B87FF57356F779FF75BF93947C3, ___mySphere)),static_cast<int32_t>(offsetof(spherePositioning_t280148174E4E2B87FF57356F779FF75BF93947C3, ___myBlaster)),};
+	static_cast<int32_t>(offsetof(spherePositioning_t280148174E4E2B87FF57356F779FF75BF93947C3, ___mySphere)),static_cast<int32_t>(offsetof(spherePositioning_t280148174E4E2B87FF57356F779FF75BF93947C3, ___myBlaster)),static_cast<int32_t>(offsetof(spherePositioning_t280148174E4E2B87FF57356F779FF75BF93947C3, ___myFluffSphere)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable11997[12] = 
 {
 	static_cast<int32_t>(offsetof(VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49, ___maxExpectedVelocity)),static_cast<int32_t>(offsetof(VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49, ___minParamValue)),static_cast<int32_t>(offsetof(VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49, ___maxParamValue)),static_cast<int32_t>(offsetof(VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49, ____FmodParatemers)),static_cast<int32_t>(offsetof(VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49, ___estimatedNormalizedVelocity)),static_cast<int32_t>(offsetof(VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49, ___entryPosition)),static_cast<int32_t>(offsetof(VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49, ___entryTime)),static_cast<int32_t>(offsetof(VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49, ___trackedObject)),static_cast<int32_t>(offsetof(VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49, ___sphere1)),static_cast<int32_t>(offsetof(VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49, ___sphere2)),static_cast<int32_t>(offsetof(VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49, ___plasma1)),static_cast<int32_t>(offsetof(VelocityEstimator_tD78416F4108F4B6ACD65DA7A3C561A46D195BF49, ___plasma2)),};
