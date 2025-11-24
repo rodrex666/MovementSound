@@ -2765,7 +2765,7 @@ MonoBehaviour:
       Data2: 1290552345
       Data3: -426812510
       Data4: -1589912006
-    Path: event:/Drums
+    Path: event:/Song_1/Drums
   Event: 
   EventPlayTrigger: 1
   EventStopTrigger: 2
