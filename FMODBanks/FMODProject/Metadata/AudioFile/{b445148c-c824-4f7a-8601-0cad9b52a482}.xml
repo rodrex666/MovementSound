@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{b445148c-c824-4f7a-8601-0cad9b52a482}">
+		<property name="assetPath">
+			<value>BenFlowers_Retry_Full/03_Toms.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>256.43247165532881</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{fb747c87-e886-4d5d-a24b-7b59ff8756e2}</destination>
+		</relationship>
+	</object>
+</objects>

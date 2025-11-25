@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{ccac5b92-9bab-4649-8276-d9145a9e671a}">
+		<property name="assetPath">
+			<value>BenFlowers_Retry_Full/04_Snare.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>257.10267573696143</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{fb747c87-e886-4d5d-a24b-7b59ff8756e2}</destination>
+		</relationship>
+	</object>
+</objects>

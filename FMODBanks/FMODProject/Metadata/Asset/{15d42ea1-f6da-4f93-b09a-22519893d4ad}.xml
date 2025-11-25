@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="EncodableAsset" id="{15d42ea1-f6da-4f93-b09a-22519893d4ad}">
+		<property name="assetPath">
+			<value>BenFlowers_Retry_Full/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{fb747c87-e886-4d5d-a24b-7b59ff8756e2}</destination>
+		</relationship>
+	</object>
+</objects>

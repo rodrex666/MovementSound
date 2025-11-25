@@ -3,32 +3,47 @@ using UnityEngine;
 
 public class FMODPlaywithParameters : MonoBehaviour
 {
-    FMOD.Studio.EventInstance MainMix;
-    private float _valueFmod =1f;
+    FMOD.Studio.EventInstance soundInstance;
+    
     public FMODUnity.EventReference instrumentEvent;
     [SerializeField]
     private bool _controlParameter = true;
+    [SerializeField]
+    private string _parameterVolumeName;
+    [SerializeField]
+    private float _valueVolumeFmod = 2f;
+    [SerializeField]
+    private string _parameterTypeName;
+    [SerializeField]
+    private float _valueTypeFmod = 1f;
 
     void Start()
     {
-        MainMix= FMODUnity.RuntimeManager.CreateInstance(instrumentEvent);
-        MainMix.start();
-        FMODUnity.RuntimeManager.AttachInstanceToGameObject(MainMix, gameObject, gameObject.GetComponent<Rigidbody>());
+        soundInstance= FMODUnity.RuntimeManager.CreateInstance(instrumentEvent);
+        soundInstance.start();
+        FMODUnity.RuntimeManager.AttachInstanceToGameObject(soundInstance, gameObject, gameObject.GetComponent<Rigidbody>());
+        soundInstance.setParameterByName(_parameterTypeName, _valueTypeFmod);
+        soundInstance.setParameterByName(_parameterVolumeName, _valueVolumeFmod);
     }
 
     // Update is called once per frame
     void Update()
     {
         if (_controlParameter)
-        { MainMix.setParameterByName("MainMixVolume", _valueFmod); }
+        { soundInstance.setParameterByName(_parameterVolumeName, _valueVolumeFmod); }
     }
     public void updateParameterFMOD(float value)
     {
-        _valueFmod = value;
+        _valueVolumeFmod = value;
+    }
+    public void updateParameterTypeFMOD(float value)
+    {
+        _valueTypeFmod = value;
+        soundInstance.setParameterByName(_parameterTypeName, _valueTypeFmod);
     }
     private void OnDestroy()
     {
-        MainMix.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-        MainMix.release();
+        soundInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        soundInstance.release();
     }
 }

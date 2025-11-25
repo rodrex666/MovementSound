@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{96bd992a-0b29-4925-8929-824f848757f8}">
+		<property name="assetPath">
+			<value>AronJaeger_FlyHigh_Full/16_Synth01.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>160.5</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{fb747c87-e886-4d5d-a24b-7b59ff8756e2}</destination>
+		</relationship>
+	</object>
+</objects>
