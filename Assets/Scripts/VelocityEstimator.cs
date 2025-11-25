@@ -88,7 +88,7 @@ public class VelocityEstimator : MonoBehaviour
             estimatedNormalizedVelocity = Mathf.Clamp(rawVelocity/maxExpectedVelocity,minParamValue,maxParamValue);
 
             //Update Parameters in Sphere
-            _FmodParatemers.updateParameterFMOD(estimatedNormalizedVelocity);
+            _FmodParatemers.updateParameter(estimatedNormalizedVelocity);
 
             // --- DEBUG LOG ---
             Debug.Log(trackedObject.name + " exited. Raw velocity: " + rawVelocity.ToString("F2") + " u/s. Normalized velocity: " + estimatedNormalizedVelocity.ToString("F2"));
