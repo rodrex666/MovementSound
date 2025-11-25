@@ -17,6 +17,9 @@ public class FMODPlaywithParameters : MonoBehaviour
     [SerializeField]
     public float _valueTypeFmod = 1f;
 
+    private float velocityHandsfinal = 0f;
+    private float velocityHandsnew = 0f;
+
     void Start()
     {
         soundInstance= FMODUnity.RuntimeManager.CreateInstance(instrumentEvent);
@@ -31,12 +34,18 @@ public class FMODPlaywithParameters : MonoBehaviour
     void Update()
     {
         if (_controlParameter)
-        { soundInstance.setParameterByName(_parameterVolumeName, _valueVolumeFmod); }
+        { 
+            velocityHandsfinal = velocityHandsnew + _valueVolumeFmod*Time.deltaTime;
+            
+            soundInstance.setParameterByName(_parameterVolumeName, _valueVolumeFmod);
+            Debug.Log(gameObject.name + " - " + velocityHandsfinal);
+            velocityHandsnew = velocityHandsfinal;
+        }
     }
     public void updateParameter(float value)
     {
         _valueVolumeFmod = value;
-        Debug.Log(gameObject.name + " - " + value);
+        
     }
     public void updateParameterTypeFMOD(float value)
     {
@@ -61,8 +70,16 @@ public class FMODPlaywithParameters : MonoBehaviour
     {
         soundInstance.start();
     }
-    public void stopSong()
+    public void stopsSong()
     {
         soundInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+    }
+    public void pauseSong()
+    {
+        soundInstance.setPaused(true);
+    }
+    public void continueSong()
+    {
+        soundInstance.setPaused(false);
     }
 }
