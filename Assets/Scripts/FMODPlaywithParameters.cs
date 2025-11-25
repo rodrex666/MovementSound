@@ -20,10 +20,11 @@ public class FMODPlaywithParameters : MonoBehaviour
     void Start()
     {
         soundInstance= FMODUnity.RuntimeManager.CreateInstance(instrumentEvent);
-        soundInstance.start();
+        
         FMODUnity.RuntimeManager.AttachInstanceToGameObject(soundInstance, gameObject, gameObject.GetComponent<Rigidbody>());
         soundInstance.setParameterByName(_parameterTypeName, _valueTypeFmod);
         soundInstance.setParameterByName(_parameterVolumeName, _valueVolumeFmod);
+        startSong();
     }
 
     // Update is called once per frame
@@ -45,5 +46,21 @@ public class FMODPlaywithParameters : MonoBehaviour
     {
         soundInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         soundInstance.release();
+    }
+    public void volumeVelocityOn()
+    {
+        _controlParameter = true;
+    }
+    public void volumeVelocityOff()
+    {
+        _controlParameter = false;
+    }
+    public void startSong()
+    {
+        soundInstance.start();
+    }
+    public void stopSong()
+    {
+        soundInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
 }
