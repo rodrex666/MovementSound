@@ -17,6 +17,31 @@ public class VinylSnapToPlatter : MonoBehaviour
 
     public static VinylFloating_Grabbable currentSnappedVinyl = null;
 
+    [Header("Vinyl Options and their parameters")]
+    public GameObject vinyl1;
+    public GameObject vinyl2;
+    public GameObject vinyl3;
+
+    public FMODPlaywithParameters fmodVoice;
+    public FMODPlaywithParameters fmodBass;
+    public FMODPlaywithParameters fmodDrums;
+    public FMODPlaywithParameters fmodGuitar;
+    public GameObject voice;
+    public GameObject bass;
+    public GameObject drums;
+    public GameObject guitar;
+
+    public string vinylName;
+    public float fmodVinylNumber;
+
+    void Start()
+    {
+        fmodVoice = voice.GetComponent<FMODPlaywithParameters>();
+        fmodBass = bass.GetComponent<FMODPlaywithParameters>();
+        fmodDrums = drums.GetComponent<FMODPlaywithParameters>();
+        fmodGuitar = guitar.GetComponent<FMODPlaywithParameters>();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         VinylFloating_Grabbable vinyl = other.GetComponent<VinylFloating_Grabbable>();
@@ -55,6 +80,35 @@ public class VinylSnapToPlatter : MonoBehaviour
         vinylTransform.SetParent(snapPoint.parent);
 
         vinyl.isSnappedToPlatter = true;
+
+        //check which vinyl is on
+        vinylName = vinyl.name;
+
+        if (vinylName == vinyl1.name)
+        {
+            fmodVinylNumber = 1;
+        }
+        else if (vinylName == vinyl2.name)
+        {
+            fmodVinylNumber = 2;
+        }
+        else if (vinylName == vinyl3.name)
+        {
+            fmodVinylNumber = 3;
+        }
+
+        //set fmod to play that vinyl
+        fmodVoice._valueTypeFmod = fmodVinylNumber;
+        fmodBass._valueTypeFmod = fmodVinylNumber;
+        fmodDrums._valueTypeFmod = fmodVinylNumber;
+        fmodGuitar._valueTypeFmod = fmodVinylNumber;
+
+        //call the function to update fmod
+        fmodVoice.updateParameterTypeFMOD(fmodVinylNumber);
+        fmodBass.updateParameterFMOD(fmodVinylNumber);
+        fmodDrums.updateParameterFMOD(fmodVinylNumber);
+        fmodGuitar.updateParameterFMOD(fmodVinylNumber);
+
 
         // Start platter spinning
         PlatterSpin platterSpin = snapPoint.parent.GetComponentInChildren<PlatterSpin>();
