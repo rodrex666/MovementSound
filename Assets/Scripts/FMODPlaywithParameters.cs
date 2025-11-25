@@ -15,7 +15,7 @@ public class FMODPlaywithParameters : MonoBehaviour
     [SerializeField]
     private string _parameterTypeName;
     [SerializeField]
-    private float _valueTypeFmod = 1f;
+    public float _valueTypeFmod = 1f;
 
     void Start()
     {
@@ -40,6 +40,7 @@ public class FMODPlaywithParameters : MonoBehaviour
     {
         _valueTypeFmod = value;
         soundInstance.setParameterByName(_parameterTypeName, _valueTypeFmod);
+        Debug.Log("FMOD function called");
     }
     private void OnDestroy()
     {
