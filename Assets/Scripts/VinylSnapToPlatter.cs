@@ -105,9 +105,9 @@ public class VinylSnapToPlatter : MonoBehaviour
 
         //call the function to update fmod
         fmodVoice.updateParameterTypeFMOD(fmodVinylNumber);
-        fmodBass.updateParameterFMOD(fmodVinylNumber);
-        fmodDrums.updateParameterFMOD(fmodVinylNumber);
-        fmodGuitar.updateParameterFMOD(fmodVinylNumber);
+        fmodBass.updateParameterTypeFMOD(fmodVinylNumber);
+        fmodDrums.updateParameterTypeFMOD(fmodVinylNumber);
+        fmodGuitar.updateParameterTypeFMOD(fmodVinylNumber);
 
 
         // Start platter spinning
