@@ -28,7 +28,7 @@ public class plasmaControl : MonoBehaviour
 
     [Header("Sound Emitter")]
     [SerializeField]
-    private FMODPlaywithParameters _FmodParatemers;
+    private SoundEmitterSender _FmodParatemers;
 
     //public GameObject myFluffSphere;
     //public VisualEffect fluffyVFX;
