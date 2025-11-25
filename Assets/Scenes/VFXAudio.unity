@@ -749,6 +749,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 354525670}
     - target: {fileID: 141214406303610082, guid: 3f6a2d302142fc54a8cf9e62c184a55c, type: 3}
+      propertyPath: sphereInstrument
+      value: 
+      objectReference: {fileID: 7473665696012121991}
+    - target: {fileID: 141214406303610082, guid: 3f6a2d302142fc54a8cf9e62c184a55c, type: 3}
       propertyPath: passthroughHolder
       value: 
       objectReference: {fileID: 1571982018}
@@ -761,6 +765,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 354525670}
     - target: {fileID: 2632480009128498884, guid: 3f6a2d302142fc54a8cf9e62c184a55c, type: 3}
+      propertyPath: sphereInstrument
+      value: 
+      objectReference: {fileID: 1659714538}
+    - target: {fileID: 2632480009128498884, guid: 3f6a2d302142fc54a8cf9e62c184a55c, type: 3}
       propertyPath: passthroughHolder
       value: 
       objectReference: {fileID: 1571982018}
@@ -772,6 +780,10 @@ PrefabInstance:
       propertyPath: passthroughOG
       value: 
       objectReference: {fileID: 354525670}
+    - target: {fileID: 2763048714975948072, guid: 3f6a2d302142fc54a8cf9e62c184a55c, type: 3}
+      propertyPath: sphereInstrument
+      value: 
+      objectReference: {fileID: 7473665696012121991}
     - target: {fileID: 2763048714975948072, guid: 3f6a2d302142fc54a8cf9e62c184a55c, type: 3}
       propertyPath: passthroughHolder
       value: 
@@ -840,6 +852,10 @@ PrefabInstance:
       propertyPath: passthroughOG
       value: 
       objectReference: {fileID: 354525670}
+    - target: {fileID: 8230953233440060398, guid: 3f6a2d302142fc54a8cf9e62c184a55c, type: 3}
+      propertyPath: sphereInstrument
+      value: 
+      objectReference: {fileID: 7473665696012121990}
     - target: {fileID: 8230953233440060398, guid: 3f6a2d302142fc54a8cf9e62c184a55c, type: 3}
       propertyPath: passthroughHolder
       value: 
@@ -1028,7 +1044,7 @@ PrefabInstance:
     - target: {fileID: 8213764499447065888, guid: b18c82127540c194caf4f7679b532fa4, type: 3}
       propertyPath: _FmodParatemers
       value: 
-      objectReference: {fileID: 1659714538}
+      objectReference: {fileID: 7473665696012121992}
     - target: {fileID: 8213764499447065888, guid: b18c82127540c194caf4f7679b532fa4, type: 3}
       propertyPath: maxExpectedVelocity
       value: 2
@@ -1147,6 +1163,39 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4197aea7391489e4297293c7f747ab2b, type: 3}
+--- !u!114 &7473665696012121990 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7538005248258196878, guid: 4197aea7391489e4297293c7f747ab2b, type: 3}
+  m_PrefabInstance: {fileID: 7473665696012121989}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd72ea89a5a1e4b4997e7bb335ff02d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FMODPlaywithParameters
+--- !u!114 &7473665696012121991 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3032641017470147337, guid: 4197aea7391489e4297293c7f747ab2b, type: 3}
+  m_PrefabInstance: {fileID: 7473665696012121989}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd72ea89a5a1e4b4997e7bb335ff02d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FMODPlaywithParameters
+--- !u!114 &7473665696012121992 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6691184409794782112, guid: 4197aea7391489e4297293c7f747ab2b, type: 3}
+  m_PrefabInstance: {fileID: 7473665696012121989}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0c091e2a8ad5046848d8f71a3d11b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SoundEmitterSender
 --- !u!1001 &7577119451123396273
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1460,7 +1509,7 @@ PrefabInstance:
     - target: {fileID: 2065706476549874157, guid: 82ac3364da378be48af3814c23ec7e29, type: 3}
       propertyPath: _FmodParatemers
       value: 
-      objectReference: {fileID: 1659714538}
+      objectReference: {fileID: 7473665696012121992}
     - target: {fileID: 2065706476549874157, guid: 82ac3364da378be48af3814c23ec7e29, type: 3}
       propertyPath: maxExpectedVelocity
       value: 2

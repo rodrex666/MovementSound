@@ -33,9 +33,10 @@ public class FMODPlaywithParameters : MonoBehaviour
         if (_controlParameter)
         { soundInstance.setParameterByName(_parameterVolumeName, _valueVolumeFmod); }
     }
-    public void updateParameterFMOD(float value)
+    public void updateParameter(float value)
     {
         _valueVolumeFmod = value;
+        Debug.Log(gameObject.name + " - " + value);
     }
     public void updateParameterTypeFMOD(float value)
     {
