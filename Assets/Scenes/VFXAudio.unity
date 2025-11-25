@@ -20964,6 +20964,10 @@ PrefabInstance:
       propertyPath: myFluffSphere
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8722012985561664912, guid: 7943e33b095b85343be8d36a13775c9c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 0}
