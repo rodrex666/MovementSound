@@ -37,6 +37,9 @@ public class VinylFloating_Grabbable : MonoBehaviour
             {
                 VinylSnapToPlatter.currentSnappedVinyl = null;
 
+                // Notify the turntable that the vinyl was removed
+                VinylSnapToPlatter.NotifyVinylRemoved();
+
                 // Unparent from platter so it doesn't inherit rotation
                 if (originalParent != null)
                     transform.SetParent(originalParent, true);

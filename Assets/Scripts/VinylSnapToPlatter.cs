@@ -1,9 +1,15 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class VinylSnapToPlatter : MonoBehaviour
 {
     [Header("Snap Point")]
     public Transform snapPoint;
+
+    [Header("Tonearm Auto-Move")]
+    public Transform tonearmPivot;
+    public Transform tonearmRestPose;
+    public Transform tonearmPlayPose;
+    public float tonearmMoveSpeed = 2f;
 
     [Header("Settings")]
     public float snapSpeed = 10f;
@@ -26,7 +32,6 @@ public class VinylSnapToPlatter : MonoBehaviour
     private System.Collections.IEnumerator SnapRoutine(Transform vinylTransform, VinylFloating_Grabbable vinyl)
     {
         Transform originalParent = vinylTransform.parent;
-
         vinyl.originalParent = originalParent;
 
         Vector3 startPos = vinylTransform.position;
@@ -38,32 +43,68 @@ public class VinylSnapToPlatter : MonoBehaviour
         {
             t += Time.deltaTime * snapSpeed;
 
-            // Move toward snap point
             vinylTransform.position = Vector3.Lerp(startPos, snapPoint.position, t);
-
-            // Rotate upright
             vinylTransform.rotation = Quaternion.Lerp(startRot, snapPoint.rotation, t * snapRotationSpeed);
 
             yield return null;
         }
 
-        // Final placement
         vinylTransform.position = snapPoint.position;
         vinylTransform.rotation = snapPoint.rotation;
 
-        // Parent to turntable (optional)
         vinylTransform.SetParent(snapPoint.parent);
 
-        // Mark as snapped
         vinyl.isSnappedToPlatter = true;
 
         // Start platter spinning
         PlatterSpin platterSpin = snapPoint.parent.GetComponentInChildren<PlatterSpin>();
         if (platterSpin != null)
-        {
             platterSpin.isSpinning = true;
-        }
 
         currentSnappedVinyl = vinyl;
+
+        // ⭐ Move tonearm onto the record
+        if (tonearmPivot != null && tonearmPlayPose != null)
+            StartCoroutine(MoveTonearmRoutine(tonearmPivot, tonearmPlayPose));
+    }
+
+    // Handle vinyl removal
+    public static void NotifyVinylRemoved()
+    {
+        if (instance != null)
+        {
+            instance.StartCoroutine(instance.MoveTonearmRoutine(
+                instance.tonearmPivot,
+                instance.tonearmRestPose
+            ));
+        }
+
+        currentSnappedVinyl = null;
+    }
+
+    // Smooth automatic tonearm swing
+    private System.Collections.IEnumerator MoveTonearmRoutine(Transform pivot, Transform targetPose)
+    {
+        Quaternion startRot = pivot.localRotation;
+        Quaternion targetRot = targetPose.localRotation;
+
+        float t = 0f;
+
+        while (t < 1f)
+        {
+            t += Time.deltaTime * tonearmMoveSpeed;
+            pivot.localRotation = Quaternion.Slerp(startRot, targetRot, t);
+            yield return null;
+        }
+
+        pivot.localRotation = targetRot;
+    }
+
+    // Singleton instance so static remove call works
+    private static VinylSnapToPlatter instance;
+
+    private void Awake()
+    {
+        instance = this;
     }
 }
