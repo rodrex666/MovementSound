@@ -6,6 +6,11 @@ public class passthroughColour : MonoBehaviour
     public Gradient myColour;
     public OVRPassthroughLayer passComponent;
     public GameObject passthroughOG;
+    /// <summary>
+    /// If the player is on this section and he moves the hands, the assigned sphere should change the volume
+    /// </summary>
+    [SerializeField]
+    private FMODPlaywithParameters sphereInstrument;
 
     void Start()
     {
@@ -21,6 +26,7 @@ public class passthroughColour : MonoBehaviour
             passthroughOG.SetActive(false);
             passthroughHolder.SetActive(true);
             passComponent.colorMapEditorGradient = myColour;
+            sphereInstrument.volumeVelocityOn();
         }
     }
     private void OnTriggerExit(Collider other)
@@ -29,6 +35,7 @@ public class passthroughColour : MonoBehaviour
         {
             passthroughHolder.SetActive(false);
             passthroughOG.SetActive(true);
+            sphereInstrument.volumeVelocityOff();
         }
     }
 }
