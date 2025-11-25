@@ -1945,7 +1945,7 @@ MonoBehaviour:
       Data2: 1108141900
       Data3: -1359295345
       Data4: -758678955
-    Path: event:/Main_mix
+    Path: event:/Song_1/Main_mix
   Event: 
   EventPlayTrigger: 1
   EventStopTrigger: 2
@@ -4424,7 +4424,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VelocityEstimator
   maxExpectedVelocity: 10
+  minParamValue: 0
+  maxParamValue: 0
+  _FmodParatemers: {fileID: 0}
   estimatedNormalizedVelocity: 0
+  sphere1: {fileID: 0}
+  sphere2: {fileID: 0}
+  plasma1: {fileID: 0}
+  plasma2: {fileID: 0}
 --- !u!1 &714415934
 GameObject:
   m_ObjectHideFlags: 0
@@ -7027,7 +7034,7 @@ MonoBehaviour:
       Data2: 1290552345
       Data3: -426812510
       Data4: -1589912006
-    Path: event:/Drums
+    Path: event:/Song_1/Drums
   Event: 
   EventPlayTrigger: 1
   EventStopTrigger: 2
@@ -8724,7 +8731,7 @@ MonoBehaviour:
       Data2: 1317772606
       Data3: -1231584869
       Data4: -190765661
-    Path: event:/Vox
+    Path: event:/Song_1/Vox
   Event: 
   EventPlayTrigger: 1
   EventStopTrigger: 2

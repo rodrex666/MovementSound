@@ -451,6 +451,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::spherePositioning
   mySphere: {fileID: 420940339119308471}
+  myBlaster: {fileID: 0}
+  myFluffSphere: {fileID: 0}
 --- !u!1 &75965264
 GameObject:
   m_ObjectHideFlags: 0
@@ -6160,7 +6162,7 @@ MonoBehaviour:
       Data2: 1290552345
       Data3: -426812510
       Data4: -1589912006
-    Path: event:/Drums
+    Path: event:/Song_1/Drums
   Event: 
   EventPlayTrigger: 1
   EventStopTrigger: 2
@@ -9003,6 +9005,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   mySphere: {fileID: 6057183544568666803}
+  myBlaster: {fileID: 0}
+  myFluffSphere: {fileID: 0}
 --- !u!1 &1522117275
 GameObject:
   m_ObjectHideFlags: 0
@@ -50146,18 +50150,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::plasmaControl
   plasmaVFX: {fileID: 6361216424592446982}
-  aveVelNormalIntense: 0
-  aveVelNormalColour: 0
   sphereOther: {fileID: 6057183544568666803}
+  normalIntense: 0
   sphereDistance: 0
   myY: 0
+  estimatedNormalizedVelocity: 0
   previousPosition: {x: 0, y: 0, z: 0}
   myVelocity: 0
   maxExpectedVelocity: 10
   minParamValue: 0
   maxParamValue: 2
+  mySmoothVelocity: 0
   _FmodParatemers: {fileID: 0}
-  estimatedNormalizedVelocity: 0
 --- !u!4 &5031382706878953246
 Transform:
   m_ObjectHideFlags: 0
@@ -67765,18 +67769,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::plasmaControl
   plasmaVFX: {fileID: 817988018233883928}
-  aveVelNormalIntense: 0
-  aveVelNormalColour: 0
   sphereOther: {fileID: 420940339119308471}
+  normalIntense: 0
   sphereDistance: 0
   myY: 0
+  estimatedNormalizedVelocity: 0
   previousPosition: {x: 0, y: 0, z: 0}
   myVelocity: 0
   maxExpectedVelocity: 10
   minParamValue: 0
   maxParamValue: 2
+  mySmoothVelocity: 0
   _FmodParatemers: {fileID: 0}
-  estimatedNormalizedVelocity: 0
 --- !u!4 &6616323573471177582
 Transform:
   m_ObjectHideFlags: 0
