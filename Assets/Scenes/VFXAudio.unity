@@ -1072,7 +1072,11 @@ PrefabInstance:
       objectReference: {fileID: 945064933}
     - target: {fileID: 3032641017470147337, guid: 4197aea7391489e4297293c7f747ab2b, type: 3}
       propertyPath: _valueTypeFmod
-      value: 3
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3032641017470147337, guid: 4197aea7391489e4297293c7f747ab2b, type: 3}
+      propertyPath: _valueVolumeFmod
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3216428050495440719, guid: 4197aea7391489e4297293c7f747ab2b, type: 3}
       propertyPath: radius
@@ -1140,7 +1144,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7157536181746561632, guid: 4197aea7391489e4297293c7f747ab2b, type: 3}
       propertyPath: _valueTypeFmod
-      value: 3
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7157536181746561632, guid: 4197aea7391489e4297293c7f747ab2b, type: 3}
+      propertyPath: _valueVolumeFmod
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7341355066805595686, guid: 4197aea7391489e4297293c7f747ab2b, type: 3}
       propertyPath: mainCamera
@@ -1148,7 +1156,11 @@ PrefabInstance:
       objectReference: {fileID: 945064933}
     - target: {fileID: 7538005248258196878, guid: 4197aea7391489e4297293c7f747ab2b, type: 3}
       propertyPath: _valueTypeFmod
-      value: 3
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7538005248258196878, guid: 4197aea7391489e4297293c7f747ab2b, type: 3}
+      propertyPath: _valueVolumeFmod
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8684260000126250783, guid: 4197aea7391489e4297293c7f747ab2b, type: 3}
       propertyPath: m_Enabled
@@ -1156,7 +1168,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9190744640698331967, guid: 4197aea7391489e4297293c7f747ab2b, type: 3}
       propertyPath: _valueTypeFmod
-      value: 3
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9190744640698331967, guid: 4197aea7391489e4297293c7f747ab2b, type: 3}
+      propertyPath: _valueVolumeFmod
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

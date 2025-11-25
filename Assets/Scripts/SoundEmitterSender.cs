@@ -26,4 +26,32 @@ public class SoundEmitterSender : MonoBehaviour
             soundEmitter.GetComponent<FMODPlaywithParameters>().updateParameterTypeFMOD(value);
         }
     }
+    public void playSongs()
+    {
+        foreach (GameObject soundEmitter in _soundEmitters)
+        {
+            soundEmitter.GetComponent<FMODPlaywithParameters>().startSong();
+        }
+    }
+    public void stopSongs() {
+        foreach (GameObject soundEmitter in _soundEmitters)
+        {
+            soundEmitter.GetComponent<FMODPlaywithParameters>().stopsSong();
+        }
+    }
+    public void pauseSongs()
+    {
+        foreach (GameObject soundEmitter in _soundEmitters)
+        {
+            soundEmitter.GetComponent<FMODPlaywithParameters>().pauseSong();
+        }
+    }
+    public void continueSongs()
+    {
+        foreach (GameObject soundEmitter in _soundEmitters)
+        {
+            soundEmitter.GetComponent<FMODPlaywithParameters>().continueSong();
+        }
+    }
+
 }
