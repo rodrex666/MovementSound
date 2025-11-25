@@ -13,9 +13,13 @@ extern void AutoHidePopup_Hide_mE31E91F7E6100470AF8D9DCF0885EB952AB0A651 (void);
 extern void AutoHidePopup__ctor_m450B13648A715472AFEE09AF3280F30896E35ADC (void);
 extern void FMODPlaywithParameters_Start_mD9334FC92FD8548E146263B26A3D7866CABACE2E (void);
 extern void FMODPlaywithParameters_Update_m73FAF395CFE27B551DC584249898E46E8D539F9D (void);
-extern void FMODPlaywithParameters_updateParameterFMOD_m72AD985DD99338FCEBEFB96FF2274F6DE469C3C1 (void);
+extern void FMODPlaywithParameters_updateParameter_m26FF28D1DA7721662513E1FDF5D2F4F1946BACEE (void);
 extern void FMODPlaywithParameters_updateParameterTypeFMOD_mF835F2814FC6E3B4C858CB392F35902F740732D0 (void);
 extern void FMODPlaywithParameters_OnDestroy_mFC761FC5564126E7C7575316A6EBBC66FD088663 (void);
+extern void FMODPlaywithParameters_volumeVelocityOn_m97FE408A5E8047990C5B969B32DE01C0951F8168 (void);
+extern void FMODPlaywithParameters_volumeVelocityOff_mE5701923E142AC7C3F00AE844B051676697A6DE8 (void);
+extern void FMODPlaywithParameters_startSong_m9A2F41B68B92A04108D424F3CFA77B1455CA6504 (void);
+extern void FMODPlaywithParameters_stopSong_m6FF190E45C73FDF9A867D04BAB5EE82B5D9150C3 (void);
 extern void FMODPlaywithParameters__ctor_mDDA32DD9F91D57DDE62AD98BB4CEB9C6D3BA0FCF (void);
 extern void footBlastCollision_Start_m080949413479B05143470526359176FE00AE6E4F (void);
 extern void footBlastCollision_OnTriggerEnter_m5E808ED0763992DFB96366F331CC25A2AB7D776C (void);
@@ -55,6 +59,19 @@ extern void RestartMenuGestureController_LoadMainMenu_m540E2F5D10B57FDE5A7739BBD
 extern void RestartMenuGestureController_QuitApp_m9C1C37A113349DDCAFFFA166D862EB11A550DD1C (void);
 extern void RestartMenuGestureController_IsPeaceSign_m90DC6F01D9DA03FCA3D713E2BFFAEF6E1D7AA0EF (void);
 extern void RestartMenuGestureController__ctor_mDBA25E30B9870782FAB18E8AA24DD7D03EEDEDD9 (void);
+extern void rockOff_Start_m08406F2C47E225574DEBD8D02E9D12013D3758E5 (void);
+extern void rockOff_Timer_m58B7D35502E309E945A24ADFE76B8E1AEA3D41D9 (void);
+extern void rockOff__ctor_m5ADAFCC22CD203500D579A1ECB25AF0E6FA7CDEC (void);
+extern void U3CTimerU3Ed__2__ctor_m5E539759F729A6A310E15AF9FCF97F50D9668583 (void);
+extern void U3CTimerU3Ed__2_System_IDisposable_Dispose_m6B6B71C6D50BAA624AF797677F1585B71F70EAF5 (void);
+extern void U3CTimerU3Ed__2_MoveNext_m4F8A6DCEB1C9BB8BD53536057B03F4751EB74E7B (void);
+extern void U3CTimerU3Ed__2_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mF11BA2D9ED7D8BF896BFC68675C9F03677086391 (void);
+extern void U3CTimerU3Ed__2_System_Collections_IEnumerator_Reset_m694C51E44CAF53D7BA1C271FE4F46FFD6500E99E (void);
+extern void U3CTimerU3Ed__2_System_Collections_IEnumerator_get_Current_m57455C928C67F42874DA37C7F4003F2E900968FF (void);
+extern void SoundEmitterSender_updateParameterFMOD_mB6CF5C9A1546926BFEE7B69B7C42115208739EE4 (void);
+extern void SoundEmitterSender_changeValuesParameterEmmitters_m5DCA160B24FB215F1490D029CFF1905557C4CD15 (void);
+extern void SoundEmitterSender_changeSong_mF100DAAC2A1F3A35DA02EDE7A4116AE1BBDA01A2 (void);
+extern void SoundEmitterSender__ctor_mC1D288FF0CD33D04D1AD53C23280475C32665897 (void);
 extern void spherePositioning_Start_mD0039E833A1F9E7D414620EB90C8BF6BF6FA34A5 (void);
 extern void spherePositioning__ctor_m566F80382689076AC2DECB1C2908C6917070943C (void);
 extern void TurntableGestureToggle_Start_m3884D552F6452E6780010D302869B6F676A46D98 (void);
@@ -94,7 +111,7 @@ extern void Readme__ctor_m69C325C4C171DCB0312B646A9034AA91EA8C39C6 (void);
 extern void Section__ctor_m5F732533E4DFC0167D965E5F5DB332E46055399B (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[87] = 
+static Il2CppMethodPointer s_methodPointers[104] = 
 {
 	AutoHidePopup_Update_mD5671236CE1613CCE7ACAA3DDB78C500C1F3C7FD,
 	AutoHidePopup_Show_m3238B7377B3B25584EA9FE3631E4CC6649B39133,
@@ -102,9 +119,13 @@ static Il2CppMethodPointer s_methodPointers[87] =
 	AutoHidePopup__ctor_m450B13648A715472AFEE09AF3280F30896E35ADC,
 	FMODPlaywithParameters_Start_mD9334FC92FD8548E146263B26A3D7866CABACE2E,
 	FMODPlaywithParameters_Update_m73FAF395CFE27B551DC584249898E46E8D539F9D,
-	FMODPlaywithParameters_updateParameterFMOD_m72AD985DD99338FCEBEFB96FF2274F6DE469C3C1,
+	FMODPlaywithParameters_updateParameter_m26FF28D1DA7721662513E1FDF5D2F4F1946BACEE,
 	FMODPlaywithParameters_updateParameterTypeFMOD_mF835F2814FC6E3B4C858CB392F35902F740732D0,
 	FMODPlaywithParameters_OnDestroy_mFC761FC5564126E7C7575316A6EBBC66FD088663,
+	FMODPlaywithParameters_volumeVelocityOn_m97FE408A5E8047990C5B969B32DE01C0951F8168,
+	FMODPlaywithParameters_volumeVelocityOff_mE5701923E142AC7C3F00AE844B051676697A6DE8,
+	FMODPlaywithParameters_startSong_m9A2F41B68B92A04108D424F3CFA77B1455CA6504,
+	FMODPlaywithParameters_stopSong_m6FF190E45C73FDF9A867D04BAB5EE82B5D9150C3,
 	FMODPlaywithParameters__ctor_mDDA32DD9F91D57DDE62AD98BB4CEB9C6D3BA0FCF,
 	footBlastCollision_Start_m080949413479B05143470526359176FE00AE6E4F,
 	footBlastCollision_OnTriggerEnter_m5E808ED0763992DFB96366F331CC25A2AB7D776C,
@@ -144,6 +165,19 @@ static Il2CppMethodPointer s_methodPointers[87] =
 	RestartMenuGestureController_QuitApp_m9C1C37A113349DDCAFFFA166D862EB11A550DD1C,
 	RestartMenuGestureController_IsPeaceSign_m90DC6F01D9DA03FCA3D713E2BFFAEF6E1D7AA0EF,
 	RestartMenuGestureController__ctor_mDBA25E30B9870782FAB18E8AA24DD7D03EEDEDD9,
+	rockOff_Start_m08406F2C47E225574DEBD8D02E9D12013D3758E5,
+	rockOff_Timer_m58B7D35502E309E945A24ADFE76B8E1AEA3D41D9,
+	rockOff__ctor_m5ADAFCC22CD203500D579A1ECB25AF0E6FA7CDEC,
+	U3CTimerU3Ed__2__ctor_m5E539759F729A6A310E15AF9FCF97F50D9668583,
+	U3CTimerU3Ed__2_System_IDisposable_Dispose_m6B6B71C6D50BAA624AF797677F1585B71F70EAF5,
+	U3CTimerU3Ed__2_MoveNext_m4F8A6DCEB1C9BB8BD53536057B03F4751EB74E7B,
+	U3CTimerU3Ed__2_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mF11BA2D9ED7D8BF896BFC68675C9F03677086391,
+	U3CTimerU3Ed__2_System_Collections_IEnumerator_Reset_m694C51E44CAF53D7BA1C271FE4F46FFD6500E99E,
+	U3CTimerU3Ed__2_System_Collections_IEnumerator_get_Current_m57455C928C67F42874DA37C7F4003F2E900968FF,
+	SoundEmitterSender_updateParameterFMOD_mB6CF5C9A1546926BFEE7B69B7C42115208739EE4,
+	SoundEmitterSender_changeValuesParameterEmmitters_m5DCA160B24FB215F1490D029CFF1905557C4CD15,
+	SoundEmitterSender_changeSong_mF100DAAC2A1F3A35DA02EDE7A4116AE1BBDA01A2,
+	SoundEmitterSender__ctor_mC1D288FF0CD33D04D1AD53C23280475C32665897,
 	spherePositioning_Start_mD0039E833A1F9E7D414620EB90C8BF6BF6FA34A5,
 	spherePositioning__ctor_m566F80382689076AC2DECB1C2908C6917070943C,
 	TurntableGestureToggle_Start_m3884D552F6452E6780010D302869B6F676A46D98,
@@ -184,7 +218,7 @@ static Il2CppMethodPointer s_methodPointers[87] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[87] = 
+static const int32_t s_InvokerIndices[104] = 
 {
 	17916,
 	17916,
@@ -194,6 +228,10 @@ static const int32_t s_InvokerIndices[87] =
 	17916,
 	13790,
 	13790,
+	17916,
+	17916,
+	17916,
+	17916,
 	17916,
 	17916,
 	17916,
@@ -233,6 +271,19 @@ static const int32_t s_InvokerIndices[87] =
 	17916,
 	17916,
 	9840,
+	17916,
+	17916,
+	17704,
+	17916,
+	13614,
+	17916,
+	17476,
+	17704,
+	17916,
+	17704,
+	13790,
+	17916,
+	13790,
 	17916,
 	17916,
 	17916,
@@ -278,7 +329,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	87,
+	104,
 	s_methodPointers,
 	0,
 	NULL,

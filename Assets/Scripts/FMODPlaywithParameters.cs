@@ -7,7 +7,7 @@ public class FMODPlaywithParameters : MonoBehaviour
     
     public FMODUnity.EventReference instrumentEvent;
     [SerializeField]
-    private bool _controlParameter = true;
+    public bool _controlParameter = true;
     [SerializeField]
     private string _parameterVolumeName;
     [SerializeField]
