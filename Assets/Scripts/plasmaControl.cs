@@ -30,9 +30,13 @@ public class plasmaControl : MonoBehaviour
     [SerializeField]
     private FMODPlaywithParameters _FmodParatemers;
 
+    public GameObject myFluffSphere;
+    public VisualEffect fluffyVFX;
+
     void Start()
     {
         plasmaVFX = GetComponent<VisualEffect>();
+        fluffyVFX = myFluffSphere.GetComponent<VisualEffect>();
         previousPosition = transform.position;
         mySmoothVelocity = 0f;
     }
@@ -74,5 +78,9 @@ public class plasmaControl : MonoBehaviour
         plasmaVFX.SetFloat("intensity", normalIntense);
         plasmaVFX.SetFloat("attractionStrength", sphereDistanceNorm);
         plasmaVFX.SetFloat("rate", myY);
+
+        fluffyVFX.SetFloat("sphereDistance", sphereDistance);
+        fluffyVFX.SetFloat("rate", myY);
+        fluffyVFX.SetFloat("colourTime", estimatedNormalizedVelocity);
     }
 }
