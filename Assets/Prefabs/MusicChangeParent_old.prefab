@@ -765,7 +765,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8153996054238962209}
   m_Layer: 0
-  m_Name: MusicChangeParent
+  m_Name: MusicChangeParent_old
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
