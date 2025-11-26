@@ -132,6 +132,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 510437683149239814, guid: 9622e7a489804d64cb220a2b70d9788a, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 852076088603088831, guid: 9622e7a489804d64cb220a2b70d9788a, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 902214270879109433, guid: 9622e7a489804d64cb220a2b70d9788a, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1085163088793389580, guid: 9622e7a489804d64cb220a2b70d9788a, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1106735898098495444, guid: 9622e7a489804d64cb220a2b70d9788a, type: 3}
       propertyPath: playerCamera
       value: 
@@ -144,6 +160,10 @@ PrefabInstance:
       propertyPath: rightHand
       value: 
       objectReference: {fileID: 8689357005016400521}
+    - target: {fileID: 2405192854963095071, guid: 9622e7a489804d64cb220a2b70d9788a, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2436342884224878124, guid: 9622e7a489804d64cb220a2b70d9788a, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -160,9 +180,21 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -186.25
       objectReference: {fileID: 0}
+    - target: {fileID: 3772096349602649165, guid: 9622e7a489804d64cb220a2b70d9788a, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4006292984080316886, guid: 9622e7a489804d64cb220a2b70d9788a, type: 3}
       propertyPath: m_Name
       value: --UI--
+      objectReference: {fileID: 0}
+    - target: {fileID: 4354627253486271653, guid: 9622e7a489804d64cb220a2b70d9788a, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4407140968103218761, guid: 9622e7a489804d64cb220a2b70d9788a, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4407140968103218761, guid: 9622e7a489804d64cb220a2b70d9788a, type: 3}
       propertyPath: m_IsActive
@@ -240,6 +272,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -401.25
       objectReference: {fileID: 0}
+    - target: {fileID: 6653277268173419484, guid: 9622e7a489804d64cb220a2b70d9788a, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6790409612667445304, guid: 9622e7a489804d64cb220a2b70d9788a, type: 3}
       propertyPath: rockOn
       value: 
@@ -268,6 +304,10 @@ PrefabInstance:
       propertyPath: gestureCooldown
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8160000812371839541, guid: 9622e7a489804d64cb220a2b70d9788a, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8162509124388622058, guid: 9622e7a489804d64cb220a2b70d9788a, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -284,10 +324,17 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -293.75
       objectReference: {fileID: 0}
+    - target: {fileID: 8358707256564120035, guid: 9622e7a489804d64cb220a2b70d9788a, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4407140968103218761, guid: 9622e7a489804d64cb220a2b70d9788a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 941904022}
   m_SourcePrefab: {fileID: 100100000, guid: 9622e7a489804d64cb220a2b70d9788a, type: 3}
 --- !u!1001 &105173295
 PrefabInstance:
@@ -635,7 +682,7 @@ GameObject:
   - component: {fileID: 817925104}
   - component: {fileID: 817925106}
   - component: {fileID: 817925105}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -714,7 +761,8 @@ GameObject:
   - component: {fileID: 830751804}
   - component: {fileID: 830751809}
   - component: {fileID: 830751810}
-  m_Layer: 5
+  - component: {fileID: 830751811}
+  m_Layer: 3
   m_Name: RockOn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -853,6 +901,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::rockOff
   timeBeforeDestroy: 8
+--- !u!114 &830751811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 830751802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee10491ef6d5d1d49a270cf6b09bdc19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas
+  _enableMipmapping: 0
+  _dynamicResolution: 1
+  _redrawResolutionThreshold: 2147483647
+  rectTransform: {fileID: 830751803}
+  maxTextureSize: 2048
+  manualRedraw: 0
+  renderInterval: 1
+  renderIntervalFrameOffset: 0
+  expensive: 0
+  layer: 5
+  opacity: 2
+  shape: 0
+  curveRadius: 1
+  overlapMask: 0
+  overlayType: 1
+  _overlayEnabled: 1
 --- !u!1 &838658214 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8305838377239636947, guid: a85b4e10e1bd6b545b6e5d78ee50ff85, type: 3}
@@ -875,6 +951,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b34020acb09cd94e9c4e1324517f00d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+--- !u!1 &941904019 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4407140968103218761, guid: 9622e7a489804d64cb220a2b70d9788a, type: 3}
+  m_PrefabInstance: {fileID: 56531146}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &941904020 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4279965798334807730, guid: 9622e7a489804d64cb220a2b70d9788a, type: 3}
+  m_PrefabInstance: {fileID: 56531146}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &941904022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941904019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee10491ef6d5d1d49a270cf6b09bdc19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas
+  _enableMipmapping: 0
+  _dynamicResolution: 1
+  _redrawResolutionThreshold: 2147483647
+  rectTransform: {fileID: 941904020}
+  maxTextureSize: 2048
+  manualRedraw: 0
+  renderInterval: 1
+  renderIntervalFrameOffset: 0
+  expensive: 0
+  layer: 5
+  opacity: 2
+  shape: 0
+  curveRadius: 1
+  overlapMask: 0
+  overlayType: 1
+  _overlayEnabled: 1
 --- !u!20 &945064933 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 2585539720759146975, guid: 7943e33b095b85343be8d36a13775c9c, type: 3}
@@ -954,7 +1068,7 @@ GameObject:
   - component: {fileID: 1782428782}
   - component: {fileID: 1782428784}
   - component: {fileID: 1782428783}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1220,7 +1334,7 @@ PrefabInstance:
     - target: {fileID: 141214406303610082, guid: 3f6a2d302142fc54a8cf9e62c184a55c, type: 3}
       propertyPath: sphereInstrument
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 215113244}
     - target: {fileID: 141214406303610082, guid: 3f6a2d302142fc54a8cf9e62c184a55c, type: 3}
       propertyPath: passthroughHolder
       value: 
@@ -1252,7 +1366,7 @@ PrefabInstance:
     - target: {fileID: 2763048714975948072, guid: 3f6a2d302142fc54a8cf9e62c184a55c, type: 3}
       propertyPath: sphereInstrument
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1054233792}
     - target: {fileID: 2763048714975948072, guid: 3f6a2d302142fc54a8cf9e62c184a55c, type: 3}
       propertyPath: passthroughHolder
       value: 
@@ -1388,7 +1502,7 @@ PrefabInstance:
     - target: {fileID: 8230953233440060398, guid: 3f6a2d302142fc54a8cf9e62c184a55c, type: 3}
       propertyPath: sphereInstrument
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1913024469}
     - target: {fileID: 8230953233440060398, guid: 3f6a2d302142fc54a8cf9e62c184a55c, type: 3}
       propertyPath: passthroughHolder
       value: 
