@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using FMODUnityResonance;
+using UnityEngine;
 
 public class VinylSnapToPlatter : MonoBehaviour
 {
@@ -22,24 +23,15 @@ public class VinylSnapToPlatter : MonoBehaviour
     public GameObject vinyl2;
     public GameObject vinyl3;
 
-    public FMODPlaywithParameters fmodVoice;
-    public FMODPlaywithParameters fmodBass;
-    public FMODPlaywithParameters fmodDrums;
-    public FMODPlaywithParameters fmodGuitar;
-    public GameObject voice;
-    public GameObject bass;
-    public GameObject drums;
-    public GameObject guitar;
+    public SoundEmitterSender fmodAll;
+    public GameObject allHolder;
 
     public string vinylName;
     public float fmodVinylNumber;
 
     void Start()
     {
-        fmodVoice = voice.GetComponent<FMODPlaywithParameters>();
-        fmodBass = bass.GetComponent<FMODPlaywithParameters>();
-        fmodDrums = drums.GetComponent<FMODPlaywithParameters>();
-        fmodGuitar = guitar.GetComponent<FMODPlaywithParameters>();
+        fmodAll = allHolder.GetComponent<SoundEmitterSender>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -97,18 +89,9 @@ public class VinylSnapToPlatter : MonoBehaviour
             fmodVinylNumber = 3;
         }
 
-        //set fmod to play that vinyl
-        fmodVoice._valueTypeFmod = fmodVinylNumber;
-        fmodBass._valueTypeFmod = fmodVinylNumber;
-        fmodDrums._valueTypeFmod = fmodVinylNumber;
-        fmodGuitar._valueTypeFmod = fmodVinylNumber;
-
-        //call the function to update fmod
-        fmodVoice.updateParameterTypeFMOD(fmodVinylNumber);
-        fmodBass.updateParameterTypeFMOD(fmodVinylNumber);
-        fmodDrums.updateParameterTypeFMOD(fmodVinylNumber);
-        fmodGuitar.updateParameterTypeFMOD(fmodVinylNumber);
-
+        //change vinyl song and play
+        fmodAll.changeSong(fmodVinylNumber);
+        //fmodAll.continueSongs();
 
         // Start platter spinning
         PlatterSpin platterSpin = snapPoint.parent.GetComponentInChildren<PlatterSpin>();
@@ -139,6 +122,9 @@ public class VinylSnapToPlatter : MonoBehaviour
     // Smooth automatic tonearm swing
     private System.Collections.IEnumerator MoveTonearmRoutine(Transform pivot, Transform targetPose)
     {
+        //pauseTheMusic;
+        //fmodAll.pauseSongs();
+
         Quaternion startRot = pivot.localRotation;
         Quaternion targetRot = targetPose.localRotation;
 

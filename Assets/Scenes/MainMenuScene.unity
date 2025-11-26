@@ -2609,7 +2609,7 @@ MonoBehaviour:
   playerCamera: {fileID: 6927388412115791209}
   distanceFromPlayer: 1.1
   heightOffset: -0.1
-  followLag: 0.18
+  followLag: 0.08
   easeCurve:
     serializedVersion: 2
     m_Curve:
