@@ -166,7 +166,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteral54754078F81BF468EFA43E14CE376B985006DEAC
 IL2CPP_EXTERN_C String_t* _stringLiteral5FA9723B2F4C3783BC3A1699D76E829D3B1C644E;
 IL2CPP_EXTERN_C String_t* _stringLiteral62CB1D81E2B442D69B283BBA5258B36E58071A2D;
 IL2CPP_EXTERN_C String_t* _stringLiteral645C658AB37B47B32C7D2D045229CE91F2BC3BEF;
-IL2CPP_EXTERN_C String_t* _stringLiteral8680125CDFB993B21E69F3BF9FAB42EC0000435F;
 IL2CPP_EXTERN_C String_t* _stringLiteral884820433266E121D9AF505AF4DE98B3BA081DC8;
 IL2CPP_EXTERN_C String_t* _stringLiteral8B39DD9FFA8AC3EDD72D3F435A409D265723991A;
 IL2CPP_EXTERN_C String_t* _stringLiteral8F31E52AC333A7138514A392FCD282D6DB411F1C;
@@ -908,9 +907,9 @@ struct U3CMoveTonearmRoutineU3Ed__19_t5813C3C9E3C947C8F7363A0F51588BD8516C50DB  
 {
 	int32_t ___U3CU3E1__state;
 	RuntimeObject* ___U3CU3E2__current;
-	VinylSnapToPlatter_t07171A65FF860BAF6D32FF3BB613E3F834C16213* ___U3CU3E4__this;
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___pivot;
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___targetPose;
+	VinylSnapToPlatter_t07171A65FF860BAF6D32FF3BB613E3F834C16213* ___U3CU3E4__this;
 	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___U3CstartRotU3E5__2;
 	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___U3CtargetRotU3E5__3;
 	float ___U3CtU3E5__4;
@@ -2209,13 +2208,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* VinylSnapToPlatter_SnapRoutine
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CSnapRoutineU3Ed__17__ctor_mAAF4928B4E9492D316BA7EE133DB272F63DCF452 (U3CSnapRoutineU3Ed__17_t2EF2C30E6C5E7677D1D9A249A0712D8808CFCE23* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* VinylSnapToPlatter_MoveTonearmRoutine_m8E3CE37A2988450C1A9FFB2DEEF5A3DF36758AA4 (VinylSnapToPlatter_t07171A65FF860BAF6D32FF3BB613E3F834C16213* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_pivot, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___1_targetPose, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CMoveTonearmRoutineU3Ed__19__ctor_m44BD35BB5B35131B2BF51F951674B7A73EC3671D (U3CMoveTonearmRoutineU3Ed__19_t5813C3C9E3C947C8F7363A0F51588BD8516C50DB* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundEmitterSender_continueSongs_mFFAF6E3ABFB43873FC896F88DA0474C113C74576 (SoundEmitterSender_tB4FE86175D540D751CBD5112EB684F69237AE534* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Transform_get_localRotation_mD53D37611A5DAE93EC6C7BBCAC337408C5CACA77 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_localRotation_mAB4A011D134BA58AB780BECC0025CA65F16185FA (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_Lerp_m259606226726C2F46E079A5A688B9E24FF7E9A0D (Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___0_a, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___1_b, float ___2_t, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_SetParent_m6677538B60246D958DD91F931C50F969CCBB5250 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_p, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundEmitterSender_changeSong_mF100DAAC2A1F3A35DA02EDE7A4116AE1BBDA01A2 (SoundEmitterSender_tB4FE86175D540D751CBD5112EB684F69237AE534* __this, float ___0_value, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundEmitterSender_pauseSongs_m7F3FA1A99E380B8016CBD838CBDB358A2EE33837 (SoundEmitterSender_tB4FE86175D540D751CBD5112EB684F69237AE534* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScriptableObject__ctor_mD037FDB0B487295EA47F79A4DB1BF1846C9087FF (ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B (RuntimeArray* ___0_array, RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 ___1_fldHandle, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Magnitude_m21652D951393A3D7CE92CE40049A0E7F76544D1B_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_vector, const RuntimeMethod* method) ;
@@ -5989,13 +5986,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CMoveTonearmRoutineU3Ed__19_System_IDi
 // Method Definition Index: 91179
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CMoveTonearmRoutineU3Ed__19_MoveNext_mA7E43C25380BA665AAED84AB4568C5CCB8E9B18E (U3CMoveTonearmRoutineU3Ed__19_t5813C3C9E3C947C8F7363A0F51588BD8516C50DB* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8680125CDFB993B21E69F3BF9FAB42EC0000435F);
-		s_Il2CppMethodInitialized = true;
-	}
 	int32_t V_0 = 0;
 	VinylSnapToPlatter_t07171A65FF860BAF6D32FF3BB613E3F834C16213* V_1 = NULL;
 	{
@@ -6013,7 +6003,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CMoveTonearmRoutineU3Ed__19_MoveNext_m
 		int32_t L_3 = V_0;
 		if ((((int32_t)L_3) == ((int32_t)1)))
 		{
-			goto IL_00b0;
+			goto IL_009b;
 		}
 	}
 	{
@@ -6023,51 +6013,42 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CMoveTonearmRoutineU3Ed__19_MoveNext_m
 IL_001a:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VinylSnapToPlatter.cs:127>
-		VinylSnapToPlatter_t07171A65FF860BAF6D32FF3BB613E3F834C16213* L_4 = V_1;
-		NullCheck(L_4);
-		SoundEmitterSender_tB4FE86175D540D751CBD5112EB684F69237AE534* L_5 = L_4->___fmodAll;
-		NullCheck(L_5);
-		SoundEmitterSender_continueSongs_mFFAF6E3ABFB43873FC896F88DA0474C113C74576(L_5, NULL);
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VinylSnapToPlatter.cs:129>
-		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral8680125CDFB993B21E69F3BF9FAB42EC0000435F, NULL);
 		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VinylSnapToPlatter.cs:130>
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6 = __this->___pivot;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4 = __this->___pivot;
+		NullCheck(L_4);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_5;
+		L_5 = Transform_get_localRotation_mD53D37611A5DAE93EC6C7BBCAC337408C5CACA77(L_4, NULL);
+		__this->___U3CstartRotU3E5__2 = L_5;
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VinylSnapToPlatter.cs:131>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6 = __this->___targetPose;
 		NullCheck(L_6);
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_7;
 		L_7 = Transform_get_localRotation_mD53D37611A5DAE93EC6C7BBCAC337408C5CACA77(L_6, NULL);
-		__this->___U3CstartRotU3E5__2 = L_7;
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VinylSnapToPlatter.cs:131>
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_8 = __this->___targetPose;
-		NullCheck(L_8);
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_9;
-		L_9 = Transform_get_localRotation_mD53D37611A5DAE93EC6C7BBCAC337408C5CACA77(L_8, NULL);
-		__this->___U3CtargetRotU3E5__3 = L_9;
+		__this->___U3CtargetRotU3E5__3 = L_7;
 		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VinylSnapToPlatter.cs:133>
 		__this->___U3CtU3E5__4 = (0.0f);
-		goto IL_00b7;
+		goto IL_00a2;
 	}
 
-IL_0065:
+IL_0050:
 	{
 		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VinylSnapToPlatter.cs:137>
-		float L_10 = __this->___U3CtU3E5__4;
-		float L_11;
-		L_11 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
-		VinylSnapToPlatter_t07171A65FF860BAF6D32FF3BB613E3F834C16213* L_12 = V_1;
-		NullCheck(L_12);
-		float L_13 = L_12->___tonearmMoveSpeed;
-		__this->___U3CtU3E5__4 = ((float)il2cpp_codegen_add(L_10, ((float)il2cpp_codegen_multiply(L_11, L_13))));
+		float L_8 = __this->___U3CtU3E5__4;
+		float L_9;
+		L_9 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		VinylSnapToPlatter_t07171A65FF860BAF6D32FF3BB613E3F834C16213* L_10 = V_1;
+		NullCheck(L_10);
+		float L_11 = L_10->___tonearmMoveSpeed;
+		__this->___U3CtU3E5__4 = ((float)il2cpp_codegen_add(L_8, ((float)il2cpp_codegen_multiply(L_9, L_11))));
 		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VinylSnapToPlatter.cs:138>
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_14 = __this->___pivot;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_15 = __this->___U3CstartRotU3E5__2;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_16 = __this->___U3CtargetRotU3E5__3;
-		float L_17 = __this->___U3CtU3E5__4;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_18;
-		L_18 = Quaternion_Slerp_m0A9969F500E7716EA4F6BC4E7D5464372D8E9E15(L_15, L_16, L_17, NULL);
-		NullCheck(L_14);
-		Transform_set_localRotation_mAB4A011D134BA58AB780BECC0025CA65F16185FA(L_14, L_18, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_12 = __this->___pivot;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_13 = __this->___U3CstartRotU3E5__2;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_14 = __this->___U3CtargetRotU3E5__3;
+		float L_15 = __this->___U3CtU3E5__4;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_16;
+		L_16 = Quaternion_Slerp_m0A9969F500E7716EA4F6BC4E7D5464372D8E9E15(L_13, L_14, L_15, NULL);
+		NullCheck(L_12);
+		Transform_set_localRotation_mAB4A011D134BA58AB780BECC0025CA65F16185FA(L_12, L_16, NULL);
 		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VinylSnapToPlatter.cs:139>
 		__this->___U3CU3E2__current = NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)NULL);
@@ -6075,26 +6056,26 @@ IL_0065:
 		return (bool)1;
 	}
 
-IL_00b0:
+IL_009b:
 	{
 		__this->___U3CU3E1__state = (-1);
 	}
 
-IL_00b7:
+IL_00a2:
 	{
 		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VinylSnapToPlatter.cs:135>
-		float L_19 = __this->___U3CtU3E5__4;
-		if ((((float)L_19) < ((float)(1.0f))))
+		float L_17 = __this->___U3CtU3E5__4;
+		if ((((float)L_17) < ((float)(1.0f))))
 		{
-			goto IL_0065;
+			goto IL_0050;
 		}
 	}
 	{
 		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VinylSnapToPlatter.cs:142>
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_20 = __this->___pivot;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_21 = __this->___U3CtargetRotU3E5__3;
-		NullCheck(L_20);
-		Transform_set_localRotation_mAB4A011D134BA58AB780BECC0025CA65F16185FA(L_20, L_21, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_18 = __this->___pivot;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_19 = __this->___U3CtargetRotU3E5__3;
+		NullCheck(L_18);
+		Transform_set_localRotation_mAB4A011D134BA58AB780BECC0025CA65F16185FA(L_18, L_19, NULL);
 		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VinylSnapToPlatter.cs:143>
 		return (bool)0;
 	}
@@ -6413,89 +6394,83 @@ IL_01cc:
 		float L_73 = L_72->___fmodVinylNumber;
 		NullCheck(L_71);
 		SoundEmitterSender_changeSong_mF100DAAC2A1F3A35DA02EDE7A4116AE1BBDA01A2(L_71, L_73, NULL);
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VinylSnapToPlatter.cs:94>
+		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VinylSnapToPlatter.cs:98>
 		VinylSnapToPlatter_t07171A65FF860BAF6D32FF3BB613E3F834C16213* L_74 = V_1;
 		NullCheck(L_74);
-		SoundEmitterSender_tB4FE86175D540D751CBD5112EB684F69237AE534* L_75 = L_74->___fmodAll;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_75 = L_74->___snapPoint;
 		NullCheck(L_75);
-		SoundEmitterSender_pauseSongs_m7F3FA1A99E380B8016CBD838CBDB358A2EE33837(L_75, NULL);
-		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VinylSnapToPlatter.cs:98>
-		VinylSnapToPlatter_t07171A65FF860BAF6D32FF3BB613E3F834C16213* L_76 = V_1;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_76;
+		L_76 = Transform_get_parent_m65354E28A4C94EC00EBCF03532F7B0718380791E(L_75, NULL);
 		NullCheck(L_76);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_77 = L_76->___snapPoint;
-		NullCheck(L_77);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_78;
-		L_78 = Transform_get_parent_m65354E28A4C94EC00EBCF03532F7B0718380791E(L_77, NULL);
-		NullCheck(L_78);
-		PlatterSpin_t3CDFCEE7AD946FC5162B41FA9407820CA11DD323* L_79;
-		L_79 = Component_GetComponentInChildren_TisPlatterSpin_t3CDFCEE7AD946FC5162B41FA9407820CA11DD323_m41A48C72C42AB160234F29A86A285F1AA040D0E2(L_78, Component_GetComponentInChildren_TisPlatterSpin_t3CDFCEE7AD946FC5162B41FA9407820CA11DD323_m41A48C72C42AB160234F29A86A285F1AA040D0E2_RuntimeMethod_var);
-		V_3 = L_79;
+		PlatterSpin_t3CDFCEE7AD946FC5162B41FA9407820CA11DD323* L_77;
+		L_77 = Component_GetComponentInChildren_TisPlatterSpin_t3CDFCEE7AD946FC5162B41FA9407820CA11DD323_m41A48C72C42AB160234F29A86A285F1AA040D0E2(L_76, Component_GetComponentInChildren_TisPlatterSpin_t3CDFCEE7AD946FC5162B41FA9407820CA11DD323_m41A48C72C42AB160234F29A86A285F1AA040D0E2_RuntimeMethod_var);
+		V_3 = L_77;
 		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VinylSnapToPlatter.cs:99>
-		PlatterSpin_t3CDFCEE7AD946FC5162B41FA9407820CA11DD323* L_80 = V_3;
+		PlatterSpin_t3CDFCEE7AD946FC5162B41FA9407820CA11DD323* L_78 = V_3;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_81;
-		L_81 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_80, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_81)
+		bool L_79;
+		L_79 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_78, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_79)
 		{
-			goto IL_0209;
+			goto IL_01fe;
 		}
 	}
 	{
 		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VinylSnapToPlatter.cs:100>
-		PlatterSpin_t3CDFCEE7AD946FC5162B41FA9407820CA11DD323* L_82 = V_3;
-		NullCheck(L_82);
-		L_82->___isSpinning = (bool)1;
+		PlatterSpin_t3CDFCEE7AD946FC5162B41FA9407820CA11DD323* L_80 = V_3;
+		NullCheck(L_80);
+		L_80->___isSpinning = (bool)1;
 	}
 
-IL_0209:
+IL_01fe:
 	{
 		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VinylSnapToPlatter.cs:102>
-		VinylFloating_Grabbable_t2DF774FCC266ABE37D8C2CDF017DB71D7B20579B* L_83 = __this->___vinyl;
-		((VinylSnapToPlatter_t07171A65FF860BAF6D32FF3BB613E3F834C16213_StaticFields*)il2cpp_codegen_static_fields_for(VinylSnapToPlatter_t07171A65FF860BAF6D32FF3BB613E3F834C16213_il2cpp_TypeInfo_var))->___currentSnappedVinyl = L_83;
-		Il2CppCodeGenWriteBarrier((void**)(&((VinylSnapToPlatter_t07171A65FF860BAF6D32FF3BB613E3F834C16213_StaticFields*)il2cpp_codegen_static_fields_for(VinylSnapToPlatter_t07171A65FF860BAF6D32FF3BB613E3F834C16213_il2cpp_TypeInfo_var))->___currentSnappedVinyl), (void*)L_83);
+		VinylFloating_Grabbable_t2DF774FCC266ABE37D8C2CDF017DB71D7B20579B* L_81 = __this->___vinyl;
+		((VinylSnapToPlatter_t07171A65FF860BAF6D32FF3BB613E3F834C16213_StaticFields*)il2cpp_codegen_static_fields_for(VinylSnapToPlatter_t07171A65FF860BAF6D32FF3BB613E3F834C16213_il2cpp_TypeInfo_var))->___currentSnappedVinyl = L_81;
+		Il2CppCodeGenWriteBarrier((void**)(&((VinylSnapToPlatter_t07171A65FF860BAF6D32FF3BB613E3F834C16213_StaticFields*)il2cpp_codegen_static_fields_for(VinylSnapToPlatter_t07171A65FF860BAF6D32FF3BB613E3F834C16213_il2cpp_TypeInfo_var))->___currentSnappedVinyl), (void*)L_81);
 		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VinylSnapToPlatter.cs:105>
-		VinylSnapToPlatter_t07171A65FF860BAF6D32FF3BB613E3F834C16213* L_84 = V_1;
-		NullCheck(L_84);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_85 = L_84->___tonearmPivot;
+		VinylSnapToPlatter_t07171A65FF860BAF6D32FF3BB613E3F834C16213* L_82 = V_1;
+		NullCheck(L_82);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_83 = L_82->___tonearmPivot;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_86;
-		L_86 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_85, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_86)
+		bool L_84;
+		L_84 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_83, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_84)
 		{
-			goto IL_0249;
+			goto IL_023e;
 		}
 	}
 	{
-		VinylSnapToPlatter_t07171A65FF860BAF6D32FF3BB613E3F834C16213* L_87 = V_1;
-		NullCheck(L_87);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_88 = L_87->___tonearmPlayPose;
+		VinylSnapToPlatter_t07171A65FF860BAF6D32FF3BB613E3F834C16213* L_85 = V_1;
+		NullCheck(L_85);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_86 = L_85->___tonearmPlayPose;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_89;
-		L_89 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_88, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_89)
+		bool L_87;
+		L_87 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_86, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_87)
 		{
-			goto IL_0249;
+			goto IL_023e;
 		}
 	}
 	{
 		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VinylSnapToPlatter.cs:106>
+		VinylSnapToPlatter_t07171A65FF860BAF6D32FF3BB613E3F834C16213* L_88 = V_1;
+		VinylSnapToPlatter_t07171A65FF860BAF6D32FF3BB613E3F834C16213* L_89 = V_1;
 		VinylSnapToPlatter_t07171A65FF860BAF6D32FF3BB613E3F834C16213* L_90 = V_1;
-		VinylSnapToPlatter_t07171A65FF860BAF6D32FF3BB613E3F834C16213* L_91 = V_1;
+		NullCheck(L_90);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_91 = L_90->___tonearmPivot;
 		VinylSnapToPlatter_t07171A65FF860BAF6D32FF3BB613E3F834C16213* L_92 = V_1;
 		NullCheck(L_92);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_93 = L_92->___tonearmPivot;
-		VinylSnapToPlatter_t07171A65FF860BAF6D32FF3BB613E3F834C16213* L_94 = V_1;
-		NullCheck(L_94);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_95 = L_94->___tonearmPlayPose;
-		NullCheck(L_91);
-		RuntimeObject* L_96;
-		L_96 = VinylSnapToPlatter_MoveTonearmRoutine_m8E3CE37A2988450C1A9FFB2DEEF5A3DF36758AA4(L_91, L_93, L_95, NULL);
-		NullCheck(L_90);
-		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_97;
-		L_97 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(L_90, L_96, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_93 = L_92->___tonearmPlayPose;
+		NullCheck(L_89);
+		RuntimeObject* L_94;
+		L_94 = VinylSnapToPlatter_MoveTonearmRoutine_m8E3CE37A2988450C1A9FFB2DEEF5A3DF36758AA4(L_89, L_91, L_93, NULL);
+		NullCheck(L_88);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_95;
+		L_95 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(L_88, L_94, NULL);
 	}
 
-IL_0249:
+IL_023e:
 	{
 		//<source_info:C:/Users/neeti/Documents/GitHub/MovementSound/Assets/Scripts/VinylSnapToPlatter.cs:107>
 		return (bool)0;
