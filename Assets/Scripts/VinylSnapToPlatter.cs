@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using FMODUnityResonance;
+using UnityEngine;
 
 public class VinylSnapToPlatter : MonoBehaviour
 {
@@ -16,6 +17,22 @@ public class VinylSnapToPlatter : MonoBehaviour
     public float snapRotationSpeed = 10f;
 
     public static VinylFloating_Grabbable currentSnappedVinyl = null;
+
+    [Header("Vinyl Options and their parameters")]
+    public GameObject vinyl1;
+    public GameObject vinyl2;
+    public GameObject vinyl3;
+
+    public SoundEmitterSender fmodAll;
+    public GameObject allHolder;
+
+    public string vinylName;
+    public float fmodVinylNumber;
+
+    void Start()
+    {
+        fmodAll = allHolder.GetComponent<SoundEmitterSender>();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -56,6 +73,26 @@ public class VinylSnapToPlatter : MonoBehaviour
 
         vinyl.isSnappedToPlatter = true;
 
+        //check which vinyl is on
+        vinylName = vinyl.name;
+
+        if (vinylName == vinyl1.name)
+        {
+            fmodVinylNumber = 1;
+        }
+        else if (vinylName == vinyl2.name)
+        {
+            fmodVinylNumber = 2;
+        }
+        else if (vinylName == vinyl3.name)
+        {
+            fmodVinylNumber = 3;
+        }
+
+        //change vinyl song and play
+        fmodAll.changeSong(fmodVinylNumber);
+        //fmodAll.continueSongs();
+
         // Start platter spinning
         PlatterSpin platterSpin = snapPoint.parent.GetComponentInChildren<PlatterSpin>();
         if (platterSpin != null)
@@ -85,6 +122,9 @@ public class VinylSnapToPlatter : MonoBehaviour
     // Smooth automatic tonearm swing
     private System.Collections.IEnumerator MoveTonearmRoutine(Transform pivot, Transform targetPose)
     {
+        //pauseTheMusic;
+        //fmodAll.pauseSongs();
+
         Quaternion startRot = pivot.localRotation;
         Quaternion targetRot = targetPose.localRotation;
 

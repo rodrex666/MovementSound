@@ -7,7 +7,7 @@ public class FMODPlaywithParameters : MonoBehaviour
     
     public FMODUnity.EventReference instrumentEvent;
     [SerializeField]
-    private bool _controlParameter = true;
+    public bool _controlParameter = true;
     [SerializeField]
     private string _parameterVolumeName;
     [SerializeField]
@@ -15,7 +15,7 @@ public class FMODPlaywithParameters : MonoBehaviour
     [SerializeField]
     private string _parameterTypeName;
     [SerializeField]
-    private float _valueTypeFmod = 1f;
+    public float _valueTypeFmod = 1f;
 
     private float velocityHandsfinal = 0f;
     private float velocityHandsnew = 0f;
@@ -56,6 +56,7 @@ public class FMODPlaywithParameters : MonoBehaviour
     {
         _valueTypeFmod = value;
         soundInstance.setParameterByName(_parameterTypeName, _valueTypeFmod);
+        Debug.Log("FMOD function called");
     }
     private void OnDestroy()
     {
