@@ -19,7 +19,11 @@ public class FMODPlaywithParameters : MonoBehaviour
 
     private float velocityHandsfinal = 0f;
     private float velocityHandsnew = 0f;
-
+    /// <summary>
+    /// to reduce the velocity is 
+    /// </summary>
+    [SerializeField]
+    private float _reduceVelocity = 0.007f;
     void Start()
     {
         soundInstance= FMODUnity.RuntimeManager.CreateInstance(instrumentEvent);
@@ -35,11 +39,12 @@ public class FMODPlaywithParameters : MonoBehaviour
     {
         if (_controlParameter)
         { 
-            velocityHandsfinal = velocityHandsnew + _valueVolumeFmod*Time.deltaTime;
+            velocityHandsfinal = Mathf.Clamp(velocityHandsnew + _valueVolumeFmod*Time.deltaTime,0f,2f);
             
-            soundInstance.setParameterByName(_parameterVolumeName, _valueVolumeFmod);
+            soundInstance.setParameterByName(_parameterVolumeName, velocityHandsfinal);
             Debug.Log(gameObject.name + " - " + velocityHandsfinal);
-            velocityHandsnew = velocityHandsfinal;
+            velocityHandsnew =  velocityHandsfinal - _reduceVelocity;
+
         }
     }
     public void updateParameter(float value)
