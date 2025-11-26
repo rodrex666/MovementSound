@@ -326,9 +326,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 28960253}
     - target: {fileID: 1258122426285132912, guid: a85b4e10e1bd6b545b6e5d78ee50ff85, type: 3}
+      propertyPath: fmodAll
+      value: 
+      objectReference: {fileID: 7473665696012121992}
+    - target: {fileID: 1258122426285132912, guid: a85b4e10e1bd6b545b6e5d78ee50ff85, type: 3}
       propertyPath: fmodBass
       value: 
       objectReference: {fileID: 215113244}
+    - target: {fileID: 1258122426285132912, guid: a85b4e10e1bd6b545b6e5d78ee50ff85, type: 3}
+      propertyPath: allHolder
+      value: 
+      objectReference: {fileID: 7473665696012121990}
     - target: {fileID: 1258122426285132912, guid: a85b4e10e1bd6b545b6e5d78ee50ff85, type: 3}
       propertyPath: fmodDrums
       value: 
@@ -1643,12 +1651,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4197aea7391489e4297293c7f747ab2b, type: 3}
+--- !u!1 &7473665696012121990 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1543240134769919242, guid: 4197aea7391489e4297293c7f747ab2b, type: 3}
+  m_PrefabInstance: {fileID: 7473665696012121989}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &7473665696012121992 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6691184409794782112, guid: 4197aea7391489e4297293c7f747ab2b, type: 3}
   m_PrefabInstance: {fileID: 7473665696012121989}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 7473665696012121990}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9c0c091e2a8ad5046848d8f71a3d11b4, type: 3}

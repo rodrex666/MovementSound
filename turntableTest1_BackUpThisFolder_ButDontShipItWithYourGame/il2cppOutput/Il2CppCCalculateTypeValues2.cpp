@@ -7031,7 +7031,7 @@ struct Activation_t01A77DD03A6BC29B90ACB37149350B95ABFCBF19
 {
 	int32_t ___value__;
 };
-struct U3CMoveTonearmRoutineU3Ed__25_t124E0ED0B3338548B0F2BBB15ABBCB446B469013  : public RuntimeObject
+struct U3CMoveTonearmRoutineU3Ed__19_t5813C3C9E3C947C8F7363A0F51588BD8516C50DB  : public RuntimeObject
 {
 	int32_t ___U3CU3E1__state;
 	RuntimeObject* ___U3CU3E2__current;
@@ -7042,7 +7042,7 @@ struct U3CMoveTonearmRoutineU3Ed__25_t124E0ED0B3338548B0F2BBB15ABBCB446B469013  
 	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___U3CtargetRotU3E5__3;
 	float ___U3CtU3E5__4;
 };
-struct U3CSnapRoutineU3Ed__23_tF8F17BE7B132BF21AB777D318328C908A9860ABE  : public RuntimeObject
+struct U3CSnapRoutineU3Ed__17_t2EF2C30E6C5E7677D1D9A249A0712D8808CFCE23  : public RuntimeObject
 {
 	int32_t ___U3CU3E1__state;
 	RuntimeObject* ___U3CU3E2__current;
@@ -11326,6 +11326,8 @@ struct FMODPlaywithParameters_t76C514E722C5D7D71E35942B927F19DF46A1A741  : publi
 	float ____valueVolumeFmod;
 	String_t* ____parameterTypeName;
 	float ____valueTypeFmod;
+	float ___velocityHandsfinal;
+	float ___velocityHandsnew;
 };
 struct FmodResonanceAudioRoom_t7078E03ED7F19847733049BD2ACA2CBA5B39BB35  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -11658,14 +11660,8 @@ struct VinylSnapToPlatter_t07171A65FF860BAF6D32FF3BB613E3F834C16213  : public Mo
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___vinyl1;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___vinyl2;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___vinyl3;
-	FMODPlaywithParameters_t76C514E722C5D7D71E35942B927F19DF46A1A741* ___fmodVoice;
-	FMODPlaywithParameters_t76C514E722C5D7D71E35942B927F19DF46A1A741* ___fmodBass;
-	FMODPlaywithParameters_t76C514E722C5D7D71E35942B927F19DF46A1A741* ___fmodDrums;
-	FMODPlaywithParameters_t76C514E722C5D7D71E35942B927F19DF46A1A741* ___fmodGuitar;
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___voice;
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___bass;
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___drums;
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___guitar;
+	SoundEmitterSender_tB4FE86175D540D751CBD5112EB684F69237AE534* ___fmodAll;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___allHolder;
 	String_t* ___vinylName;
 	float ___fmodVinylNumber;
 };
@@ -15147,9 +15143,9 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize11766 = { sizeof(VelocityEst
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize11767;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize11767 = { sizeof(VinylFloating_Grabbable_t2DF774FCC266ABE37D8C2CDF017DB71D7B20579B), -1, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize11768;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize11768 = { sizeof(U3CMoveTonearmRoutineU3Ed__25_t124E0ED0B3338548B0F2BBB15ABBCB446B469013), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize11768 = { sizeof(U3CMoveTonearmRoutineU3Ed__19_t5813C3C9E3C947C8F7363A0F51588BD8516C50DB), -1, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize11769;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize11769 = { sizeof(U3CSnapRoutineU3Ed__23_tF8F17BE7B132BF21AB777D318328C908A9860ABE), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize11769 = { sizeof(U3CSnapRoutineU3Ed__17_t2EF2C30E6C5E7677D1D9A249A0712D8808CFCE23), -1, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize11770;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize11770 = { sizeof(VinylSnapToPlatter_t07171A65FF860BAF6D32FF3BB613E3F834C16213), -1, sizeof(VinylSnapToPlatter_t07171A65FF860BAF6D32FF3BB613E3F834C16213_StaticFields), 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize11771;
