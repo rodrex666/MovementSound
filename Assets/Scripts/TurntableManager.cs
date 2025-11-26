@@ -18,6 +18,8 @@ public class TurntableGestureToggle : MonoBehaviour
     private float lastGestureTime = 0f;
     private bool isActive = false;
 
+    public GameObject rockOn;
+
     void Start()
     {
         if (playerCamera == null)
@@ -46,6 +48,8 @@ public class TurntableGestureToggle : MonoBehaviour
 
         if (isActive)
             PlaceTurntable();
+            Destroy(rockOn);
+            
     }
 
     // ---------------------------------------------------------
