@@ -91,8 +91,8 @@ public class VinylSnapToPlatter : MonoBehaviour
 
         //change vinyl song and play
         fmodAll.changeSong(fmodVinylNumber);
-        fmodAll.pauseSongs();
-        //fmodAll.stopSongs();
+        //fmodAll.pauseSongs();
+        fmodAll.stopSongs();
         
         // Start platter spinning
         PlatterSpin platterSpin = snapPoint.parent.GetComponentInChildren<PlatterSpin>();
@@ -124,8 +124,8 @@ public class VinylSnapToPlatter : MonoBehaviour
     private System.Collections.IEnumerator MoveTonearmRoutine(Transform pivot, Transform targetPose)
     {
         //pauseTheMusic;
-        fmodAll.continueSongs();
-        //fmodAll.playSongs();
+        //fmodAll.continueSongs();
+       fmodAll.playSongs();
         Debug.Log("should stop");
         Quaternion startRot = pivot.localRotation;
         Quaternion targetRot = targetPose.localRotation;
