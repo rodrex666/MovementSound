@@ -1,5 +1,5 @@
 # Mr.Vibes
-![Mr. Vibes](Assets\Images_README\xrcc_tHUMBNAI.png)
+![Mr. Vibes](.\Assets\Images_README\xrcc_tHUMBNAI.png)
 > 🏆 **Achievement:** Finalist - Immersive Insiders XRCC Hackathon 2025
 
 ## 📖 About the Project
