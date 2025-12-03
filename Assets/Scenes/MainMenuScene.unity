@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 69106018}
   - component: {fileID: 69106017}
   - component: {fileID: 69106020}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: MultiplayerButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -292,7 +292,7 @@ GameObject:
   - component: {fileID: 205034169}
   - component: {fileID: 205034171}
   - component: {fileID: 205034170}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -428,7 +428,7 @@ GameObject:
   - component: {fileID: 257657375}
   - component: {fileID: 257657377}
   - component: {fileID: 257657376}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -613,7 +613,7 @@ GameObject:
   - component: {fileID: 323010292}
   - component: {fileID: 323010294}
   - component: {fileID: 323010293}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: PeaceInstruct
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -688,7 +688,7 @@ GameObject:
   - component: {fileID: 373542306}
   - component: {fileID: 373542308}
   - component: {fileID: 373542307}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1048,7 +1048,7 @@ GameObject:
   - component: {fileID: 473834396}
   - component: {fileID: 473834398}
   - component: {fileID: 473834397}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1325,7 +1325,7 @@ GameObject:
   m_Component:
   - component: {fileID: 569724519}
   - component: {fileID: 569724520}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: ButtonParent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1393,7 +1393,7 @@ GameObject:
   - component: {fileID: 573400056}
   - component: {fileID: 573400055}
   - component: {fileID: 573400057}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1712,7 +1712,7 @@ GameObject:
   - component: {fileID: 790770948}
   - component: {fileID: 790770950}
   - component: {fileID: 790770949}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1883,7 +1883,7 @@ GameObject:
   - component: {fileID: 1456873351}
   - component: {fileID: 1456873353}
   - component: {fileID: 1456873352}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1957,7 +1957,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1459847430}
   - component: {fileID: 1459847431}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: ComingSoonPopup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2161,7 +2161,7 @@ GameObject:
   - component: {fileID: 1818382628}
   - component: {fileID: 1818382627}
   - component: {fileID: 1818382630}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: QuitButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2322,7 +2322,7 @@ GameObject:
   - component: {fileID: 1915560266}
   - component: {fileID: 1915560265}
   - component: {fileID: 1915560268}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: SinglePlayButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2484,7 +2484,8 @@ GameObject:
   - component: {fileID: 2066615319}
   - component: {fileID: 2066615324}
   - component: {fileID: 2066615325}
-  m_Layer: 5
+  - component: {fileID: 2066615326}
+  m_Layer: 3
   m_Name: MainMenuCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2636,6 +2637,34 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   rotationSmooth: 12
+--- !u!114 &2066615326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2066615318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee10491ef6d5d1d49a270cf6b09bdc19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas
+  _enableMipmapping: 0
+  _dynamicResolution: 1
+  _redrawResolutionThreshold: 2147483647
+  rectTransform: {fileID: 2066615322}
+  maxTextureSize: 2048
+  manualRedraw: 0
+  renderInterval: 1
+  renderIntervalFrameOffset: 0
+  expensive: 0
+  layer: 5
+  opacity: 2
+  shape: 0
+  curveRadius: 1
+  overlapMask: 0
+  overlayType: 1
+  _overlayEnabled: 1
 --- !u!4 &8699861438886686
 Transform:
   m_ObjectHideFlags: 0
