@@ -200,6 +200,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4526401871788545118, guid: 9622e7a489804d64cb220a2b70d9788a, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5102733232628433747, guid: 9622e7a489804d64cb220a2b70d9788a, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -303,6 +307,14 @@ PrefabInstance:
     - target: {fileID: 6790409612667445304, guid: 9622e7a489804d64cb220a2b70d9788a, type: 3}
       propertyPath: gestureCooldown
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7625983583886345657, guid: 9622e7a489804d64cb220a2b70d9788a, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158445215975051706, guid: 9622e7a489804d64cb220a2b70d9788a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8160000812371839541, guid: 9622e7a489804d64cb220a2b70d9788a, type: 3}
       propertyPath: m_Layer
