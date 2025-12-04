@@ -3,8 +3,10 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuController : MonoBehaviour
 {
+
     [Header("Scene Names")]
     public string soloSceneName = "MainScene";
+    public string MultiplayerSceneName = "MultiplayerScene";
 
     [Header("Coming Soon Popup")]
     public AutoHidePopup popup;
@@ -16,7 +18,7 @@ public class MainMenuController : MonoBehaviour
 
     public void MultiplayerMode()
     {
-        popup.Show();    // <--- auto hides itself
+        SceneManager.LoadScene(MultiplayerSceneName);
     }
 
     public void QuitGame()
