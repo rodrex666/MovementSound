@@ -543,6 +543,13 @@ MonoBehaviour:
   tonearmMoveSpeed: 2
   snapSpeed: 1
   snapRotationSpeed: 1
+  vinyl1: {fileID: 0}
+  vinyl2: {fileID: 0}
+  vinyl3: {fileID: 0}
+  fmodAll: {fileID: 0}
+  allHolder: {fileID: 0}
+  vinylName: 
+  fmodVinylNumber: 0
 --- !u!114 &2892852562873347230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -960,7 +967,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4257333832098421410}
   m_Layer: 0
-  m_Name: MusicChangeParent
+  m_Name: MusicChangeParent 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2931,6 +2938,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VinylRecordC
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 70d0c1a4d0fe44f4da39cdc3e8ae3943, type: 3}
+      propertyPath: m_TagString
+      value: Vinyl
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -3121,6 +3132,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VinylRecordB
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 70d0c1a4d0fe44f4da39cdc3e8ae3943, type: 3}
+      propertyPath: m_TagString
+      value: Vinyl
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -3306,6 +3321,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 70d0c1a4d0fe44f4da39cdc3e8ae3943, type: 3}
       propertyPath: m_Name
       value: VinylRecordA
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 70d0c1a4d0fe44f4da39cdc3e8ae3943, type: 3}
+      propertyPath: m_TagString
+      value: Vinyl
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

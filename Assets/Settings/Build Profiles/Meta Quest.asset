@@ -34,7 +34,7 @@ MonoBehaviour:
     - line: '|   targetDevice: 2'
     - line: '|   useOnDemandResources: 0'
     - line: '|   accelerometerFrequency: 60'
-    - line: '|   companyName: DefaultCompany'
+    - line: '|   companyName: RockoStudioVR'
     - line: '|   productName: Mr.Vibes'
     - line: '|   defaultCursor: {instanceID: 0}'
     - line: '|   cursorHotspot: {x: 0, y: 0}'
@@ -166,7 +166,7 @@ MonoBehaviour:
     - line: '|   loadStoreDebugModeEnabled: 0'
     - line: '|   visionOSBundleVersion: 1.0'
     - line: '|   tvOSBundleVersion: 1.0'
-    - line: '|   bundleVersion: 1.0.0'
+    - line: '|   bundleVersion: 1.5.0'
     - line: '|   preloadedAssets:'
     - line: '|   - {fileID: 11400000, guid: 48d7d090d90fb07498511589649ba1ef, type:
         2}'
@@ -193,7 +193,7 @@ MonoBehaviour:
     - line: '|   androidMaxAspectRatio: 2.4'
     - line: '|   androidMinAspectRatio: 1'
     - line: '|   applicationIdentifier:'
-    - line: '|     Android: com.UnityTechnologies.com.unity.template.urpblank'
+    - line: '|     Android: com.RockoStudioVR.MrVibes'
     - line: '|     Standalone: com.Unity-Technologies.com.unity.template.urp-blank'
     - line: '|     iPhone: com.Unity-Technologies.com.unity.template.urp-blank'
     - line: '|   buildNumber:'
@@ -202,7 +202,7 @@ MonoBehaviour:
     - line: '|     iPhone: 0'
     - line: '|     tvOS: 0'
     - line: '|   overrideDefaultApplicationIdentifier: 1'
-    - line: '|   AndroidBundleVersionCode: 1'
+    - line: '|   AndroidBundleVersionCode: 4'
     - line: '|   AndroidMinSdkVersion: 32'
     - line: '|   AndroidTargetSdkVersion: 32'
     - line: '|   AndroidPreferredInstallLocation: 0'
@@ -994,7 +994,7 @@ MonoBehaviour:
     - rid: 1149573756080357646
       type: {class: AndroidPlatformBuildSettings, ns: UnityEditor.Android, asm: UnityEditor.Android.Extensions}
       data:
-        m_Development: 0
+        m_Development: 1
         m_ConnectProfiler: 0
         m_BuildWithDeepProfilingSupport: 0
         m_AllowDebugging: 0
@@ -1013,7 +1013,7 @@ MonoBehaviour:
         m_DebugSymbolLevel: 1
         m_DebugSymbolFormat: 5
         m_CurrentDeploymentTargetId: __builtin__target_default
-        m_BuildType: 2
+        m_BuildType: 1
         m_LinkTimeOptimization: 0
         m_BuildAppBundle: 0
         m_IPAddressToConnect: 

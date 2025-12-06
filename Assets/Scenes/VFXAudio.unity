@@ -304,6 +304,10 @@ PrefabInstance:
       propertyPath: gestureCooldown
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7916495351918208019, guid: 9622e7a489804d64cb220a2b70d9788a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8160000812371839541, guid: 9622e7a489804d64cb220a2b70d9788a, type: 3}
       propertyPath: m_Layer
       value: 3
@@ -2021,6 +2025,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3847491456970998073, guid: 7943e33b095b85343be8d36a13775c9c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4261140176328968079, guid: 7943e33b095b85343be8d36a13775c9c, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}

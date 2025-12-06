@@ -1,4 +1,5 @@
 ﻿using FMODUnityResonance;
+using Unity.XR.CoreUtils;
 using UnityEngine;
 
 public class VinylSnapToPlatter : MonoBehaviour
@@ -28,6 +29,7 @@ public class VinylSnapToPlatter : MonoBehaviour
 
     public string vinylName;
     public float fmodVinylNumber;
+    private bool _hasVinyl = false;
 
     void Start()
     {
@@ -36,23 +38,32 @@ public class VinylSnapToPlatter : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        VinylFloating_Grabbable vinyl = other.GetComponent<VinylFloating_Grabbable>();
-        if (vinyl == null) return;
+        if (other.tag == "Vinyl") { 
+            VinylFloating_Grabbable vinyl = other.GetComponent<VinylFloating_Grabbable>();
+            if (vinyl == null) return;
+           
+            // Block if a vinyl is already snapped
+            if (currentSnappedVinyl != null && currentSnappedVinyl != vinyl)
+            {
+               
+                return;
+            }
 
-        // Block if a vinyl is already snapped
-        if (currentSnappedVinyl != null && currentSnappedVinyl != vinyl)
-            return;
-
-        StartCoroutine(SnapRoutine(other.transform, vinyl));
+            if (gameObject.GetComponentsInChildren<Transform>().Length <= 2)
+            {
+                StartCoroutine(SnapRoutine(other.transform, vinyl));
+            }
+        }
     }
 
     private System.Collections.IEnumerator SnapRoutine(Transform vinylTransform, VinylFloating_Grabbable vinyl)
     {
         Transform originalParent = vinylTransform.parent;
         vinyl.originalParent = originalParent;
-
+        _hasVinyl = true;
         Vector3 startPos = vinylTransform.position;
         Quaternion startRot = vinylTransform.rotation;
+        fmodAll.pauseSongs();
 
         float t = 0f;
 
@@ -91,7 +102,7 @@ public class VinylSnapToPlatter : MonoBehaviour
 
         //change vinyl song and play
         fmodAll.changeSong(fmodVinylNumber);
-        //fmodAll.pauseSongs();
+        //
         //fmodAll.stopSongs();
         
         // Start platter spinning
@@ -113,19 +124,21 @@ public class VinylSnapToPlatter : MonoBehaviour
         {
             instance.StartCoroutine(instance.MoveTonearmRoutine(
                 instance.tonearmPivot,
-                instance.tonearmRestPose
+                instance.tonearmRestPose        
             ));
+           
         }
-
+        
         currentSnappedVinyl = null;
+        
     }
 
     // Smooth automatic tonearm swing
     private System.Collections.IEnumerator MoveTonearmRoutine(Transform pivot, Transform targetPose)
     {
         //pauseTheMusic;
-        //fmodAll.continueSongs();
-       //fmodAll.playSongs();
+        //
+       //
         //Debug.Log("should stop");
         Quaternion startRot = pivot.localRotation;
         Quaternion targetRot = targetPose.localRotation;
@@ -140,6 +153,8 @@ public class VinylSnapToPlatter : MonoBehaviour
         }
 
         pivot.localRotation = targetRot;
+        fmodAll.continueSongs();
+
     }
 
     // Singleton instance so static remove call works

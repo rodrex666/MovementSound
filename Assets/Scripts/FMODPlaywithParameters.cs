@@ -42,7 +42,7 @@ public class FMODPlaywithParameters : MonoBehaviour
             velocityHandsfinal = Mathf.Clamp(velocityHandsnew + _valueVolumeFmod*Time.deltaTime,0f,2f);
             
             soundInstance.setParameterByName(_parameterVolumeName, velocityHandsfinal);
-            Debug.Log(gameObject.name + " - " + velocityHandsfinal);
+            
             velocityHandsnew =  velocityHandsfinal - _reduceVelocity;
 
         }
@@ -56,7 +56,7 @@ public class FMODPlaywithParameters : MonoBehaviour
     {
         _valueTypeFmod = value;
         soundInstance.setParameterByName(_parameterTypeName, _valueTypeFmod);
-        Debug.Log("FMOD function called");
+        
     }
     private void OnDestroy()
     {
